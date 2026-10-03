@@ -1,0 +1,27 @@
+{
+    "fixture": "2023-05/list/news.html",
+    "layout": "NEWS",
+    "pageUrl": "https://coolenjoy.net/bbs/38",
+    "clock": "2023-05-05T05:00:00Z",
+    "itemCount": 1,
+    "warnings": [],
+    "items": [
+        {
+            "board": null,
+            "category": "업계동향",
+            "subCategory": null,
+            "title": "애플, 2023년 2분기 실적 948억 달러 기록",
+            "url": "https://coolenjoy.net/bbs/38/4321104",
+            "writer": "{{writer_02}}",
+            "commentCount": 15,
+            "viewCount": "187",
+            "recommendCount": 4,
+            "postedAt": {
+                "dateTime": "2023-05-05T11:34",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        }
+    ]
+}

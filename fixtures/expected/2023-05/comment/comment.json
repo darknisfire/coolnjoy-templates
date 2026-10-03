@@ -1,0 +1,18 @@
+{
+    "fixture": "2023-05/list/comment.html",
+    "pageUrl": "https://coolenjoy.net/bbs/comment",
+    "itemCount": 1,
+    "warnings": [],
+    "items": [
+        {
+            "writer": "{{writer_01}}",
+            "profileImageUrl": "https://coolenjoy.net/bbs/{{profile_img_01}}",
+            "postedAt": {
+                "dateTime": "2023-05-05T11:46",
+                "precision": "MINUTE"
+            },
+            "content": "애플은 꾸준히 성장하고 잘 나가네요 ^^",
+            "recommendCount": 0
+        }
+    ]
+}

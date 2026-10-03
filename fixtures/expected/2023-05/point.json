@@ -1,0 +1,27 @@
+{
+    "fixture": "2023-05/list/point.html",
+    "layout": "POINT",
+    "pageUrl": "https://coolenjoy.net/bbs/point",
+    "clock": "2023-05-05T05:00:00Z",
+    "itemCount": 1,
+    "warnings": [],
+    "items": [
+        {
+            "board": null,
+            "category": "진행",
+            "subCategory": null,
+            "title": "2023 쿨엔조이 FESTA 32탄",
+            "url": "https://coolenjoy.net/bbs/point/150587",
+            "writer": "COOLENJOY",
+            "commentCount": 279,
+            "viewCount": "16.1k",
+            "recommendCount": null,
+            "postedAt": null,
+            "thumbnailUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/point/1682482878985.png",
+            "extras": {
+                "condition": "-점",
+                "period": "~ 2023-05-10 23:59:59"
+            }
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "fixture": "2023-05/list/give.html",
+    "layout": "GIVE",
+    "pageUrl": "https://coolenjoy.net/bbs/give",
+    "clock": "2023-05-05T05:00:00Z",
+    "itemCount": 1,
+    "warnings": [],
+    "items": [
+        {
+            "board": null,
+            "category": "드립니다",
+            "subCategory": null,
+            "title": "갤럭시S23 울트라 실리콘 그립 케이스 방출합니다.",
+            "url": "https://coolenjoy.net/bbs/give/8709378",
+            "writer": "{{writer_02}}",
+            "commentCount": 2,
+            "viewCount": "26",
+            "recommendCount": 5,
+            "postedAt": {
+                "dateTime": "2023-05-05T13:48",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        }
+    ]
+}

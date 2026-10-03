@@ -1,0 +1,30 @@
+{
+    "fixture": "2023-05/list/market.html",
+    "layout": "MARKET",
+    "pageUrl": "https://coolenjoy.net/bbs/29",
+    "clock": "2023-05-05T05:00:00Z",
+    "itemCount": 1,
+    "warnings": [],
+    "items": [
+        {
+            "board": null,
+            "category": "진행",
+            "subCategory": null,
+            "title": "darkFlash UPMOST 850W 80PLUS GOLD FULL MODULAR 0원 추첨 특가",
+            "url": "https://coolenjoy.net/bbs/29/327586",
+            "writer": null,
+            "commentCount": 598,
+            "viewCount": "3833",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2023-04-28T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/60ba28ff8112342405289e5397b65aa5_Qkueiyxt_f18a9197ea9dbb55c18ac307b951b46543411d0c.png",
+            "extras": {
+                "period": "2023-04-28 16:48:14 ~ 2023-05-07 23:59:59",
+                "price": "0원"
+            }
+        }
+    ]
+}

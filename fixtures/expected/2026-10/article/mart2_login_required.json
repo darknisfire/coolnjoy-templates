@@ -1,0 +1,7 @@
+{
+    "fixture": "2026-10/article/mart2_login_required.html",
+    "pageUrl": "https://coolenjoy.net/bbs/mart2/1276355",
+    "clock": "2026-10-03T05:00:00Z",
+    "kind": "LOGIN_REQUIRED",
+    "message": "글을 읽을 권한이 없습니다.\n\n회원이시라면 로그인 후 이용해 보십시오."
+}

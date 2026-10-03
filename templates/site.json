@@ -1,6 +1,6 @@
 {
-  "templateVersion": 1,
-  "minEngineVersion": 1,
+  "templateVersion": 2,
+  "minEngineVersion": 2,
   "site": {
     "baseUrl": "https://coolenjoy.net"
   },
@@ -1866,6 +1866,499 @@
         }
       },
       "extras": {}
+    }
+  },
+  "comment": {
+    "row": "section#bo_vc > article",
+    "contentSelect": "div.cmt_contents",
+    "content": {
+      "op": [
+        {
+          "text": {}
+        }
+      ]
+    },
+    "fields": {
+      "writer": {
+        "select": "a.sv_member",
+        "op": [
+          {
+            "text": {}
+          }
+        ]
+      },
+      "profileImageUrl": {
+        "select": "img.rounded-circle",
+        "op": [
+          {
+            "absUrl": "src"
+          }
+        ]
+      },
+      "postedAt": {
+        "select": "span.bo_vc_hdinfo > time",
+        "op": [
+          {
+            "attr": "datetime"
+          },
+          {
+            "regexGroup": {
+              "pattern": "^(.{16,19})",
+              "group": 1
+            }
+          },
+          {
+            "date": {}
+          }
+        ],
+        "fallback": [
+          {
+            "select": "span.bo_vc_hdinfo > time",
+            "op": [
+              {
+                "text": {}
+              },
+              {
+                "date": {}
+              }
+            ]
+          }
+        ]
+      },
+      "recommendCount": {
+        "select": "a.na-cgood > b",
+        "op": [
+          {
+            "text": {}
+          },
+          {
+            "toInt": {}
+          }
+        ]
+      }
+    }
+  },
+  "article": {
+    "root": "article#bo_v",
+    "ref": [
+      {
+        "select": "link[rel=canonical]",
+        "op": [
+          {
+            "attr": "href"
+          }
+        ]
+      },
+      {
+        "select": "meta[property=og:url]",
+        "op": [
+          {
+            "attr": "content"
+          }
+        ]
+      },
+      {
+        "op": [
+          {
+            "pageUrl": {}
+          }
+        ]
+      }
+    ],
+    "titleSelect": "h1#bo_v_title",
+    "title": {
+      "op": [
+        {
+          "labelSplit": {
+            "sep": "|",
+            "part": "title"
+          }
+        }
+      ]
+    },
+    "category": {
+      "op": [
+        {
+          "labelSplit": {
+            "sep": "|",
+            "part": "label"
+          }
+        }
+      ]
+    },
+    "fields": {
+      "writer": {
+        "select": "#bo_v_info a.sv_member",
+        "op": [
+          {
+            "text": {}
+          }
+        ],
+        "fallback": [
+          {
+            "select": "#bo_v_info .sv_guest",
+            "op": [
+              {
+                "text": {}
+              }
+            ]
+          }
+        ]
+      },
+      "writerProfileImageUrl": {
+        "select": "#bo_v_atc img.rounded-circle",
+        "op": [
+          {
+            "absUrl": "src"
+          }
+        ]
+      },
+      "postedAt": {
+        "select": "#bo_v_info time",
+        "op": [
+          {
+            "attr": "datetime"
+          },
+          {
+            "regexGroup": {
+              "pattern": "^(.{16,19})",
+              "group": 1
+            }
+          },
+          {
+            "date": {}
+          }
+        ],
+        "fallback": [
+          {
+            "select": "#bo_v_info time",
+            "op": [
+              {
+                "text": {}
+              },
+              {
+                "date": {}
+              }
+            ]
+          }
+        ]
+      },
+      "viewCount": {
+        "select": "#bo_v_info",
+        "op": [
+          {
+            "afterIcon": "fa-eye"
+          },
+          {
+            "toInt": {}
+          }
+        ]
+      },
+      "recommendCount": {
+        "select": "#bo_v_info .wr_good_cnt",
+        "op": [
+          {
+            "text": {}
+          },
+          {
+            "toInt": {}
+          }
+        ],
+        "fallback": [
+          {
+            "select": "#wr_good",
+            "op": [
+              {
+                "text": {}
+              },
+              {
+                "toInt": {}
+              }
+            ]
+          }
+        ]
+      },
+      "commentCount": {
+        "select": "#bo_v_info",
+        "op": [
+          {
+            "afterIcon": "fa-commenting-o"
+          },
+          {
+            "toInt": {}
+          }
+        ],
+        "fallback": [
+          {
+            "select": "#viewcomment b.orangered",
+            "op": [
+              {
+                "text": {}
+              },
+              {
+                "toInt": {}
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "extras": {
+      "writerId": {
+        "select": "#bo_v_info a.sv_member",
+        "op": [
+          {
+            "attr": "href"
+          },
+          {
+            "regexGroup": {
+              "pattern": "[?&]mb_id=([^&#]+)",
+              "group": 1
+            }
+          }
+        ]
+      }
+    },
+    "content": {
+      "main": {
+        "select": "#bo_v_con div.view-content"
+      },
+      "fallback": {
+        "select": "#bo_v_con",
+        "remove": [
+          "#bo_v_img"
+        ],
+        "warning": "ARTICLE: div.view-content not found; using #bo_v_con"
+      },
+      "missingWarning": "ARTICLE: #bo_v_con not found",
+      "pre": {
+        "select": "#bo_v_con",
+        "remove": [
+          "#bo_v_img"
+        ],
+        "cutFrom": "div.view-content"
+      }
+    },
+    "attachments": {
+      "selectAll": "#bo_v_file a[href], #bo_v_data a[href*=download.php], a.view_file_download",
+      "url": {
+        "op": [
+          {
+            "absUrl": "href"
+          },
+          {
+            "requireMatch": "^https?://"
+          }
+        ]
+      },
+      "name": {
+        "select": "strong",
+        "op": [
+          {
+            "text": {}
+          }
+        ],
+        "fallback": [
+          {
+            "op": [
+              {
+                "textWithoutSrOnly": {}
+              },
+              {
+                "regexReplace": {
+                  "pattern": "\\s+",
+                  "replacement": " "
+                }
+              }
+            ]
+          },
+          {
+            "op": [
+              {
+                "absUrl": "href"
+              },
+              {
+                "split": {
+                  "sep": "/",
+                  "index": "last"
+                }
+              },
+              {
+                "split": {
+                  "sep": "?",
+                  "index": "first"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "links": {
+      "selectAll": "#bo_v_link a[href], #bo_v_data a[href*=link.php]",
+      "url": {
+        "op": [
+          {
+            "absUrl": "href"
+          },
+          {
+            "requireMatch": "^https?://"
+          }
+        ]
+      },
+      "name": {
+        "select": "strong",
+        "op": [
+          {
+            "text": {}
+          }
+        ],
+        "fallback": [
+          {
+            "op": [
+              {
+                "textWithoutSrOnly": {}
+              },
+              {
+                "regexReplace": {
+                  "pattern": "\\s+",
+                  "replacement": " "
+                }
+              }
+            ]
+          },
+          {
+            "op": [
+              {
+                "absUrl": "href"
+              },
+              {
+                "split": {
+                  "sep": "/",
+                  "index": "last"
+                }
+              },
+              {
+                "split": {
+                  "sep": "?",
+                  "index": "first"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "embedUrls": {
+      "selectAll": "#bo_v_con iframe[src]",
+      "item": {
+        "op": [
+          {
+            "absUrl": "src"
+          }
+        ]
+      },
+      "distinct": true
+    },
+    "commentsEmpty": "#bo_vc_empty",
+    "commentPaging": {
+      "region": "#viewcomment",
+      "current": {
+        "select": ".float-left",
+        "op": [
+          {
+            "text": {}
+          },
+          {
+            "regexGroup": {
+              "pattern": "/\\s*(\\d+)\\s*페이지",
+              "group": 1
+            }
+          },
+          {
+            "toInt": {}
+          }
+        ],
+        "fallback": [
+          {
+            "select": "input[id^=comment_page_]",
+            "op": [
+              {
+                "attr": "value"
+              },
+              {
+                "toInt": {}
+              }
+            ]
+          }
+        ]
+      },
+      "pages": {
+        "selectAll": "[onclick*=na_page]",
+        "item": {
+          "op": [
+            {
+              "attr": "onclick"
+            },
+            {
+              "regexGroup": {
+                "pattern": "[?&]page=(\\d+)",
+                "group": 1
+              }
+            },
+            {
+              "toInt": {}
+            }
+          ]
+        }
+      }
+    },
+    "errors": {
+      "rules": [
+        {
+          "result": "LoginRequired",
+          "when": {
+            "htmlContains": "name=\"flogin\""
+          }
+        },
+        {
+          "result": "LoginRequired",
+          "when": {
+            "htmlContains": "id=\"validation_check\"",
+            "alertContains": "로그인"
+          }
+        },
+        {
+          "result": "LoginRequired",
+          "when": {
+            "htmlContains": "id=\"validation_check\"",
+            "redirectContains": "/bbs/login.php"
+          }
+        },
+        {
+          "result": "NotFound",
+          "when": {
+            "htmlContains": "id=\"validation_check\"",
+            "alertContains": "존재하지"
+          }
+        },
+        {
+          "result": "AccessDenied",
+          "when": {
+            "htmlContains": "id=\"validation_check\"",
+            "alertContains": "권한"
+          }
+        },
+        {
+          "result": "Unrecognized",
+          "when": {
+            "htmlContains": "id=\"validation_check\"",
+            "hasAlert": true
+          },
+          "reason": "site error page: {alert}"
+        }
+      ],
+      "unrecognizedReason": "no article#bo_v and no known error page"
     }
   }
 }

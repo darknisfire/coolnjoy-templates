@@ -1,0 +1,9 @@
+{
+    "fixture": "2026-10/article/mart2_login_required.html",
+    "pageUrl": "https://coolenjoy.net/bbs/mart2/1276355",
+    "itemCount": 0,
+    "warnings": [
+        "COMMENT: no rows matched 'section#bo_vc > article'"
+    ],
+    "items": []
+}

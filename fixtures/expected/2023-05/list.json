@@ -1,0 +1,27 @@
+{
+    "fixture": "2023-05/list/list.html",
+    "layout": "LIST",
+    "pageUrl": "https://coolenjoy.net/bbs/37",
+    "clock": "2023-05-05T05:00:00Z",
+    "itemCount": 1,
+    "warnings": [],
+    "items": [
+        {
+            "board": null,
+            "category": "OS",
+            "subCategory": null,
+            "title": "윈도우 업데이트와 MS Store 다운로드 속도가 느리거나 안될때",
+            "url": "https://coolenjoy.net/bbs/37/246473",
+            "writer": "{{writer_02}}",
+            "commentCount": 9,
+            "viewCount": "195",
+            "recommendCount": 4,
+            "postedAt": {
+                "dateTime": "2023-05-04T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        }
+    ]
+}

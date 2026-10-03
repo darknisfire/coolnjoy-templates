@@ -1,0 +1,38 @@
+{
+    "fixture": "2026-10/article/webzine_daybook.html",
+    "pageUrl": "https://coolenjoy.net/bbs/daybook/6734441",
+    "itemCount": 3,
+    "warnings": [],
+    "items": [
+        {
+            "writer": "{{writer_10}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_10}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-10T16:03",
+                "precision": "MINUTE"
+            },
+            "content": "비밀글입니다.",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_11}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-10T21:01",
+                "precision": "MINUTE"
+            },
+            "content": "비밀글입니다.",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_12}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-10T21:47",
+                "precision": "MINUTE"
+            },
+            "content": "비밀글입니다.",
+            "recommendCount": 0
+        }
+    ]
+}

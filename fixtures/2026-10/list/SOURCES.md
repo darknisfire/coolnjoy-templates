@@ -2,11 +2,8 @@
 
 - 수집: 2026-10-03 13:08~13:12 KST. GET만, 요청 간 1초 이상, UA `CoolnJoy-Android/2.0.0 (+dev)`, 비로그인.
 - 가공: 응답 전체 페이지에서 아래 "추출 영역"만 잘라 저장(파이썬 BeautifulSoup `str()` 재직렬화). `script`/`style`만 제거했고 행은 전부 유지했다. 원본 전체 HTML은 저장소에 두지 않는다.
-- **익명화**: 이 저장소의 픽스처는 원본에서 회원 식별 정보(닉네임, 회원 ID `mb_id`, 프로필 이미지 경로의 ID·업로드 사진 경로)를 자리표시자 `{{writer_NN}}`, `{{mb_id_NN}}`, `{{profile_img_NN}}`로 치환한 것이다(같은 사람은 한 파일 안에서 같은 번호, 번호는 파일 내 첫 등장 순서). 글 제목 등 공개 게시글 내용은 그대로이나, 제목에 회원 닉네임과 같은 단어가 있으면 함께 치환된다. 원본은 앱 저장소(`core/src/test/resources/fixtures/2026-10/list`)에만 있다.
-  - 생성: `node scripts/anonymize-fixtures.mjs <원본 디렉터리> fixtures/2026-10/list`
-  - 누락 검사: `node scripts/anonymize-fixtures.mjs --check <원본 디렉터리> fixtures/2026-10/list` (원본에서 수집한 닉네임/ID가 출력에 남은 개수를 출력, 0이 아니면 종료 코드 1. `--verbose`는 값을 출력하므로 로컬에서만 사용)
-  - 아래 표의 "원본 수집" 정보는 익명화 전 원본 기준이다.
-- 이 저장소의 테스트는 `TemplateValidationTest`(고정 Clock 2026-10-03 13:10 KST, 스냅샷 `fixtures/expected/`).
+- 글 제목·본문은 공개 페이지 그대로이고, 회원 식별 정보(닉네임·`mb_id`·프로필 사진 경로)는 아래 "익명화"대로 자리표시자로 치환했다.
+- 테스트는 `ListParserFixture2610Test`(고정 Clock 2026-10-03 13:10 KST).
 
 | 픽스처 | 레이아웃 | 출처 URL | 수집 시각(KST) | HTTP | 추출 영역 | 행 수 | 비고 |
 |---|---|---|---|---|---|---|---|
@@ -41,3 +38,12 @@ review, 39, copy_preview, 36, system, freeboard2, 33, gallery, jirum2, 27, overc
 ## 실사이트 smoke(`liveTest`) 요청
 
 `LiveSmokeTest`가 실행당 GET 2회(`/bbs/38`, `/bbs/new.php`)를 수행한다. 수집 중 첫 실행(13:16 KST 무렵)은 둘 다 200.
+
+## 익명화(2026-10-03)
+
+회원 식별 정보는 자리표시자로 치환했다(템플릿 저장소 `anonymize-fixtures.mjs` 규칙을 앱 저장소용으로 보강한 `core/tools/anonymize-fixtures.mjs` 사용). 같은 사람은 같은 번호, 번호는 파일 내 첫 등장 순서다.
+
+- 닉네임 → `{{writer_NN}}`, 회원 ID → `{{mb_id_NN}}`(`mb_id=`, `stx=`, 작성자 카드의 `(ID)`, 프로필·아이콘 이미지 경로 `member_image/xx/..`·`image/bbs_m/icon/..` 안의 ID 포함), `div.pf_img` 안의 업로드 프로필 사진 경로 → `{{profile_img_NN}}`.
+- 닉네임은 회원 링크·`title="닉 자기소개"`·같은 파일 안의 같은 문자열을 치환한다. 사이트명·브랜드로도 쓰이는 `쿨엔조이`, `darkFlash`는 다른 파일에서 수집된 경우 치환하지 않는다(`--keep`).
+- 공식 계정 ID `coolenjoy`는 사이트·게시판 경로와 구분되지 않아 그대로 두었다. 로그인 계정 표시 `TESTUSER`는 픽스처 가공 때 이미 치환된 값이라 유지한다.
+- 재현(원본을 `<orig>`에 두고 실행. 세 디렉터리를 서로 `--also`로 지정): `node core/tools/anonymize-fixtures.mjs --also <orig>/2026-10/list --also <orig>/2026-10/article <orig>/2023-05/list <out>/2023-05/list`. 검사는 `--check`를 같은 인자 앞에 붙이고 개수만 본다.

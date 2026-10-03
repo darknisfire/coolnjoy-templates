@@ -1,0 +1,88 @@
+{
+    "fixture": "2026-10/article/pds.html",
+    "pageUrl": "https://coolenjoy.net/bbs/pds/203489",
+    "itemCount": 8,
+    "warnings": [],
+    "items": [
+        {
+            "writer": "{{writer_05}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_05}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-27T01:53",
+                "precision": "MINUTE"
+            },
+            "content": "인텔 드라이버 고마워요",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_06}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_06}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-27T11:39",
+                "precision": "MINUTE"
+            },
+            "content": "드라이버 정보 감사합니다",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_07}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_07}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-27T12:12",
+                "precision": "MINUTE"
+            },
+            "content": "자료 감사합니다",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_08}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_08}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-27T12:49",
+                "precision": "MINUTE"
+            },
+            "content": "인텔이 드라이버 잘만드는데.. 오류도없고",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_09}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_09}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-27T23:51",
+                "precision": "MINUTE"
+            },
+            "content": "자료 감사합니다",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_10}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_10}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-28T09:09",
+                "precision": "MINUTE"
+            },
+            "content": "자료 감사합니다",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_11}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_11}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-29T09:07",
+                "precision": "MINUTE"
+            },
+            "content": "자료 감사합니다",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_12}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-29T18:20",
+                "precision": "MINUTE"
+            },
+            "content": "자료 감사합니다",
+            "recommendCount": 0
+        }
+    ]
+}

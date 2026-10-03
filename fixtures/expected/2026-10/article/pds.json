@@ -1,0 +1,118 @@
+{
+    "fixture": "2026-10/article/pds.html",
+    "pageUrl": "https://coolenjoy.net/bbs/pds/203489",
+    "clock": "2026-10-03T05:00:00Z",
+    "kind": "SUCCESS",
+    "warnings": [],
+    "article": {
+        "boardId": "pds",
+        "wrId": 203489,
+        "url": "https://coolenjoy.net/bbs/pds/203489",
+        "title": "Intel 11-14th Gen Core Processor Graphics Driver v32.0.101.7092 WHQL",
+        "category": "드라전용",
+        "writer": "{{writer_04}}",
+        "writerProfileImageUrl": "https://photo.coolenjoy.co.kr/image/icon/muti_thumb/850745042.jpg",
+        "postedAt": {
+            "dateTime": "2026-09-27T01:14:10",
+            "precision": "MINUTE"
+        },
+        "viewCount": 266,
+        "recommendCount": 3,
+        "preContentHtml": "<table width=\"100%\" cellpadding=\"5\" cellspacing=\"0\">\n  <tbody>\n   <tr>\n    <td width=\"400\" valign=\"top\">\n     <table width=\"100%\" cellpadding=\"7\" cellspacing=\"0\">\n      <tbody>\n       <tr>\n        <td width=\"80\" height=\"10\"></td>\n        <td></td>\n       </tr>\n       <tr>\n        <td width=\"80\"><b>운영체제</b></td>\n        <td>Windows 11 Family*, Windows 10* (22H2)</td>\n       </tr>\n       <tr>\n        <td width=\"80\"><b>제작사</b></td>\n        <td>Intel</td>\n       </tr>\n       <tr>\n        <td width=\"80\"><b>라이센스</b></td>\n        <td>Free</td>\n       </tr>\n      </tbody>\n     </table></td>\n    <td width=\"50%\"></td>\n   </tr>\n  </tbody>\n </table>\n\n<br>\n<br>",
+        "contentHtml": "<p>소개</p>\n<p>이 다운로드 파일은 11세대부터 14세대까지의 Intel® Core™ 프로세서 그래픽용 Intel® 그래픽 드라이버 32.0.101.7092를 설치합니다.</p>\n<p><br></p>\n<p><br></p>\n<p><br></p>\n<p><br></p>\n<p>세부 설명</p>\n<p>참고: 인텔은 11세대부터 14세대까지의 인텔 프로세서 그래픽과 관련 인텔 아톰®, 펜티엄®, 셀러론® 프로세서 그래픽을 레거시 소프트웨어 지원 모델로 전환했습니다.&nbsp;</p>\n<p>이 지원 업데이트 및 드라이버 패키지의 추가 변경 사항에 대한 자세한 내용은 여기를 참조하십시오 . &nbsp;</p>\n<p><span><br></span></p>\n<p><span>인텔 범용 드라이버는 컴퓨터 제조업체(OEM)에서 아직 맞춤 설정하지 않은 최신 기능 향상 및 버그 수정 사항을 사용자에게 제공합니다.&nbsp;</span></p>\n<p><span>OEM 드라이버는 플랫폼별 요구 사항에 맞춘 맞춤형 기능과 솔루션을 포함하도록 엄선되었습니다.&nbsp;</span></p>\n<p><span>이 인텔 범용 그래픽 드라이버를 설치하면 사용자가 직접 선택한 OEM 그래픽 드라이버가 덮어쓰여집니다.&nbsp;</span></p>\n<p><span>OEM 웹사이트에서 호환되는 OEM 드라이버 버전을 확인할 수 있습니다.&nbsp;</span></p>\n<p><span>이 드라이버 설치가 OEM 맞춤 설정에 미치는 영향에 대한 자세한 내용은 이 &nbsp;문서를 참조하십시오.</span></p>\n<p><span><br></span></p>\n<p><span>Windows 업데이트에서 방금 설치한 드라이버보다 이전 버전의 드라이버를 권장하거나 업데이트하는 문제가 발생하고 있습니까?&nbsp;</span></p>\n<p><span>그렇다면 여기에서 해결 방법을 찾을 수 있습니다 .</span></p>\n<p><span><br></span></p>\n<p><span>인텔 범용 그래픽 드라이버 사용 중 발생하는 그래픽 관련 문제는 인텔에 직접 보고 해야 합니다 .&nbsp;</span></p>\n<p><span>기업 고객은 항상 OEM 드라이버를 사용하고, 모든 문제는 해당 플랫폼을 구매한 공급업체와 지원팀을 통해 보고해야 합니다.</span></p>\n<p><br></p>\n<p><br></p>\n<p><br></p>\n<p><br></p>\n<p>OS 참조:</p>\n<p><span><br></span></p>\n<p><span>Microsoft Windows® 10-64 - 2022년 10월 업데이트(22H2)</span></p>\n<p><span>Microsoft Windows 11*-64 - 2021년 10월 업데이트(21H2)</span></p>\n<p><span>Microsoft Windows 11-64 - 2022년 9월 업데이트(22H2)</span></p>\n<p><span>Microsoft Windows 11-64 - 2023년 10월 업데이트(23H2)</span></p>\n<p><span>Microsoft Windows 11-64 - 2024년 10월 업데이트(24H2)</span></p>\n<p><span>Microsoft Windows 11-64 - 2025년 9월 업데이트(25H2)</span></p>\n<p><br></p>\n<p><br></p>\n<p><br></p>\n<p><br></p>\n<p>플랫폼(운영체제 지원)</p>\n<p><span><br></span></p>\n<p><span>11세대 인텔® 코어™ 프로세서 제품군(코드명 타이거 레이크, 로켓 레이크, 타이거 레이크-H)</span></p>\n<p><span>12세대 인텔® 코어™ 프로세서 제품군(코드명 Alder Lake-S, Alder Lake-H, Alder Lake-P, Alder Lake-U, Alder Lake-HX, Alder Lake-N, Twin Lake)</span></p>\n<p><span>13세대 인텔® 코어™ 프로세서 제품군(코드명 Raptor Lake-S, Raptor Lake-HX, Raptor Lake-H, Raptor Lake-P, Raptor Lake-U)</span></p>\n<p><span>14세대 인텔® 코어™ 프로세서 제품군(코드명 Raptor Lake-S Refresh, Raptor Lake-H Refresh, Raptor Lake-U Refresh)</span></p>\n<p><span>Intel® Iris® Xe 전용 그래픽 제품군(코드명 DG1)&nbsp;</span></p>\n<p><br></p>\n<p><br></p>",
+        "images": [],
+        "attachments": [],
+        "links": [],
+        "embedUrls": [
+            "https://file.coolenjoy.net/pds/pds_view.php?nno=179043854821141"
+        ],
+        "commentCount": 8,
+        "commentPage": 1,
+        "commentPageCount": 1,
+        "extras": {
+            "writerId": "{{mb_id_04}}"
+        },
+        "comments": [
+            {
+                "writer": "{{writer_05}}",
+                "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_05}}.jpg",
+                "postedAt": {
+                    "dateTime": "2026-09-27T01:53",
+                    "precision": "MINUTE"
+                },
+                "content": "인텔 드라이버 고마워요",
+                "recommendCount": 0
+            },
+            {
+                "writer": "{{writer_06}}",
+                "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_06}}.jpg",
+                "postedAt": {
+                    "dateTime": "2026-09-27T11:39",
+                    "precision": "MINUTE"
+                },
+                "content": "드라이버 정보 감사합니다",
+                "recommendCount": 0
+            },
+            {
+                "writer": "{{writer_07}}",
+                "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_07}}.jpg",
+                "postedAt": {
+                    "dateTime": "2026-09-27T12:12",
+                    "precision": "MINUTE"
+                },
+                "content": "자료 감사합니다",
+                "recommendCount": 0
+            },
+            {
+                "writer": "{{writer_08}}",
+                "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_08}}.jpg",
+                "postedAt": {
+                    "dateTime": "2026-09-27T12:49",
+                    "precision": "MINUTE"
+                },
+                "content": "인텔이 드라이버 잘만드는데.. 오류도없고",
+                "recommendCount": 0
+            },
+            {
+                "writer": "{{writer_09}}",
+                "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_09}}.jpg",
+                "postedAt": {
+                    "dateTime": "2026-09-27T23:51",
+                    "precision": "MINUTE"
+                },
+                "content": "자료 감사합니다",
+                "recommendCount": 0
+            },
+            {
+                "writer": "{{writer_10}}",
+                "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_10}}.jpg",
+                "postedAt": {
+                    "dateTime": "2026-09-28T09:09",
+                    "precision": "MINUTE"
+                },
+                "content": "자료 감사합니다",
+                "recommendCount": 0
+            },
+            {
+                "writer": "{{writer_11}}",
+                "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_11}}.jpg",
+                "postedAt": {
+                    "dateTime": "2026-09-29T09:07",
+                    "precision": "MINUTE"
+                },
+                "content": "자료 감사합니다",
+                "recommendCount": 0
+            },
+            {
+                "writer": "{{writer_12}}",
+                "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+                "postedAt": {
+                    "dateTime": "2026-09-29T18:20",
+                    "precision": "MINUTE"
+                },
+                "content": "자료 감사합니다",
+                "recommendCount": 0
+            }
+        ]
+    }
+}

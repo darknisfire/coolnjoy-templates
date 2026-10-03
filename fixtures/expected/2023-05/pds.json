@@ -1,0 +1,27 @@
+{
+    "fixture": "2023-05/list/pds.html",
+    "layout": "PDS",
+    "pageUrl": "https://coolenjoy.net/bbs/pds",
+    "clock": "2023-05-05T05:00:00Z",
+    "itemCount": 1,
+    "warnings": [],
+    "items": [
+        {
+            "board": null,
+            "category": "BIOS",
+            "subCategory": "메인보드",
+            "title": "ASUS ROG STRIX B650E-F GAMING WIFI BIOS 1602",
+            "url": "https://coolenjoy.net/bbs/pds/168914",
+            "writer": "{{writer_02}}",
+            "commentCount": 7,
+            "viewCount": "64",
+            "recommendCount": 2,
+            "postedAt": {
+                "dateTime": "2023-05-04T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        }
+    ]
+}

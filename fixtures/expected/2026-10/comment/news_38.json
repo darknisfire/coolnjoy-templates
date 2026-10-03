@@ -1,0 +1,78 @@
+{
+    "fixture": "2026-10/article/news_38.html",
+    "pageUrl": "https://coolenjoy.net/bbs/38/7067460",
+    "itemCount": 7,
+    "warnings": [],
+    "items": [
+        {
+            "writer": "{{writer_05}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_05}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-10-02T16:55",
+                "precision": "MINUTE"
+            },
+            "content": "한글날의 의미도 되새기면서 재미있게 참여할 수 있는 뜻깊은 이벤트네요.",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_06}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_06}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-10-02T20:05",
+                "precision": "MINUTE"
+            },
+            "content": "한글날 기념 우리말 대잔치 이벤트 정보 감사합니다.",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_07}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_07}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-10-02T20:19",
+                "precision": "MINUTE"
+            },
+            "content": "이벤트 좋네요",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_08}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_08}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-10-02T21:47",
+                "precision": "MINUTE"
+            },
+            "content": "이벤트 정보 감사합니다",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_09}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+            "postedAt": {
+                "dateTime": "2026-10-03T10:50",
+                "precision": "MINUTE"
+            },
+            "content": "오 참여해야겠네요",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_10}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_10}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-10-03T11:22",
+                "precision": "MINUTE"
+            },
+            "content": "신기한 이벤트네요",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_11}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_11}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-10-03T11:53",
+                "precision": "MINUTE"
+            },
+            "content": "의미 있는 이벤트라 인기 좋겟네요.",
+            "recommendCount": 0
+        }
+    ]
+}

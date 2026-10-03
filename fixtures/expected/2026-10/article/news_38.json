@@ -1,0 +1,108 @@
+{
+    "fixture": "2026-10/article/news_38.html",
+    "pageUrl": "https://coolenjoy.net/bbs/38/7067460",
+    "clock": "2026-10-03T05:00:00Z",
+    "kind": "SUCCESS",
+    "warnings": [],
+    "article": {
+        "boardId": "38",
+        "wrId": 7067460,
+        "url": "https://coolenjoy.net/bbs/38/7067460",
+        "title": "인사이 음식물처리기 쏜다! 탁탁몰, 한글날 기념 ‘우리말 대잔치’ 이벤트 진행",
+        "category": "업계동향",
+        "writer": "{{writer_04}}",
+        "writerProfileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+        "postedAt": {
+            "dateTime": "2026-10-02T16:43:29",
+            "precision": "MINUTE"
+        },
+        "viewCount": 67,
+        "recommendCount": 2,
+        "preContentHtml": null,
+        "contentHtml": "<p><img src=\"https://photo.coolenjoy.co.kr/data/editor/2610/771376353923bbff24b941faf8cf0267a64d05d0.jpg\" alt=\"771376353923bbff24b941faf8cf0267a64d05d0.jpg\"></p>\n<p><br></p>지포스 그래픽카드 전문 기업 조텍코리아(ZOTAC Korea, 대표이사 김성표, <a href=\"http://www.zotackor.com\" rel=\"nofollow noopener\"><strong>www.zotackor.com</strong></a>)는 자사&nbsp;IT&nbsp;온라인 쇼핑몰인 ‘탁탁몰’에서 한글날을 맞이하여 외국어 표현을 우리말로 바꾸는 ‘탁탁몰 우리말 대잔치’&nbsp;이벤트를 진행한다. \n<p></p>\n<p>&nbsp;</p>\n<p>‘탁탁몰 우리말 대잔치’는 한글날을 맞이하여 위대한 한글의 우수성을 기념하고 고객에게 감사의 마음을 전하기 위해 준비된 이벤트다.&nbsp;외국어로 된 다양한&nbsp;IT&nbsp;용어 가운데&nbsp;1가지 이상을 정해 아름다운 우리말로 바꾸는 탁탁몰 회원을 대상으로 ‘인사이 음식물처리기’를 총&nbsp;10명에게 추첨 경품으로 제공한다.</p>\n<p>&nbsp;</p>\n<p>본 이벤트는&nbsp;2026년 10월 3일부터 10월 15일까지 진행된다.&nbsp;신청 방법은 간단하다. ‘이벤트 신청 페이지(<a href=\"https://forms.gle/FhA2ZDFwn24taUTM9\" title=\"https://forms.gle/fha2zdfwn24tautm9\" rel=\"nofollow noopener\"><strong>https://forms.gle/FhA2ZDFwn24taUTM9</strong></a>)’에 들어가 신청서를 제출하면 된다.&nbsp;탁탁몰 회원 누구나 참여 가능하다.&nbsp;단, 1인&nbsp;1참여 원칙으로 다계정 중복 참여,&nbsp;타인의 명의 도용 등은 제한되며 적발 시 조텍코리아 이벤트에서 영구적으로 제명된다.</p>\n<p>&nbsp;</p>\n<p>한편,&nbsp;조텍코리아 공식&nbsp;IT&nbsp;쇼핑몰인 ‘탁탁몰(<a href=\"http://www.tagtag.co.kr\" rel=\"nofollow noopener\"><strong>www.tagtag.co.kr</strong></a>)’은 최고의 성능을 자랑하는 조텍 게이밍 지포스&nbsp;RTX 5090&nbsp;그래픽카드를 공식 판매가&nbsp;8,590,000원이 아닌 단돈&nbsp;100원에 구매할 수 있는 특별한 ‘탁탁몰&nbsp;100원딜’&nbsp;이벤트를&nbsp;10월&nbsp;21일까지 진행하고 있다.</p>\n<p>&nbsp;</p>\n<p>▼ <strong>조텍 ‘탁탁몰 우리말 대잔치’&nbsp;이벤트 바로가기</strong></p>\n<p><a href=\"https://tagtag.co.kr/article/%EC%9D%B4%EB%B2%A4%ED%8A%B8%EB%89%B4%EC%8A%A4/8/32004/\" rel=\"nofollow noopener\"><strong>https://tagtag.co.kr/article/이벤트뉴스/8/32004/</strong></a></p>",
+        "images": [
+            "https://photo.coolenjoy.co.kr/data/editor/2610/771376353923bbff24b941faf8cf0267a64d05d0.jpg"
+        ],
+        "attachments": [],
+        "links": [],
+        "embedUrls": [],
+        "commentCount": 7,
+        "commentPage": 1,
+        "commentPageCount": 1,
+        "extras": {
+            "writerId": "{{mb_id_04}}"
+        },
+        "comments": [
+            {
+                "writer": "{{writer_05}}",
+                "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_05}}.jpg",
+                "postedAt": {
+                    "dateTime": "2026-10-02T16:55",
+                    "precision": "MINUTE"
+                },
+                "content": "한글날의 의미도 되새기면서 재미있게 참여할 수 있는 뜻깊은 이벤트네요.",
+                "recommendCount": 0
+            },
+            {
+                "writer": "{{writer_06}}",
+                "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_06}}.jpg",
+                "postedAt": {
+                    "dateTime": "2026-10-02T20:05",
+                    "precision": "MINUTE"
+                },
+                "content": "한글날 기념 우리말 대잔치 이벤트 정보 감사합니다.",
+                "recommendCount": 0
+            },
+            {
+                "writer": "{{writer_07}}",
+                "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_07}}.jpg",
+                "postedAt": {
+                    "dateTime": "2026-10-02T20:19",
+                    "precision": "MINUTE"
+                },
+                "content": "이벤트 좋네요",
+                "recommendCount": 0
+            },
+            {
+                "writer": "{{writer_08}}",
+                "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_08}}.jpg",
+                "postedAt": {
+                    "dateTime": "2026-10-02T21:47",
+                    "precision": "MINUTE"
+                },
+                "content": "이벤트 정보 감사합니다",
+                "recommendCount": 0
+            },
+            {
+                "writer": "{{writer_09}}",
+                "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+                "postedAt": {
+                    "dateTime": "2026-10-03T10:50",
+                    "precision": "MINUTE"
+                },
+                "content": "오 참여해야겠네요",
+                "recommendCount": 0
+            },
+            {
+                "writer": "{{writer_10}}",
+                "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_10}}.jpg",
+                "postedAt": {
+                    "dateTime": "2026-10-03T11:22",
+                    "precision": "MINUTE"
+                },
+                "content": "신기한 이벤트네요",
+                "recommendCount": 0
+            },
+            {
+                "writer": "{{writer_11}}",
+                "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_11}}.jpg",
+                "postedAt": {
+                    "dateTime": "2026-10-03T11:53",
+                    "precision": "MINUTE"
+                },
+                "content": "의미 있는 이벤트라 인기 좋겟네요.",
+                "recommendCount": 0
+            }
+        ]
+    }
+}

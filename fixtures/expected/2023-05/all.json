@@ -1,0 +1,30 @@
+{
+    "fixture": "2023-05/list/all.html",
+    "layout": "ALL",
+    "pageUrl": "https://coolenjoy.net/bbs/new.php",
+    "clock": "2023-05-05T05:00:00Z",
+    "itemCount": 1,
+    "warnings": [],
+    "items": [
+        {
+            "board": "지름/알뜰정보",
+            "category": "식품",
+            "subCategory": null,
+            "title": "쏜리서치 베이직 뉴트리언트 투퍼데이 60캡슐 4병",
+            "url": "https://coolenjoy.net/bbs/new.php?bo_table=jirum&wr_id=2132063&page=2&mb_id=&meun=",
+            "writer": "{{writer_02}}",
+            "commentCount": 9,
+            "viewCount": null,
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2023-05-05T13:45",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "boTable": "jirum",
+                "wrId": "2132063"
+            }
+        }
+    ]
+}

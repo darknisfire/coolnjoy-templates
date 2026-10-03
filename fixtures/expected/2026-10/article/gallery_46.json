@@ -1,0 +1,99 @@
+{
+    "fixture": "2026-10/article/gallery_46.html",
+    "pageUrl": "https://coolenjoy.net/bbs/46/19024",
+    "clock": "2026-10-03T05:00:00Z",
+    "kind": "SUCCESS",
+    "warnings": [],
+    "article": {
+        "boardId": "46",
+        "wrId": 19024,
+        "url": "https://coolenjoy.net/bbs/46/19024",
+        "title": "이젠 여기 올라가도 되겠죠",
+        "category": "메모리",
+        "writer": "{{writer_04}}",
+        "writerProfileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_04}}.jpg",
+        "postedAt": {
+            "dateTime": "2026-05-31T01:11:13",
+            "precision": "MINUTE"
+        },
+        "viewCount": 351,
+        "recommendCount": 3,
+        "preContentHtml": null,
+        "contentHtml": "<p><a href=\"https://coolenjoy.net/bbs/view_image.php?fn=https%3A%2F%2Fphoto.coolenjoy.co.kr%2Fdata%2Feditor%2F2605%2F5bde4b04b9adf811407602932eb44d5d9d3b3515.jpg\" rel=\"nofollow noopener\"><img src=\"https://photo.coolenjoy.co.kr/data/editor/2605/thumb-5bde4b04b9adf811407602932eb44d5d9d3b3515.jpg\" alt=\"5bde4b04b9adf811407602932eb44d5d9d3b3515.jpg\"></a></p>\n<p><a href=\"https://coolenjoy.net/bbs/view_image.php?fn=https%3A%2F%2Fphoto.coolenjoy.co.kr%2Fdata%2Feditor%2F2605%2F1882c522736a67da1f984febfd0234c7f2d706bc.jpg\" rel=\"nofollow noopener\"><img src=\"https://photo.coolenjoy.co.kr/data/editor/2605/thumb-1882c522736a67da1f984febfd0234c7f2d706bc.jpg\" alt=\"1882c522736a67da1f984febfd0234c7f2d706bc.jpg\"></a></p>\n<p><br></p>\n<p>요즘 핫한 그회사의 ddr2 때 &nbsp;메모입니다..</p>\n<p><br></p>\n<p>오래된 뜻 오래 안된거 같은 메모리네요&nbsp;</p>",
+        "images": [
+            "https://photo.coolenjoy.co.kr/data/editor/2605/5bde4b04b9adf811407602932eb44d5d9d3b3515.jpg",
+            "https://photo.coolenjoy.co.kr/data/editor/2605/1882c522736a67da1f984febfd0234c7f2d706bc.jpg"
+        ],
+        "attachments": [],
+        "links": [],
+        "embedUrls": [],
+        "commentCount": 6,
+        "commentPage": 1,
+        "commentPageCount": 1,
+        "extras": {
+            "writerId": "{{mb_id_04}}"
+        },
+        "comments": [
+            {
+                "writer": "{{writer_05}}",
+                "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_05}}.jpg",
+                "postedAt": {
+                    "dateTime": "2026-05-31T02:11",
+                    "precision": "MINUTE"
+                },
+                "content": "ddr3까진 가지고 있는데 2는 오랜만에 보는군요",
+                "recommendCount": 0
+            },
+            {
+                "writer": "{{writer_03}}",
+                "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_03}}.jpg",
+                "postedAt": {
+                    "dateTime": "2026-05-31T21:02",
+                    "precision": "MINUTE"
+                },
+                "content": "2007년쯤 DDR2-667 구매했던 기억이 나네요. 그 시절엔 시금치 메모리는 무조건 삼성만 찾았던...",
+                "recommendCount": 0
+            },
+            {
+                "writer": "{{writer_06}}",
+                "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+                "postedAt": {
+                    "dateTime": "2026-05-31T21:26",
+                    "precision": "MINUTE"
+                },
+                "content": "ㅎㅎ 옆사진에 pc2100u 있습니다 ddr1 입죠 2는 아직 명함내밀긴 좀 이르긴 하죠 ㅎㅎㅎㅎㅎㅎ 자그마치 메이드인 이태리~",
+                "recommendCount": 0
+            },
+            {
+                "writer": "{{writer_08}}",
+                "profileImageUrl": "https://photo.coolenjoy.co.kr/image/icon/muti_thumb/3344586835.jpg",
+                "postedAt": {
+                    "dateTime": "2026-06-01T13:40",
+                    "precision": "MINUTE"
+                },
+                "content": "하닉이 ddr2 때 품질도 ddr5만큼 좋았는데 주변 여건 때문에 패권 못 잡았죠.",
+                "recommendCount": 0
+            },
+            {
+                "writer": "{{writer_09}}",
+                "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_09}}.jpg",
+                "postedAt": {
+                    "dateTime": "2026-06-02T09:45",
+                    "precision": "MINUTE"
+                },
+                "content": "DDR2 램 저도 가지고 있는",
+                "recommendCount": 0
+            },
+            {
+                "writer": "{{writer_10}}",
+                "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+                "postedAt": {
+                    "dateTime": "2026-08-13T00:50",
+                    "precision": "MINUTE"
+                },
+                "content": "와우!",
+                "recommendCount": 0
+            }
+        ]
+    }
+}

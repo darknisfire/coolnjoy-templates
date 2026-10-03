@@ -23,12 +23,12 @@ if (!existsSync(srcRoot)) {
   process.exit(2);
 }
 
-// 엔진 실행에 필요한 최소 파일 집합: template/ 전체, model/ 전체, parse/ 중 DateNormalizer·ParseResult.
+// 엔진 실행에 필요한 최소 파일 집합: template/ 전체, model/ 전체, parse/ 중 DateNormalizer·ParseResult·ContentSanitizer·RowListParser, auth/SitePages, site/ArticleUrls·SiteConfig·Board.
 const wanted = [];
 for (const sub of ['template', 'model']) {
   for (const f of readdirSync(path.join(srcRoot, sub)).filter((n) => n.endsWith('.kt')).sort()) wanted.push(`${sub}/${f}`);
 }
-wanted.push('parse/DateNormalizer.kt', 'parse/ParseResult.kt');
+wanted.push('parse/DateNormalizer.kt', 'parse/ParseResult.kt', 'parse/ContentSanitizer.kt', 'auth/SitePages.kt', 'site/ArticleUrls.kt', 'site/SiteConfig.kt', 'site/Board.kt', 'parse/RowListParser.kt');
 
 for (const rel of wanted) {
   if (!existsSync(path.join(srcRoot, rel))) {
@@ -60,6 +60,9 @@ const engineVersion = m[1];
 const declared = new Set();
 for (const e of entries) {
   for (const d of e.text.matchAll(/^\s*(?:(?:public|internal|private|data|sealed|enum|abstract|open|annotation)\s+)*(?:class|interface|object|typealias)\s+(\w+)/gm)) declared.add(d[1]);
+}
+for (const e of entries) {
+  for (const d of e.text.matchAll(/^\s*(?:(?:public|internal|private|inline)\s+)*fun\s+(?:<[^>]*>\s*)?(?:[\w<>?.]+\.)?(\w+)\s*[(<]/gm)) declared.add(d[1]);
 }
 const unresolved = new Set();
 for (const e of entries) {

@@ -1,0 +1,268 @@
+{
+    "fixture": "2026-10/article/jirum_many_comments.html",
+    "pageUrl": "https://coolenjoy.net/bbs/jirum/3553133",
+    "itemCount": 26,
+    "warnings": [],
+    "items": [
+        {
+            "writer": "{{writer_05}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/icon/muti_thumb/1227329000.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-07T15:57",
+                "precision": "MINUTE"
+            },
+            "content": "LS57CG950 가격대가 있지만 스펙 좋네요. 한가위 빅세일 정보 감사합니다.",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_06}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/member_noimage.gif",
+            "postedAt": {
+                "dateTime": "2026-09-07T16:04",
+                "precision": "MINUTE"
+            },
+            "content": "LS57CG950 가격대가 나가지만 갖고 싶은 55인치 게이밍 모니터군요 빅세일 정보 고맙습니다",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_07}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_07}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-07T16:07",
+                "precision": "MINUTE"
+            },
+            "content": "삼성 모니터 지마켓 한가위 빅세일 정보 고마워요",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_08}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-07T16:14",
+                "precision": "MINUTE"
+            },
+            "content": "이벤트 좋네요",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_09}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_09}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-07T17:51",
+                "precision": "MINUTE"
+            },
+            "content": "삼성 모니터 할인 정보 감사합니다.",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_10}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-07T17:55",
+                "precision": "MINUTE"
+            },
+            "content": "삼성 모니터 스페셜 특가 정보 감사합니다.",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_11}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_11}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-07T18:05",
+                "precision": "MINUTE"
+            },
+            "content": "삼성 모니터 한가위 빅세일 정보 감사합니다.",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_12}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-07T18:39",
+                "precision": "MINUTE"
+            },
+            "content": "57인치 써보고 싶네요",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_13}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_13}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-07T19:10",
+                "precision": "MINUTE"
+            },
+            "content": "모니터 할인정보 감사합니다",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_14}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_14}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-07T19:41",
+                "precision": "MINUTE"
+            },
+            "content": "빅세일 정보 감사합니다.",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_15}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_15}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-07T20:23",
+                "precision": "MINUTE"
+            },
+            "content": "할인 정보 감사해요",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_16}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_16}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-07T20:25",
+                "precision": "MINUTE"
+            },
+            "content": "모니터 특가 정보감사합니다.",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_17}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_17}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-07T22:08",
+                "precision": "MINUTE"
+            },
+            "content": "할인 환영합니다",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_18}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_18}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-07T22:42",
+                "precision": "MINUTE"
+            },
+            "content": "빅세일 정보 잘 봤습니다.",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_19}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_19}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-08T06:31",
+                "precision": "MINUTE"
+            },
+            "content": "빅세일 정보 고맙습니다",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_20}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_20}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-08T10:59",
+                "precision": "MINUTE"
+            },
+            "content": "한가위 빅세일 카드 할인 괜찮군요.",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_21}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_21}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-08T12:51",
+                "precision": "MINUTE"
+            },
+            "content": "특가 정보 감사합니다",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_22}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_22}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-08T16:22",
+                "precision": "MINUTE"
+            },
+            "content": "한가위 모니터 할인 정보 감사해요.",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_23}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_23}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-08T19:50",
+                "precision": "MINUTE"
+            },
+            "content": "모니터 특가 정보 잘 봤습니다",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_24}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-08T20:20",
+                "precision": "MINUTE"
+            },
+            "content": "모니터 할인 정보 감사합니다",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_25}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_25}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-09T06:33",
+                "precision": "MINUTE"
+            },
+            "content": "모니터 할인 정보 고맙습니다.",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_26}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-10T21:36",
+                "precision": "MINUTE"
+            },
+            "content": "9월 22일까지면 추석 전에 바꾸기 딱이겠습니다",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_27}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_27}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-12T09:47",
+                "precision": "MINUTE"
+            },
+            "content": "추석 할인 괜찬은",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_28}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_28}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-15T14:09",
+                "precision": "MINUTE"
+            },
+            "content": "정보 감사합니다!",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_29}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-16T16:34",
+                "precision": "MINUTE"
+            },
+            "content": "할인 정보 감사합니다!",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_30}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-19T13:50",
+                "precision": "MINUTE"
+            },
+            "content": "모니터 특가 감사합니다 !!",
+            "recommendCount": 0
+        }
+    ]
+}

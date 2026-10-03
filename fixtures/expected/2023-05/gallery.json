@@ -1,0 +1,27 @@
+{
+    "fixture": "2023-05/list/gallery.html",
+    "layout": "GALLERY",
+    "pageUrl": "https://coolenjoy.net/bbs/46",
+    "clock": "2023-05-05T05:00:00Z",
+    "itemCount": 1,
+    "warnings": [],
+    "items": [
+        {
+            "board": null,
+            "category": "키보드",
+            "subCategory": null,
+            "title": "마이크로소프트 네추럴 키보드.....",
+            "url": "https://coolenjoy.net/bbs/46/17585",
+            "writer": "{{writer_02}}",
+            "commentCount": 31,
+            "viewCount": "274",
+            "recommendCount": 5,
+            "postedAt": {
+                "dateTime": "2023-04-27T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://photo.coolenjoy.co.kr/data/editor/2304/list_5bd7dca35b1497e821e945a76719ce89220f9807.jpg",
+            "extras": {}
+        }
+    ]
+}

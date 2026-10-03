@@ -1,5 +1,6 @@
 package coolnjoy.templates
 
+import bateaux.spt.coolnjoy.core.model.ArticleResult
 import bateaux.spt.coolnjoy.core.parse.DateNormalizer
 import bateaux.spt.coolnjoy.core.template.TemplateEngine
 import org.junit.jupiter.api.Tag
@@ -15,7 +16,7 @@ import kotlin.test.assertTrue
 
 /**
  * 실사이트 smoke. 기본 `test`에서는 제외되고 `gradle -p validator liveTest`로만 실행된다.
- * 대표 게시판 4곳을 GET(요청 간 1초 이상, 비로그인)해 현재 템플릿으로 파싱한다.
+ * 대표 게시판 4곳과 38 게시판 첫 글 1건을 GET(총 5회, 요청 간 1초 이상, 비로그인)해 현재 템플릿으로 파싱한다.
  */
 @Tag("live")
 class LiveSmokeTest {
@@ -46,6 +47,7 @@ class LiveSmokeTest {
 
         // (게시판 id, 경로). 최신글(new.php)의 board id는 "new".
         val targets = listOf("38" to "/bbs/38", "jirum" to "/bbs/jirum", "freeboard2" to "/bbs/freeboard2", "new" to "/bbs/new.php")
+        var firstOf38: String? = null
         targets.forEachIndexed { index, (id, path) ->
             if (index > 0) Thread.sleep(1100)
             val board = template.boards.single { it.id == id }
@@ -54,6 +56,16 @@ class LiveSmokeTest {
             assertEquals(emptyList(), result.warnings, "$id warnings")
             assertTrue(result.items.isNotEmpty(), "$id rows")
             assertTrue(result.items.all { it.url.startsWith("https://coolenjoy.net/") }, "$id urls")
+            if (id == "38") firstOf38 = result.items.first().url
         }
+
+        // 38 목록 첫 글 상세(공개 게시판이라 비로그인으로 열린다).
+        Thread.sleep(1100)
+        val articleUrl = checkNotNull(firstOf38) { "38 list had no first item" }
+        val article = engine.articleParser().parse(get(articleUrl), articleUrl)
+        assertTrue(article is ArticleResult.Success, "article $articleUrl: $article")
+        assertEquals(emptyList(), article.warnings, "article warnings")
+        assertTrue(article.article.title.isNotBlank(), "article title")
+        assertTrue(article.article.contentHtml.isNotBlank(), "article content")
     }
 }

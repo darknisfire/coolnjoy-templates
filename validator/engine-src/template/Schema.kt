@@ -1,6 +1,7 @@
 package bateaux.spt.coolnjoy.core.template
 
 import bateaux.spt.coolnjoy.core.model.BoardLayout
+import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 /**
@@ -9,6 +10,8 @@ import kotlinx.serialization.Serializable
  * @property templateVersion 템플릿 자체 버전(갱신 판단용)
  * @property minEngineVersion 이 템플릿을 해석하는 데 필요한 최소 [TemplateEngine.ENGINE_VERSION]
  * @property layouts 키는 [BoardLayout] 이름(COMMENT 제외)
+ * @property comment 댓글 규칙(선택, 엔진 버전 2). 있으면 [TemplateEngine.commentParser] 사용 가능
+ * @property article 게시글 상세 규칙(선택, 엔진 버전 2). 있으면 [comment]도 있어야 한다
  */
 @Serializable
 data class SiteTemplate(
@@ -17,6 +20,8 @@ data class SiteTemplate(
     val site: SiteInfo,
     val boards: List<BoardDef> = emptyList(),
     val layouts: Map<String, LayoutTemplate>,
+    val comment: CommentTemplate? = null,
+    val article: ArticleTemplate? = null,
 )
 
 @Serializable
@@ -77,3 +82,196 @@ internal val LIST_FIELD_TYPES: Map<String, VType> = mapOf(
 )
 
 val LIST_FIELD_KEYS: Set<String> get() = LIST_FIELD_TYPES.keys
+
+// ---- 엔진 버전 2: 댓글/게시글 상세 -------------------------------------------------------------
+
+/**
+ * 댓글 규칙. 게시글 상세 안의 `section#bo_vc > article` 같은 댓글 행을 [row]로 찾는다.
+ * 행 단위 실패 격리·warning 문구는 코드 파서와 같다(`COMMENT: ...`).
+ *
+ * @property row 행 셀렉터(문서/게시글 루트 전체에서 select)
+ * @property contentSelect 행 안의 본문 요소. 없으면 그 행은 건너뛴다(필수 필드 누락)
+ * @property content [contentSelect] 요소를 컨텍스트로 평가하는 본문 규칙(STRING). null/빈 값이면 빈 문자열 — 본문이 빈 댓글도 유지한다
+ * @property fields 키는 [COMMENT_FIELD_TYPES]. 행이 컨텍스트
+ */
+@Serializable
+data class CommentTemplate(
+    val row: String,
+    val contentSelect: String,
+    val content: FieldSpec,
+    val fields: Map<String, FieldSpec> = emptyMap(),
+)
+
+/** `comment.fields`에 쓸 수 있는 키와 값 타입. */
+internal val COMMENT_FIELD_TYPES: Map<String, VType> = mapOf(
+    "writer" to VType.STRING,
+    "profileImageUrl" to VType.STRING,
+    "postedAt" to VType.DATE,
+    "recommendCount" to VType.INT,
+)
+
+/** `article.fields`에 쓸 수 있는 키와 값 타입. 컨텍스트는 게시글 루트 요소. */
+internal val ARTICLE_FIELD_TYPES: Map<String, VType> = mapOf(
+    "writer" to VType.STRING,
+    "writerProfileImageUrl" to VType.STRING,
+    "postedAt" to VType.DATE,
+    "viewCount" to VType.INT,
+    "recommendCount" to VType.INT,
+    "commentCount" to VType.INT,
+)
+
+/**
+ * 게시글 상세 규칙. 평가 순서와 오류 결과는 `CodeArticleParser`와 같다.
+ *
+ * 1. [root]가 없으면 [errors]로 분류(LoginRequired / AccessDenied / NotFound / Unrecognized).
+ * 2. [ref] 후보(문서가 컨텍스트)에서 처음으로 `ArticleUrls.parse`가 되는 값으로 bo_table/wr_id를 정한다(없으면 Unrecognized).
+ *    URL은 항상 정식 URL(`/bbs/{bo_table}/{wr_id}`).
+ * 3. [titleSelect] 요소(root 안)가 없으면 Unrecognized("missing <selector>"). [title]·[category]는 이 요소가 컨텍스트이고,
+ *    title이 비면 Unrecognized("empty title").
+ * 4. [fields]·[extras]는 root가 컨텍스트. `commentCount`가 null이면 파싱된 댓글 수.
+ *
+ * @property title [titleSelect] 요소의 제목(STRING)
+ * @property category [titleSelect] 요소의 분류(STRING, 선택)
+ * @property fields 키는 [ARTICLE_FIELD_TYPES]
+ * @property extras 값이 null이면 키를 생략(코드 파서의 `writerId` 등)
+ * @property content 본문 정화 규칙
+ * @property attachments 첨부파일 목록(선택). 없으면 빈 목록
+ * @property links 관련 링크 목록(선택)
+ * @property embedUrls 제거된 iframe 등의 원래 src 목록(선택)
+ * @property commentsEmpty 이 셀렉터가 root 안에 있으면 "댓글 행 없음" warning을 내지 않는다(선택)
+ * @property commentPaging 댓글 페이지 정보(선택). 없으면 1/1
+ * @property errors root가 없을 때의 응답 분류
+ */
+@Serializable
+data class ArticleTemplate(
+    val root: String,
+    val ref: List<FieldSpec>,
+    val titleSelect: String,
+    val title: FieldSpec,
+    val category: FieldSpec? = null,
+    val fields: Map<String, FieldSpec> = emptyMap(),
+    val extras: Map<String, FieldSpec> = emptyMap(),
+    val content: ContentSpec,
+    val attachments: LinkListSpec? = null,
+    val links: LinkListSpec? = null,
+    val embedUrls: ListSpec? = null,
+    val commentsEmpty: String? = null,
+    val commentPaging: PagingSpec? = null,
+    val errors: ErrorRules,
+)
+
+/**
+ * 본문 정화. 정화 자체(`ContentSanitizer`: 실행 가능 요소·이벤트/style 속성 제거, 상대 URL 절대화, lazy 이미지 승격,
+ * Safelist.relaxed 기반 허용 태그/속성)는 엔진에 고정이며 템플릿이 허용 목록을 바꿀 수 없다. 템플릿은 어느 요소를 정화할지만 고른다.
+ * 정화 결과의 이미지 목록(`images`)은 contentHtml과 같은 패스에서 나온다.
+ *
+ * @property main 본문 요소(root에서 select)
+ * @property fallback main이 없을 때 쓸 대체 요소(그 요소를 정화하고 [SanitizeSource.warning]을 남김)
+ * @property missingWarning main도 fallback도 없을 때 남길 warning(본문은 빈 문자열, 이미지는 빈 목록)
+ * @property pre main 앞의 부가 영역(선택)
+ */
+@Serializable
+data class ContentSpec(
+    val main: SanitizeSource,
+    val fallback: SanitizeSource? = null,
+    val missingWarning: String? = null,
+    val pre: PreContentSpec? = null,
+)
+
+/** @property select 정화할 요소 @property remove 정화 전에 복사본에서 지울 요소들의 셀렉터 @property warning 이 소스를 쓸 때 남길 warning */
+@Serializable
+data class SanitizeSource(
+    val select: String,
+    val remove: List<String> = emptyList(),
+    val warning: String? = null,
+)
+
+/**
+ * 본문 앞 영역. main이 있을 때만 평가한다. [select] 요소의 복사본에서 [remove]를 지우고, [cutFrom] 요소(첫 일치)와
+ * 그 뒤 형제 요소를 지운 뒤 정화한다. 결과가 텍스트도 이미지도 없으면 null.
+ */
+@Serializable
+data class PreContentSpec(
+    val select: String,
+    val remove: List<String> = emptyList(),
+    val cutFrom: String? = null,
+)
+
+/**
+ * 목록형 필드: [selectAll]로 고른 모든 요소(컨텍스트 안, 문서 순서)마다 [item]을 평가해 null이 아닌 값을 모은다.
+ * [item]의 select는 각 요소 기준. 값 타입은 쓰는 곳이 정한다(문자열 목록 또는 정수 목록).
+ */
+@Serializable
+data class ListSpec(
+    val selectAll: String,
+    val item: FieldSpec,
+    val distinct: Boolean = false,
+)
+
+/**
+ * `ArticleLink` 목록: [selectAll] 요소마다 [url]이 null이 아니면 항목으로 만든다(요소가 컨텍스트).
+ * [name]이 null이면 빈 문자열. 항상 url 기준으로 중복을 제거한다.
+ */
+@Serializable
+data class LinkListSpec(
+    val selectAll: String,
+    val url: FieldSpec,
+    val name: FieldSpec,
+)
+
+/**
+ * 댓글 페이지 정보. [region]이 있으면 root에서 select하고 없으면 root 자신이 컨텍스트.
+ * 현재 페이지 = [current] 값 ?: 1, 전체 페이지 = max(현재, [pages] 값들의 최댓값 ?: 1).
+ */
+@Serializable
+data class PagingSpec(
+    val region: String? = null,
+    val current: FieldSpec? = null,
+    val pages: ListSpec? = null,
+)
+
+/** [ErrorRule]의 결과 종류(JSON 문자열은 `ArticleResult` 하위 타입 이름). */
+@Serializable
+enum class ErrorKind {
+    @SerialName("LoginRequired") LOGIN_REQUIRED,
+    @SerialName("AccessDenied") ACCESS_DENIED,
+    @SerialName("NotFound") NOT_FOUND,
+    @SerialName("Unrecognized") UNRECOGNIZED,
+}
+
+/**
+ * root가 없을 때의 분류. [rules]를 순서대로 보고 처음 만족하는 규칙의 결과를 낸다. 어느 규칙도 맞지 않으면
+ * Unrecognized([unrecognizedReason]).
+ */
+@Serializable
+data class ErrorRules(
+    val rules: List<ErrorRule>,
+    val unrecognizedReason: String,
+)
+
+/**
+ * 규칙 하나. [result]의 메시지는 사이트 오류 페이지의 첫 `alert("...")` 문구(JS 이스케이프 해제, 없으면 null).
+ * Unrecognized 규칙은 [reason]을 쓰며 `{alert}`는 그 문구로 치환된다. AccessDenied는 문구가 필요하므로
+ * `alertContains` 또는 `hasAlert` 조건이 있어야 한다.
+ */
+@Serializable
+data class ErrorRule(
+    val result: ErrorKind,
+    @SerialName("when") val condition: ErrorCondition,
+    val reason: String? = null,
+)
+
+/** 지정한 조건을 모두 만족해야 참(AND). 하나 이상 지정해야 한다. 문자열 조건은 정규식이 아니라 부분 문자열 일치. */
+@Serializable
+data class ErrorCondition(
+    /** 문서에 이 셀렉터와 일치하는 요소가 있다. */
+    val select: String? = null,
+    /** 원본 HTML(스크립트 포함)에 이 문자열이 있다. */
+    val htmlContains: String? = null,
+    /** alert 문구가 있고 이 문자열을 포함한다. */
+    val alertContains: String? = null,
+    /** JS 이동 대상(`location.replace/href`)이 있고 이 문자열을 포함한다. */
+    val redirectContains: String? = null,
+    /** true면 alert 문구가 있다. */
+    val hasAlert: Boolean? = null,
+)

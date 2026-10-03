@@ -1,0 +1,7 @@
+{
+    "fixture": "2026-10/article/not_found.html",
+    "pageUrl": "https://coolenjoy.net/bbs/38/1",
+    "clock": "2026-10-03T05:00:00Z",
+    "kind": "NOT_FOUND",
+    "message": "글이 존재하지 않습니다.\n\n글이 삭제되었거나 이동된 경우입니다."
+}

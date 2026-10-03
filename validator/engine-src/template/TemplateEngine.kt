@@ -3,6 +3,8 @@ package bateaux.spt.coolnjoy.core.template
 import bateaux.spt.coolnjoy.core.model.BoardLayout
 import bateaux.spt.coolnjoy.core.model.ListItem
 import bateaux.spt.coolnjoy.core.model.PostedAt
+import bateaux.spt.coolnjoy.core.parse.ArticleParser
+import bateaux.spt.coolnjoy.core.parse.CommentParser
 import bateaux.spt.coolnjoy.core.parse.DateNormalizer
 import bateaux.spt.coolnjoy.core.parse.ListParser
 import bateaux.spt.coolnjoy.core.parse.ParseResult
@@ -24,6 +26,25 @@ class TemplateEngine(
 
     fun supports(layout: BoardLayout): Boolean = template.layouts.containsKey(layout.name)
 
+    /** 템플릿이 댓글 규칙(`comment`)을 가졌는가. */
+    fun supportsComment(): Boolean = template.comment != null
+
+    /** 템플릿이 게시글 상세 규칙(`article`, 댓글 규칙 포함)을 가졌는가. */
+    fun supportsArticle(): Boolean = template.article != null
+
+    /** @throws TemplateException 템플릿에 `comment` 섹션이 없을 때 */
+    fun commentParser(): CommentParser {
+        val spec = template.comment ?: throw TemplateException("template has no 'comment' section")
+        return TemplateCommentParser(spec, Evaluator(dates))
+    }
+
+    /** 게시글 상세 파서(본문 + 댓글). @throws TemplateException 템플릿에 `article` 섹션이 없을 때 */
+    fun articleParser(): ArticleParser {
+        val spec = template.article ?: throw TemplateException("template has no 'article' section")
+        val comment = template.comment ?: throw TemplateException("template has no 'comment' section")
+        return TemplateArticleParser(spec, TemplateCommentParser(comment, Evaluator(dates)), Evaluator(dates), template.site.baseUrl)
+    }
+
     /** @throws TemplateException 템플릿에 해당 레이아웃 규칙이 없을 때 */
     fun listParser(layout: BoardLayout): ListParser {
         val spec = template.layouts[layout.name]
@@ -32,8 +53,11 @@ class TemplateEngine(
     }
 
     companion object {
-        /** 이 엔진이 해석할 수 있는 연산/스키마 버전. 템플릿의 `minEngineVersion`이 이보다 크면 거부한다. */
-        const val ENGINE_VERSION = 1
+        /**
+         * 이 엔진이 해석할 수 있는 연산/스키마 버전. 템플릿의 `minEngineVersion`이 이보다 크면 거부한다.
+         * 1: 목록 레이아웃. 2: `comment`/`article` 섹션과 연산 `labelSplit`/`pageUrl`/`requireMatch`.
+         */
+        const val ENGINE_VERSION = 2
     }
 }
 
@@ -140,7 +164,24 @@ internal class Evaluator(private val dates: DateNormalizer) {
             Op.Date -> dates.normalize(input as String)
             is Op.QueryParam -> blankToNull(queryParam(input as String, op.name))
             is Op.Const -> blankToNull(op.value)
+            is Op.LabelSplit -> labelSplit(input as Element, op)
+            Op.PageUrl -> blankToNull((input as Element).ownerDocument()?.location())
+            is Op.RequireMatch -> (input as String).takeIf { op.regex.containsMatchIn(clip(it)) }?.let(::blankToNull)
         }
+    }
+
+    private fun labelSplit(el: Element, op: Op.LabelSplit): String? {
+        val copy = el.clone()
+        copy.select(".sr-only").remove()
+        val full = copy.text().trim()
+        val docTitle = el.ownerDocument()?.title().orEmpty()
+        val bar = full.indexOf(op.sep)
+        val (label, title) = when {
+            bar < 0 -> null to full
+            docTitle.isNotBlank() && docTitle.startsWith(full) -> null to full
+            else -> full.substring(0, bar).trim() to full.substring(bar + op.sep.length).trim()
+        }
+        return blankToNull(if (op.part == LabelPart.LABEL) label else title)
     }
 
     private fun clip(s: String): String = if (s.length > MAX_REGEX_INPUT) s.substring(0, MAX_REGEX_INPUT) else s

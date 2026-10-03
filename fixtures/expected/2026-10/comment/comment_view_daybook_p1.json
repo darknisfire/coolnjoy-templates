@@ -1,0 +1,38 @@
+{
+    "fixture": "2026-10/article/comment_view_daybook_p1.html",
+    "pageUrl": "https://coolenjoy.net/nariya/bbs/comment_view.php?bo_table=daybook&wr_id=6734441&cob=old&page=1",
+    "itemCount": 3,
+    "warnings": [],
+    "items": [
+        {
+            "writer": "{{writer_02}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_02}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-09T11:30",
+                "precision": "MINUTE"
+            },
+            "content": "비밀글입니다.",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_03}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_03}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-09T11:37",
+                "precision": "MINUTE"
+            },
+            "content": "비밀글입니다.",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_04}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-09T11:43",
+                "precision": "MINUTE"
+            },
+            "content": "비밀글입니다.",
+            "recommendCount": 0
+        }
+    ]
+}

@@ -1,0 +1,118 @@
+{
+    "fixture": "2026-10/article/jirum.html",
+    "pageUrl": "https://coolenjoy.net/bbs/jirum/3562487",
+    "itemCount": 11,
+    "warnings": [],
+    "items": [
+        {
+            "writer": "{{writer_05}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/icon/muti_thumb/1227329000.jpg",
+            "postedAt": {
+                "dateTime": "2026-10-02T15:58",
+                "precision": "MINUTE"
+            },
+            "content": "라이프 모션 위크 정보 감사합니다.",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_06}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_06}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-10-02T16:38",
+                "precision": "MINUTE"
+            },
+            "content": "특가 정보 감사합니다",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_07}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_07}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-10-02T17:33",
+                "precision": "MINUTE"
+            },
+            "content": "핏쳐 모션위크 네이버 특가 정보 고마워요",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_08}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_08}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-10-02T17:37",
+                "precision": "MINUTE"
+            },
+            "content": "할인율 좋군요",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_09}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_09}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-10-02T17:41",
+                "precision": "MINUTE"
+            },
+            "content": "특가 소식 감사합니다",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_10}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/member_noimage.gif",
+            "postedAt": {
+                "dateTime": "2026-10-02T19:31",
+                "precision": "MINUTE"
+            },
+            "content": "모션데스크 특가 정보 고맙습니다",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_11}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_11}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-10-02T19:45",
+                "precision": "MINUTE"
+            },
+            "content": "핏쳐 모션데스크, 사이드테이블 할인정보 감사합니다",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_12}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_12}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-10-02T21:14",
+                "precision": "MINUTE"
+            },
+            "content": "구매 정보 감사합니다",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_13}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_13}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-10-03T00:03",
+                "precision": "MINUTE"
+            },
+            "content": "LIFE MOTION WEEK 특가 정보 감사합니다.",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_14}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+            "postedAt": {
+                "dateTime": "2026-10-03T08:38",
+                "precision": "MINUTE"
+            },
+            "content": "할인율 나쁘지 않네요",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_15}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_15}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-10-03T12:00",
+                "precision": "MINUTE"
+            },
+            "content": "할인 가격이 나쁘지 않네요.",
+            "recommendCount": 0
+        }
+    ]
+}

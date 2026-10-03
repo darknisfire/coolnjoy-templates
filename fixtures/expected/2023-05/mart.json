@@ -1,0 +1,29 @@
+{
+    "fixture": "2023-05/list/mart.html",
+    "layout": "MART",
+    "pageUrl": "https://coolenjoy.net/bbs/mart2",
+    "clock": "2023-05-05T05:00:00Z",
+    "itemCount": 1,
+    "warnings": [],
+    "items": [
+        {
+            "board": null,
+            "category": "판매",
+            "subCategory": null,
+            "title": "지스킬 cl14 TRIDENT Z 로얄골드 (4*8G) 팝니다.",
+            "url": "https://coolenjoy.net/bbs/mart2/1188245",
+            "writer": "{{writer_02}}",
+            "commentCount": 1,
+            "viewCount": "163",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2023-05-05T13:06",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "130,000 원"
+            }
+        }
+    ]
+}

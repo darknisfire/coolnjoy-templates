@@ -1,0 +1,48 @@
+{
+    "fixture": "2026-10/article/newphp_group.html",
+    "pageUrl": "https://coolenjoy.net/bbs/new.php?bo_table=group&wr_id=208378&page=1&mb_id=&meun=",
+    "clock": "2026-10-03T05:00:00Z",
+    "kind": "SUCCESS",
+    "warnings": [],
+    "article": {
+        "boardId": "group",
+        "wrId": 208378,
+        "url": "https://coolenjoy.net/bbs/group/208378",
+        "title": "TIME Season 3 Official Trailer (2026) David Tennant",
+        "category": "새소식",
+        "writer": "{{writer_04}}",
+        "writerProfileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+        "postedAt": {
+            "dateTime": "2026-10-03T10:52:43",
+            "precision": "MINUTE"
+        },
+        "viewCount": 4,
+        "recommendCount": 0,
+        "preContentHtml": null,
+        "contentHtml": "<p><span></span></p>\n<h3>TIME Season 3 Official Trailer (2026)</h3>\n<ul>\n <li>\n  <p><b>장르:</b> 교도소 / 범죄 / 리얼리티 드라마 (BBC)</p></li>\n <li>\n  <p><b>출연:</b> 데이비드 테넌트 (David Tennant) 외</p></li>\n <li>\n  <p><b>개요:</b> 영국 BBC의 평단 호평작인 교도소 소재 안솔로지 드라마 시리즈 《타임(TIME)》의 세 번째 시즌 공식 트레일러입니다.</p></li>\n <li>\n  <p><b>줄거리:</b> 시즌마다 새로운 캐릭터와 교도소 배경을 다루는 시리즈의 특성에 따라, 이번 시즌 3에서는 데이비드 테넌트가 새로운 수감자 또는 관련 인물로 등장합니다. 교도소 내부의 냉혹한 규율과 인물들이 처한 가혹한 죄책감, 생존을 위한 갈등, 그리고 구원의 가능성을 매우 사실적이고 무겁게 다룹니다.</p></li>\n</ul>",
+        "images": [],
+        "attachments": [],
+        "links": [],
+        "embedUrls": [
+            "https://www.youtube.com/embed/E0GiylQY6CA?&wmode=opaque&rel=0"
+        ],
+        "commentCount": 1,
+        "commentPage": 1,
+        "commentPageCount": 1,
+        "extras": {
+            "writerId": "{{mb_id_04}}"
+        },
+        "comments": [
+            {
+                "writer": "{{writer_05}}",
+                "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_05}}.jpg",
+                "postedAt": {
+                    "dateTime": "2026-10-03T12:25",
+                    "precision": "MINUTE"
+                },
+                "content": "영드군요",
+                "recommendCount": 0
+            }
+        ]
+    }
+}

@@ -18,6 +18,9 @@ import kotlinx.serialization.json.int
 import kotlinx.serialization.json.intOrNull
 import java.util.regex.PatternSyntaxException
 
+/** [Op.LabelSplit]이 고르는 쪽. JSON에서는 `"label"` / `"title"`. */
+enum class LabelPart { LABEL, TITLE }
+
 /** 연산 사이를 흐르는 값의 종류. 로드 시점에 체인의 타입을 정적으로 검사한다. */
 internal enum class VType { ELEMENT, STRING, INT, DATE }
 
@@ -148,6 +151,23 @@ sealed interface Op {
         init { requireNotBlank(name, "queryParam name") }
     }
 
+    /**
+     * `{"labelSplit": {"sep": "|", "part": "label"}}` (엔진 버전 2) Element → `분류 | 제목` 형태 텍스트 분해.
+     * `.sr-only`를 뺀 텍스트에서 첫 [sep] 앞(`"label"`)/뒤(`"title"`)를 trim해 낸다. [sep]이 없으면 label은 null, title은 전체.
+     * 문서 `<title>`이 전체 텍스트로 시작하면(제목 자체에 구분자가 있는 분류 없는 글) 분리하지 않는다(`CodeArticleParser.splitTitle`과 동일).
+     */
+    data class LabelSplit(val sep: String, val part: LabelPart) : Op {
+        init { requireNotBlank(sep, "labelSplit sep") }
+    }
+
+    /** `{"pageUrl": {}}` (엔진 버전 2) 입력을 무시하고 이 문서의 URL(`Jsoup.parse`에 준 pageUrl)을 낸다. 게시글 식별용 후보 값. */
+    data object PageUrl : Op
+
+    /** `{"requireMatch": "^https?://"}` (엔진 버전 2) String → 정규식이 (부분) 일치하면 그대로, 아니면 null. */
+    data class RequireMatch(val pattern: String) : Op {
+        internal val regex: Regex = compileRegex(pattern, "requireMatch pattern")
+    }
+
     /** `{"const": "COOLENJOY"}` 입력을 무시하고(null 포함) 상수 문자열을 낸다. */
     data class Const(val value: String) : Op
 }
@@ -177,10 +197,10 @@ internal fun compileRegex(pattern: String, what: String): Regex {
 /** 연산의 입력 타입(null이면 어떤 타입이든 가능). */
 internal fun Op.inputType(): VType? = when (this) {
     Op.Text, Op.OwnText, Op.TextWithoutSrOnly, is Op.Attr, is Op.AbsUrl, is Op.TextNodes,
-    is Op.AfterIcon, is Op.WithPrefix, is Op.SubjectPart -> VType.ELEMENT
+    is Op.AfterIcon, is Op.WithPrefix, is Op.SubjectPart, is Op.LabelSplit -> VType.ELEMENT
     Op.Trim, is Op.RegexReplace, is Op.RegexGroup, is Op.RemovePrefix, is Op.Split,
-    is Op.ToInt, Op.Date, is Op.QueryParam -> VType.STRING
-    is Op.Const -> null
+    is Op.ToInt, Op.Date, is Op.QueryParam, is Op.RequireMatch -> VType.STRING
+    is Op.Const, Op.PageUrl -> null
 }
 
 internal fun Op.outputType(): VType = when (this) {
@@ -208,6 +228,9 @@ internal fun Op.opName(): String = when (this) {
     Op.Date -> "date"
     is Op.QueryParam -> "queryParam"
     is Op.Const -> "const"
+    is Op.LabelSplit -> "labelSplit"
+    Op.PageUrl -> "pageUrl"
+    is Op.RequireMatch -> "requireMatch"
 }
 
 /** `{"이름": 인자}` 형태의 JSON과 [Op] 사이의 변환. 알 수 없는 이름/인자는 [TemplateException]. */
@@ -234,6 +257,19 @@ object OpSerializer : KSerializer<Op> {
             "textWithoutSrOnly" -> noArg(name, arg).let { Op.TextWithoutSrOnly }
             "trim" -> noArg(name, arg).let { Op.Trim }
             "date" -> noArg(name, arg).let { Op.Date }
+            "pageUrl" -> noArg(name, arg).let { Op.PageUrl }
+            "requireMatch" -> Op.RequireMatch(str(name, arg))
+            "labelSplit" -> {
+                val o = objArg(name, arg, setOf("sep", "part"))
+                Op.LabelSplit(
+                    str(name, o["sep"] ?: throw TemplateException("labelSplit requires sep")),
+                    when (str(name, o["part"] ?: throw TemplateException("labelSplit requires part"))) {
+                        "label" -> LabelPart.LABEL
+                        "title" -> LabelPart.TITLE
+                        else -> throw TemplateException("labelSplit part must be \"label\" or \"title\"")
+                    },
+                )
+            }
             "attr" -> Op.Attr(str(name, arg))
             "absUrl" -> Op.AbsUrl(str(name, arg))
             "withPrefix" -> Op.WithPrefix(str(name, arg))
@@ -282,7 +318,11 @@ object OpSerializer : KSerializer<Op> {
     }
 
     private fun encodeArg(op: Op): JsonElement = when (op) {
-        Op.Text, Op.OwnText, Op.TextWithoutSrOnly, Op.Trim, Op.Date -> JsonObject(emptyMap())
+        Op.Text, Op.OwnText, Op.TextWithoutSrOnly, Op.Trim, Op.Date, Op.PageUrl -> JsonObject(emptyMap())
+        is Op.RequireMatch -> JsonPrimitive(op.pattern)
+        is Op.LabelSplit -> JsonObject(
+            mapOf("sep" to JsonPrimitive(op.sep), "part" to JsonPrimitive(op.part.name.lowercase())),
+        )
         is Op.Attr -> JsonPrimitive(op.name)
         is Op.AbsUrl -> JsonPrimitive(op.name)
         is Op.WithPrefix -> JsonPrimitive(op.prefix)

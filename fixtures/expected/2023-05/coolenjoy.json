@@ -1,0 +1,27 @@
+{
+    "fixture": "2023-05/list/coolenjoy.html",
+    "layout": "COOLENJOY",
+    "pageUrl": "https://coolenjoy.net/bbs/coolenjoy",
+    "clock": "2023-05-05T05:00:00Z",
+    "itemCount": 1,
+    "warnings": [],
+    "items": [
+        {
+            "board": null,
+            "category": "버그",
+            "subCategory": null,
+            "title": "03:03 일에 접수한 내용입니다.",
+            "url": "https://coolenjoy.net/bbs/coolenjoy/62898",
+            "writer": null,
+            "commentCount": 1,
+            "viewCount": "6",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2023-05-05T03:03",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "fixture": "2023-05/list/group.html",
+    "layout": "GROUP",
+    "pageUrl": "https://coolenjoy.net/bbs/group",
+    "clock": "2023-05-05T05:00:00Z",
+    "itemCount": 1,
+    "warnings": [],
+    "items": [
+        {
+            "board": null,
+            "category": "영화",
+            "subCategory": "새소식",
+            "title": "[듄: 파트2] 1차 예고편 (한글자막)",
+            "url": "https://coolenjoy.net/bbs/group/132722",
+            "writer": "{{writer_02}}",
+            "commentCount": 4,
+            "viewCount": "11",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2023-05-04T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        }
+    ]
+}

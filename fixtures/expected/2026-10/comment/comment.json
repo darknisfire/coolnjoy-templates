@@ -1,0 +1,28 @@
+{
+    "fixture": "2026-10/list/comment.html",
+    "pageUrl": "https://coolenjoy.net/bbs/comment",
+    "itemCount": 2,
+    "warnings": [],
+    "items": [
+        {
+            "writer": "{{writer_01}}",
+            "profileImageUrl": "https://coolenjoy.net/bbs/{{profile_img_01}}",
+            "postedAt": {
+                "dateTime": "2026-10-03T10:30",
+                "precision": "MINUTE"
+            },
+            "content": "오 한번써보고싶네요",
+            "recommendCount": 0
+        },
+        {
+            "writer": "{{writer_03}}",
+            "profileImageUrl": "https://coolenjoy.net/bbs/{{profile_img_02}}",
+            "postedAt": {
+                "dateTime": "2026-10-03T12:15",
+                "precision": "MINUTE"
+            },
+            "content": "이질감이 없네요",
+            "recommendCount": 0
+        }
+    ]
+}

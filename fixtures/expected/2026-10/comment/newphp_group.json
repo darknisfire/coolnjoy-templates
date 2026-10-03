@@ -1,0 +1,18 @@
+{
+    "fixture": "2026-10/article/newphp_group.html",
+    "pageUrl": "https://coolenjoy.net/bbs/new.php?bo_table=group&wr_id=208378&page=1&mb_id=&meun=",
+    "itemCount": 1,
+    "warnings": [],
+    "items": [
+        {
+            "writer": "{{writer_05}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_05}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-10-03T12:25",
+                "precision": "MINUTE"
+            },
+            "content": "영드군요",
+            "recommendCount": 0
+        }
+    ]
+}

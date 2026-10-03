@@ -8,8 +8,6 @@ import java.net.URI
 import java.nio.file.Files
 import java.nio.file.Path
 import java.time.Clock
-import java.time.LocalDateTime
-import java.time.YearMonth
 import java.time.ZoneId
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonArray
@@ -46,12 +44,7 @@ class TemplateValidationTest {
     private val json = Json { prettyPrint = true }
 
     /** 스냅샷용 고정 시각. 2026-10 픽스처는 2026-10-03 13:10 KST에 수집됨. */
-    private fun clockFor(dir: String): Clock {
-        val dt = if (dir == "2026-10") LocalDateTime.of(2026, 10, 3, 13, 10)
-        else runCatching { YearMonth.parse(dir).atDay(28).atTime(14, 0) }
-            .getOrElse { fail("fixture dir '$dir' needs an explicit clock in clockFor()") }
-        return Clock.fixed(dt.atZone(zone).toInstant(), zone)
-    }
+    private fun clockFor(dir: String): Clock = TestSupport.fixedClock(dir, zone, listFixture = true)
 
     private data class Fixture(val dir: String, val file: Path, val name: String, val layout: BoardLayout)
 
@@ -142,7 +135,8 @@ class TemplateValidationTest {
         }
         if (!update && Files.isDirectory(TestSupport.expectedRoot)) {
             Files.walk(TestSupport.expectedRoot).use { s ->
-                s.filter { it.toString().endsWith(".json") && it !in expectedFiles }
+                // expected/<dir>/article|comment/ 는 ArticleValidationTest 가 관리한다.
+                s.filter { it.toString().endsWith(".json") && it !in expectedFiles && it.parent.fileName.toString() !in setOf("article", "comment") }
                     .forEach { problems += "orphan snapshot without fixture: ${TestSupport.expectedRoot.relativize(it)}" }
             }
         }

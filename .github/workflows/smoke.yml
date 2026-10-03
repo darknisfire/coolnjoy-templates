@@ -24,7 +24,7 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.12'
-      - name: Live smoke (4 boards)
+      - name: Live smoke (4 boards + 1 article)
         run: gradle -p validator liveTest --console=plain
       - name: Report failure as issue
         if: failure()

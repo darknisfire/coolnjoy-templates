@@ -1,0 +1,27 @@
+{
+    "fixture": "2023-05/list/vote.html",
+    "layout": "VOTE",
+    "pageUrl": "https://coolenjoy.net/bbs/votes",
+    "clock": "2023-05-05T05:00:00Z",
+    "itemCount": 1,
+    "warnings": [],
+    "items": [
+        {
+            "board": null,
+            "category": "진행중",
+            "subCategory": null,
+            "title": "현재 사용하시는 마더보드 종류는?",
+            "url": "https://coolenjoy.net/bbs/votes/2209377",
+            "writer": "{{writer_02}}",
+            "commentCount": 93,
+            "viewCount": "2773",
+            "recommendCount": 4,
+            "postedAt": {
+                "dateTime": "2023-05-01T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        }
+    ]
+}

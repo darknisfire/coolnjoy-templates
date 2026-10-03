@@ -15,6 +15,11 @@ object TemplateLoader {
     private const val MAX_OPS_PER_FIELD = 16
     private const val MAX_FALLBACK_DEPTH = 4
     private const val MAX_SELECTOR_LENGTH = 300
+    private const val MAX_LIST_ENTRIES = 16
+    private const val MAX_TEXT_LENGTH = 200
+
+    /** `comment`/`article` 섹션을 가진 템플릿이 요구하는 최소 엔진 버전. */
+    const val MIN_ENGINE_FOR_ARTICLE = 2
 
     private val json = Json {
         ignoreUnknownKeys = false
@@ -77,9 +82,121 @@ object TemplateLoader {
         for ((name, layout) in t.layouts) {
             val bl = BoardLayout.entries.firstOrNull { it.name == name }
                 ?: fail("layouts.$name", "unknown layout '$name' (known: ${BoardLayout.entries.joinToString { it.name }})")
-            if (bl == BoardLayout.COMMENT) fail("layouts.$name", "COMMENT is not a list layout and is not supported by this engine version")
+            if (bl == BoardLayout.COMMENT) fail("layouts.$name", "COMMENT is not a list layout; use the top-level 'comment' section")
             validateLayout("layouts.$name", layout)
         }
+        if ((t.comment != null || t.article != null) && t.minEngineVersion < MIN_ENGINE_FOR_ARTICLE) {
+            fail(
+                "minEngineVersion",
+                "'comment'/'article' sections require minEngineVersion >= $MIN_ENGINE_FOR_ARTICLE (engine version 1 rejects unknown top-level keys)",
+            )
+        }
+        t.comment?.let { validateComment("comment", it) }
+        t.article?.let {
+            if (t.comment == null) fail("article", "requires a 'comment' section (article comments are parsed with it)")
+            validateArticle("article", it)
+        }
+    }
+
+    private fun validateComment(path: String, c: CommentTemplate) {
+        validateSelector("$path.row", c.row)
+        validateSelector("$path.contentSelect", c.contentSelect)
+        validateField("$path.content", c.content, VType.STRING, 0)
+        validateFieldMap("$path.fields", c.fields, COMMENT_FIELD_TYPES)
+    }
+
+    private fun validateArticle(path: String, a: ArticleTemplate) {
+        validateSelector("$path.root", a.root)
+        if (a.ref.isEmpty()) fail("$path.ref", "must have at least one candidate")
+        if (a.ref.size > MAX_LIST_ENTRIES) fail("$path.ref", "more than $MAX_LIST_ENTRIES candidates")
+        a.ref.forEachIndexed { i, spec -> validateField("$path.ref[$i]", spec, VType.STRING, 0) }
+        validateSelector("$path.titleSelect", a.titleSelect)
+        validateField("$path.title", a.title, VType.STRING, 0)
+        a.category?.let { validateField("$path.category", it, VType.STRING, 0) }
+        validateFieldMap("$path.fields", a.fields, ARTICLE_FIELD_TYPES)
+        for ((key, spec) in a.extras) {
+            if (key.isBlank()) fail("$path.extras", "extras key must not be blank")
+            validateField("$path.extras.$key", spec, VType.STRING, 0)
+        }
+        validateContent("$path.content", a.content)
+        a.attachments?.let { validateLinkList("$path.attachments", it) }
+        a.links?.let { validateLinkList("$path.links", it) }
+        a.embedUrls?.let { validateList("$path.embedUrls", it, VType.STRING) }
+        a.commentsEmpty?.let { validateSelector("$path.commentsEmpty", it) }
+        a.commentPaging?.let { p ->
+            p.region?.let { validateSelector("$path.commentPaging.region", it) }
+            p.current?.let { validateField("$path.commentPaging.current", it, VType.INT, 0) }
+            p.pages?.let { validateList("$path.commentPaging.pages", it, VType.INT) }
+        }
+        validateErrors("$path.errors", a.errors)
+    }
+
+    private fun validateFieldMap(path: String, fields: Map<String, FieldSpec>, types: Map<String, VType>) {
+        for ((key, spec) in fields) {
+            val type = types[key] ?: fail("$path.$key", "unknown field key '$key' (known: ${types.keys.joinToString()})")
+            validateField("$path.$key", spec, type, 0)
+        }
+    }
+
+    private fun validateContent(path: String, c: ContentSpec) {
+        validateSanitizeSource("$path.main", c.main)
+        c.fallback?.let { validateSanitizeSource("$path.fallback", it) }
+        c.missingWarning?.let { validateText("$path.missingWarning", it) }
+        c.pre?.let { p ->
+            validateSelector("$path.pre.select", p.select)
+            validateSelectors("$path.pre.remove", p.remove)
+            p.cutFrom?.let { validateSelector("$path.pre.cutFrom", it) }
+        }
+    }
+
+    private fun validateSanitizeSource(path: String, s: SanitizeSource) {
+        validateSelector("$path.select", s.select)
+        validateSelectors("$path.remove", s.remove)
+        s.warning?.let { validateText("$path.warning", it) }
+    }
+
+    private fun validateSelectors(path: String, selectors: List<String>) {
+        if (selectors.size > MAX_LIST_ENTRIES) fail(path, "more than $MAX_LIST_ENTRIES selectors")
+        selectors.forEachIndexed { i, sel -> validateSelector("$path[$i]", sel) }
+    }
+
+    private fun validateList(path: String, l: ListSpec, expected: VType) {
+        validateSelector("$path.selectAll", l.selectAll)
+        validateField("$path.item", l.item, expected, 0)
+    }
+
+    private fun validateLinkList(path: String, l: LinkListSpec) {
+        validateSelector("$path.selectAll", l.selectAll)
+        validateField("$path.url", l.url, VType.STRING, 0)
+        validateField("$path.name", l.name, VType.STRING, 0)
+    }
+
+    private fun validateErrors(path: String, e: ErrorRules) {
+        if (e.rules.size > MAX_LIST_ENTRIES) fail("$path.rules", "more than $MAX_LIST_ENTRIES rules")
+        validateText("$path.unrecognizedReason", e.unrecognizedReason)
+        e.rules.forEachIndexed { i, r ->
+            val p = "$path.rules[$i]"
+            val c = r.condition
+            if (c.select == null && c.htmlContains == null && c.alertContains == null && c.redirectContains == null && c.hasAlert == null) {
+                fail("$p.when", "must specify at least one condition")
+            }
+            c.select?.let { validateSelector("$p.when.select", it) }
+            listOf("htmlContains" to c.htmlContains, "alertContains" to c.alertContains, "redirectContains" to c.redirectContains)
+                .forEach { (k, v) -> if (v != null) validateText("$p.when.$k", v, allowEmpty = false) }
+            if (r.result == ErrorKind.ACCESS_DENIED && c.alertContains == null && c.hasAlert != true) {
+                fail("$p.when", "AccessDenied needs the alert message: add alertContains or hasAlert=true")
+            }
+            if (r.result == ErrorKind.UNRECOGNIZED) {
+                validateText("$p.reason", r.reason ?: fail("$p.reason", "Unrecognized rule requires 'reason'"))
+            } else if (r.reason != null) {
+                fail("$p.reason", "only Unrecognized rules take a reason")
+            }
+        }
+    }
+
+    private fun validateText(path: String, text: String, allowEmpty: Boolean = true) {
+        if (text.length > MAX_TEXT_LENGTH) fail(path, "longer than $MAX_TEXT_LENGTH chars")
+        if (!allowEmpty && text.isEmpty()) fail(path, "must not be empty")
     }
 
     private fun validateLayout(path: String, layout: LayoutTemplate) {

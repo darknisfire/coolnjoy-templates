@@ -1,0 +1,9 @@
+{
+    "fixture": "2026-10/article/freeboard2.html",
+    "pageUrl": "https://coolenjoy.net/bbs/freeboard2/2905774",
+    "itemCount": 0,
+    "warnings": [
+        "COMMENT: no rows matched 'section#bo_vc > article'"
+    ],
+    "items": []
+}

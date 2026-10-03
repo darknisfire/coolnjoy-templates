@@ -1,0 +1,18 @@
+{
+    "fixture": "2026-10/article/mart2_login.html",
+    "pageUrl": "https://coolenjoy.net/bbs/mart2/1276355",
+    "itemCount": 1,
+    "warnings": [],
+    "items": [
+        {
+            "writer": "{{writer_05}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+            "postedAt": {
+                "dateTime": "2026-08-15T12:02",
+                "precision": "MINUTE"
+            },
+            "content": "비밀글입니다.",
+            "recommendCount": 0
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "fixture": "2023-05/list/webzine.html",
+    "layout": "WEBZINE",
+    "pageUrl": "https://coolenjoy.net/bbs/daybook",
+    "clock": "2023-05-05T05:00:00Z",
+    "itemCount": 3,
+    "warnings": [],
+    "items": [
+        {
+            "board": null,
+            "category": "댓글",
+            "subCategory": null,
+            "title": "마이크론 Crucial P3 Plus 제품 찾기 댓글 이벤트",
+            "url": "https://coolenjoy.net/bbs/daybook/5840859",
+            "writer": "{{writer_02}}",
+            "commentCount": 340,
+            "viewCount": "513",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2023-05-04T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/daybook/3ef9ccc43fbe09b316de23630abcafdf_VlIgGKCJ_b11aa6e9d0fa0a5a5dcf9018c9d8fde16426dd92.png",
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "공식리뷰",
+            "subCategory": "CPU쿨러",
+            "title": "올 블랙으로 돌아온 잘만 CNPS4X",
+            "url": "https://coolenjoy.net/bbs/review/1086874",
+            "writer": "{{writer_04}}",
+            "commentCount": 100,
+            "viewCount": "2092",
+            "recommendCount": 4,
+            "postedAt": {
+                "dateTime": "2023-05-04T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/review/60ba28ff8112342405289e5397b65aa5_etIGrLWf_701c632b34c4ff9090f53fee015e288d6884a9f8.png",
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "댓글",
+            "subCategory": null,
+            "title": "마이크론 Crucial P3 Plus 제품 찾기 댓글 이벤트",
+            "url": "https://coolenjoy.net/bbs/daybook/5840859",
+            "writer": "{{writer_02}}",
+            "commentCount": 397,
+            "viewCount": "636",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2023-05-04T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/daybook/3ef9ccc43fbe09b316de23630abcafdf_VlIgGKCJ_b11aa6e9d0fa0a5a5dcf9018c9d8fde16426dd92.png",
+            "extras": {}
+        }
+    ]
+}

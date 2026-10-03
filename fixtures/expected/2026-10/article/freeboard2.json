@@ -1,0 +1,35 @@
+{
+    "fixture": "2026-10/article/freeboard2.html",
+    "pageUrl": "https://coolenjoy.net/bbs/freeboard2/2905774",
+    "clock": "2026-10-03T05:00:00Z",
+    "kind": "SUCCESS",
+    "warnings": [],
+    "article": {
+        "boardId": "freeboard2",
+        "wrId": 2905774,
+        "url": "https://coolenjoy.net/bbs/freeboard2/2905774",
+        "title": "즐거운하루되세요~",
+        "category": "잡담",
+        "writer": "{{writer_04}}",
+        "writerProfileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+        "postedAt": {
+            "dateTime": "2026-10-03T13:22:03",
+            "precision": "MINUTE"
+        },
+        "viewCount": 3,
+        "recommendCount": 0,
+        "preContentHtml": null,
+        "contentHtml": "즐거운주말 알차게보내시고 즐거운하루되세요~",
+        "images": [],
+        "attachments": [],
+        "links": [],
+        "embedUrls": [],
+        "commentCount": 0,
+        "commentPage": 1,
+        "commentPageCount": 1,
+        "extras": {
+            "writerId": "{{mb_id_04}}"
+        },
+        "comments": []
+    }
+}

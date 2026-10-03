@@ -1,6 +1,6 @@
 # coolnjoy-templates
 
-CoolnJoy 앱이 게시판 목록을 파싱할 때 쓰는 선언형 템플릿(`site.json`)의 원본, 검증, 서명 배포 저장소.
+CoolnJoy 앱이 게시판 목록·게시글 상세(article)·댓글(comment)을 파싱할 때 쓰는 선언형 템플릿(`site.json`)의 원본, 검증, 서명 배포 저장소.
 
 앱은 APK에 번들된 템플릿을 기본으로 쓰고, 이 저장소가 배포한 서명된 새 템플릿이 있으면 내려받아 교체한다. 사이트 마크업이 바뀌어도 앱 업데이트 없이 템플릿만 고칠 수 있게 하는 것이 목적이다.
 
@@ -8,10 +8,11 @@ CoolnJoy 앱이 게시판 목록을 파싱할 때 쓰는 선언형 템플릿(`si
 
 ```
 templates/site.json        템플릿 원본 (templateVersion 포함)
-fixtures/2026-10/list/     목록 페이지 HTML 픽스처 + SOURCES.md (수집 출처)
-fixtures/expected/         픽스처를 엔진으로 파싱한 결과 스냅샷(JSON)
+fixtures/<YYYY-MM>/list/     목록 페이지 HTML 픽스처(+ 댓글 조각 comment*.html) + SOURCES.md (수집 출처)
+fixtures/<YYYY-MM>/article/  게시글 상세 HTML 픽스처(오류 페이지·댓글 조각 포함) + SOURCES.md (파일별 출처 URL)
+fixtures/expected/         픽스처를 엔진으로 파싱한 결과 스냅샷(JSON). 목록은 <dir>/<이름>.json, 상세는 <dir>/article/, 댓글은 <dir>/comment/
 validator/                 검증용 Gradle(Kotlin/JVM) 프로젝트
-  engine-src/              앱 core의 템플릿 엔진 스냅샷 (ENGINE_SNAPSHOT.md 참고)
+  engine-src/              앱 core의 템플릿 엔진 스냅샷 (현재 ENGINE_VERSION 2, 파일 목록·sha256은 ENGINE_SNAPSHOT.md 참고)
   src/test/                검증 테스트, live smoke
 scripts/                   build-dist / sign / verify-dist / check-version-bump / sync-engine / anonymize-fixtures
 wrangler.jsonc             Cloudflare Workers 정적 Assets 설정 (dist/ 배포)
@@ -29,16 +30,30 @@ node scripts/anonymize-fixtures.mjs <원본 디렉터리> fixtures/<YYYY-MM>/lis
 node scripts/anonymize-fixtures.mjs --check <원본 디렉터리> fixtures/<YYYY-MM>/list
 ```
 
-`--check`는 원본에서 수집한 닉네임/ID가 결과에 남은 개수를 출력하고, 0이 아니면 실패한다. 글 제목 등 공개 게시글 내용은 그대로 두며, 제목에 회원 닉네임과 같은 단어가 있으면 함께 치환된다. 새 픽스처 디렉터리를 만들면 `TemplateValidationTest.clockFor`에 수집 시각을 추가한다(`YYYY-MM` 형식이면 해당 월 28일 14:00 KST가 기본).
+`--check`는 원본에서 수집한 닉네임/ID가 결과에 남은 개수를 출력하고, 0이 아니면 실패한다. 글 제목 등 공개 게시글 내용은 그대로 두며, 제목에 회원 닉네임과 같은 단어가 있으면 함께 치환된다. 새 픽스처 디렉터리를 만들면 `TestSupport.fixedClock`에 수집 시각을 추가한다(`YYYY-MM` 형식이면 해당 월 28일 14:00 KST가 기본. 2026-10은 목록 13:10·상세 14:00, 2023-05는 2023-05-05 14:00).
+
+게시글 상세·댓글 픽스처(`article/`)는 닉네임이 본문·댓글에 다른 회원 이름으로도 나오므로, 디렉터리들을 서로 `--also`로 지정해 한꺼번에 익명화/검사한다. 앱 저장소 보강판 스크립트가 지원하는 옵션:
+
+```
+--also <dir>   (반복) 다른 디렉터리의 닉네임도 이 디렉터리 전체에서 치환/검사한다
+--keep a,b,c   --also 로 들어온 닉네임 중 치환하지 않을 단어(기본: 쿨엔조이,darkFlash. 사이트명·브랜드명)
+--check        치환 대신 잔존 검사(--verbose 는 값까지 출력하므로 로컬 확인용으로만)
+```
+
+보강판은 ID 검색 URL의 `%2C` 형태, `image/bbs_m/icon/<id><숫자>.jpg` 아이콘 경로, 작성자 카드의 `닉네임(ID)` 텍스트도 치환한다. 예(원본이 `<orig>/2026-10/{list,article}`, `<orig>/2023-05/list` 에 있을 때, 각 디렉터리마다 나머지 둘을 `--also`로 지정):
+
+```
+node scripts/anonymize-fixtures.mjs --also <orig>/2026-10/article --also <orig>/2023-05/list <orig>/2026-10/list fixtures/2026-10/list
+```
 
 ## 로컬 검증
 
 필요: JDK 21, Node 22 이상. Gradle은 저장소의 wrapper(8.12)를 쓴다.
 
 ```
-./gradlew -p validator test                      # 템플릿 검증 + 픽스처 파싱 + 스냅샷 비교
+./gradlew -p validator test                      # 템플릿 검증 + 목록/상세/댓글 픽스처 파싱 + 스냅샷 비교
 ./gradlew -p validator test -PupdateSnapshots    # 스냅샷 갱신(결과 diff를 반드시 검토)
-./gradlew -p validator liveTest                  # 실사이트 smoke (GET 4회, 기본 test에서는 제외)
+./gradlew -p validator liveTest                  # 실사이트 smoke (GET 5회: 게시판 4 + 38 첫 글 상세 1, 기본 test에서는 제외)
 ```
 
 테스트가 확인하는 것:
@@ -47,7 +62,9 @@ node scripts/anonymize-fixtures.mjs --check <원본 디렉터리> fixtures/<YYYY
 2. `site.baseUrl` 호스트가 `coolenjoy.net`이다.
 3. 모든 목록 픽스처(파일명 `_` 앞이 레이아웃, `comment` 제외)가 행 1개 이상, warnings 없음, 모든 url이 `https://coolenjoy.net/`로 시작한다.
 4. 파싱 결과가 `fixtures/expected/`의 스냅샷과 일치한다(고정 Clock).
-5. (live) 38, jirum, freeboard2, new.php를 UA `CoolnJoy-TemplateSmoke/1`로 받아 같은 검사를 한다.
+5. 모든 상세 픽스처(`article/`)가 기대 종류로 파싱된다: 일반 글은 Success(warnings 없음, 제목·본문 있음, 댓글 수가 있으면 댓글 파싱), 파일명 `*_login_required`는 LoginRequired, `not_found*`는 NotFound, `comment_view*`(댓글 조각)는 Unrecognized. 네 종류가 모두 한 번 이상 나와야 한다.
+6. 댓글 파서가 상세 픽스처와 `list/comment*.html`을 경고 없이 파싱한다(댓글이 없는 페이지의 `no rows matched` 경고만 허용). 상세·댓글 결과도 `fixtures/expected/`의 스냅샷과 일치한다.
+7. (live) 38, jirum, freeboard2, new.php를 UA `CoolnJoy-TemplateSmoke/1`로 받아 같은 검사를 하고, 38 목록의 첫 글 상세를 받아 article 파서가 Success로 파싱하는지 확인한다.
 
 배포 산출물은 다음처럼 로컬에서 만들고 검증할 수 있다. 키는 운영 키를 쓰지 말고 임시 키쌍을 만든다.
 
