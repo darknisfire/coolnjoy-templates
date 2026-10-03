@@ -1,0 +1,250 @@
+{
+    "fixture": "2026-10/article/system_table.html",
+    "pageUrl": "https://coolenjoy.net/bbs/system/1288076",
+    "itemCount": 22,
+    "warnings": [],
+    "items": [
+        {
+            "writer": "{{writer_06}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_06}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-26T01:30",
+                "precision": "MINUTE"
+            },
+            "content": "스피커 사운드 좋을것 같네요 멋집니다",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_05}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_05}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-26T11:11",
+                "precision": "MINUTE"
+            },
+            "content": "@{{writer_06}} 답글 방에서 음감할때가 가장 즐거운 시간입니다 ㅎㅎ",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_07}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_07}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-26T02:11",
+                "precision": "MINUTE"
+            },
+            "content": "스피커부터 눈에 들어오네요. 스피커의 포스가 멋진.",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_05}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_05}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-26T11:13",
+                "precision": "MINUTE"
+            },
+            "content": "@{{writer_07}} 답글 6.5인치라 거대합니다",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_08}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_08}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-26T08:47",
+                "precision": "MINUTE"
+            },
+            "content": "스피커 대단한듯 하네요",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_05}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_05}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-26T11:13",
+                "precision": "MINUTE"
+            },
+            "content": "@{{writer_08}} 답글 예전엔 가성비도 좋았는데 어느새 가격이 1조 30만원이나 올라서 이젠 가성비라고하기엔 애매한 위치가 되었습니다ㅎㅎ",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_09}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_09}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-26T12:16",
+                "precision": "MINUTE"
+            },
+            "content": "칼리 좋죠",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_05}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_05}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-26T16:19",
+                "precision": "MINUTE"
+            },
+            "content": "@{{writer_09}} 답글 입문용으로 구매했지만 만족스럽게 잘사용중입니다",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_10}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-26T17:24",
+                "precision": "MINUTE"
+            },
+            "content": "모코코 부자시군요",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_05}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_05}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-26T18:10",
+                "precision": "MINUTE"
+            },
+            "content": "@{{writer_10}} 답글 현재는 접은 상태입니다 ㅎㅎ 카제까지하고 접었죠",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_11}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_11}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-26T17:30",
+                "precision": "MINUTE"
+            },
+            "content": "시스템 멋지네요",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_05}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_05}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-26T18:10",
+                "precision": "MINUTE"
+            },
+            "content": "@{{writer_11}} 답글 감사합니다",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_12}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_12}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-26T23:43",
+                "precision": "MINUTE"
+            },
+            "content": "아기자기 재미있는 기기들이 많네요",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_05}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_05}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-10-01T11:29",
+                "precision": "MINUTE"
+            },
+            "content": "@{{writer_12}} 답글 많지만 너저분 합니다 ㅎㅎ",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_13}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-27T09:59",
+                "precision": "MINUTE"
+            },
+            "content": "스피커가 눈에 갑니다!",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_05}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_05}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-10-01T11:29",
+                "precision": "MINUTE"
+            },
+            "content": "@{{writer_13}} 답글 소리가 시원시원해요",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_14}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_14}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-27T23:51",
+                "precision": "MINUTE"
+            },
+            "content": "화려하네요 ~",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_05}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_05}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-10-01T11:29",
+                "precision": "MINUTE"
+            },
+            "content": "@{{writer_14}} 답글 겉만 그렇습니다 ㅎㅎ 요즘 게임도 안해서 맥북으로 유튭만보는 편입니다",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_15}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_15}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-29T02:00",
+                "precision": "MINUTE"
+            },
+            "content": "책상위가 아주 복잡하군요.ㅎ",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_05}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_05}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-10-01T11:30",
+                "precision": "MINUTE"
+            },
+            "content": "@{{writer_15}} 답글 책상이 작은게 아닌데 스피커가 워낙커서 정리가 힘드네요",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_16}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-30T03:04",
+                "precision": "MINUTE"
+            },
+            "content": "잘봤습니다.",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_05}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_05}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-10-01T11:31",
+                "precision": "MINUTE"
+            },
+            "content": "@{{writer_16}} 답글 감사합니다",
+            "recommendCount": 0,
+            "secret": false
+        }
+    ]
+}

@@ -11,6 +11,12 @@ sealed interface ArticleResult {
     /** 로그인 상태에서도 등급 부족 등으로 거부됨. */
     data class AccessDenied(val message: String) : ArticleResult
 
+    /**
+     * 비밀(잠금) 글. 사이트가 상세 요청을 비밀번호 입력 페이지(`password.php?w=s&...`)로 리다이렉트했다.
+     * [passwordUrl]은 리다이렉트된 절대 URL. 판정은 응답 HTML이 아니라 리다이렉트 URL 기반이다(fetcher 계층).
+     */
+    data class SecretPost(val passwordUrl: String? = null) : ArticleResult
+
     /** 삭제되었거나 존재하지 않는 글. */
     data class NotFound(val message: String? = null) : ArticleResult
 

@@ -1,0 +1,118 @@
+{
+    "fixture": "2026-10/article/point_event.html",
+    "pageUrl": "https://coolenjoy.net/bbs/point/3127120",
+    "itemCount": 10,
+    "warnings": [],
+    "items": [
+        {
+            "writer": "{{writer_06}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_06}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-24T07:38",
+                "precision": "MINUTE"
+            },
+            "content": "참여",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_07}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-24T17:07",
+                "precision": "MINUTE"
+            },
+            "content": "참여합니다",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_08}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-24T19:13",
+                "precision": "MINUTE"
+            },
+            "content": "참여",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_09}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_09}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-24T20:17",
+                "precision": "MINUTE"
+            },
+            "content": "참여완료",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_10}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_10}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-25T02:30",
+                "precision": "MINUTE"
+            },
+            "content": "`",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_11}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_11}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-25T09:54",
+                "precision": "MINUTE"
+            },
+            "content": "참여.",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_12}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_12}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-25T11:10",
+                "precision": "MINUTE"
+            },
+            "content": "추석",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_13}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_13}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-25T16:26",
+                "precision": "MINUTE"
+            },
+            "content": "참여.",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_14}}",
+            "profileImageUrl": "https://coolenjoy.net/data/member_image/xx/{{mb_id_14}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-26T10:02",
+                "precision": "MINUTE"
+            },
+            "content": "1",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_15}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/icon/muti_thumb/1227329000.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-26T15:48",
+                "precision": "MINUTE"
+            },
+            "content": "참여합니다.",
+            "recommendCount": 0,
+            "secret": false
+        }
+    ]
+}

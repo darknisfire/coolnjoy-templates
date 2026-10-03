@@ -56,8 +56,9 @@ class TemplateEngine(
         /**
          * 이 엔진이 해석할 수 있는 연산/스키마 버전. 템플릿의 `minEngineVersion`이 이보다 크면 거부한다.
          * 1: 목록 레이아웃. 2: `comment`/`article` 섹션과 연산 `labelSplit`/`pageUrl`/`requireMatch`.
+         * 3: `comment.secret`, `article.poll`(스크립트 데이터 추출 전용), `article.specs`, `article.content.pre.rows`(라벨/값 표).
          */
-        const val ENGINE_VERSION = 2
+        const val ENGINE_VERSION = 3
     }
 }
 

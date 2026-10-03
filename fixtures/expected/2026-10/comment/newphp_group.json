@@ -12,7 +12,8 @@
                 "precision": "MINUTE"
             },
             "content": "영드군요",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": false
         }
     ]
 }

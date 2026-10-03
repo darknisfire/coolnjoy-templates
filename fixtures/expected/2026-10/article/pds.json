@@ -32,6 +32,23 @@
         "extras": {
             "writerId": "{{mb_id_04}}"
         },
+        "poll": null,
+        "specs": [],
+        "infoRows": [
+            {
+                "label": "운영체제",
+                "value": "Windows 11 Family*, Windows 10* (22H2)"
+            },
+            {
+                "label": "제작사",
+                "value": "Intel"
+            },
+            {
+                "label": "라이센스",
+                "value": "Free"
+            }
+        ],
+        "secretCommentCount": 0,
         "comments": [
             {
                 "writer": "{{writer_05}}",
@@ -41,7 +58,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "인텔 드라이버 고마워요",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_06}}",
@@ -51,7 +69,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "드라이버 정보 감사합니다",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_07}}",
@@ -61,7 +80,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "자료 감사합니다",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_08}}",
@@ -71,7 +91,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "인텔이 드라이버 잘만드는데.. 오류도없고",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_09}}",
@@ -81,7 +102,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "자료 감사합니다",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_10}}",
@@ -91,7 +113,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "자료 감사합니다",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_11}}",
@@ -101,7 +124,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "자료 감사합니다",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_12}}",
@@ -111,7 +135,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "자료 감사합니다",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             }
         ]
     }

@@ -30,6 +30,10 @@
         "extras": {
             "writerId": "{{mb_id_04}}"
         },
+        "poll": null,
+        "specs": [],
+        "infoRows": [],
+        "secretCommentCount": 0,
         "comments": []
     }
 }

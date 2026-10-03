@@ -1,0 +1,148 @@
+{
+    "fixture": "2026-10/article/votes_poll.html",
+    "pageUrl": "https://coolenjoy.net/bbs/votes/2347283",
+    "clock": "2026-10-03T05:00:00Z",
+    "kind": "SUCCESS",
+    "warnings": [],
+    "article": {
+        "boardId": "votes",
+        "wrId": 2347283,
+        "url": "https://coolenjoy.net/bbs/votes/2347283",
+        "title": "컴퓨터 청소 방법에 대하여 블로워식 과 흡입식 ?",
+        "category": "마감됨",
+        "writer": "{{writer_04}}",
+        "writerProfileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+        "postedAt": {
+            "dateTime": "2026-09-26T22:15:10",
+            "precision": "MINUTE"
+        },
+        "viewCount": 711,
+        "recommendCount": 8,
+        "preContentHtml": null,
+        "contentHtml": "<p>계절이 바뀌였는데 저는 계절이 바뀔때 마다 컴퓨터 청소를 하는데요 하면서 이것저것 같이&nbsp;</p>\n<p>점검을 합니다&nbsp;<br>\n  근데 매번 하는 방식이 달라서 어떤것이 정답인진 모르겠네요 전문가가 아니다 보니깐</p>\n<p>다른분들은 어떤 방식을 선호 하시나요?</p>\n<p>이것보다 나은것이 있으시면 댓글 부탁드려요!!</p>\n<p><br></p>\n<p><br></p>\n<p><br></p>\n<p><br></p>\n<p><span>블로워식</span></p>\n<p><a href=\"https://coolenjoy.net/bbs/view_image.php?fn=https%3A%2F%2Fphoto.coolenjoy.co.kr%2Fdata%2Feditor%2F2609%2F5f1bbdc27e770959dee9fa2c5141f9ded32ebdc6.png\" rel=\"nofollow noopener\"><img src=\"https://photo.coolenjoy.co.kr/data/editor/2609/thumb-5f1bbdc27e770959dee9fa2c5141f9ded32ebdc6.png\" alt=\"5f1bbdc27e770959dee9fa2c5141f9ded32ebdc6.png\"></a></p>\n<p><br></p>\n<p><br></p>\n<p><br></p>\n<p><br></p>\n<p><br></p>\n<p><br></p>\n<p><span>흡입식</span></p>\n<p><a href=\"https://coolenjoy.net/bbs/view_image.php?fn=https%3A%2F%2Fphoto.coolenjoy.co.kr%2Fdata%2Feditor%2F2609%2Fbaaad14b0178cea72842a6dbabafeb6c32ad414d.png\" rel=\"nofollow noopener\"><img src=\"https://photo.coolenjoy.co.kr/data/editor/2609/thumb-baaad14b0178cea72842a6dbabafeb6c32ad414d.png\" alt=\"baaad14b0178cea72842a6dbabafeb6c32ad414d.png\"></a></p>\n<p><br></p>\n<p><br></p>",
+        "images": [
+            "https://photo.coolenjoy.co.kr/data/editor/2609/5f1bbdc27e770959dee9fa2c5141f9ded32ebdc6.png",
+            "https://photo.coolenjoy.co.kr/data/editor/2609/baaad14b0178cea72842a6dbabafeb6c32ad414d.png"
+        ],
+        "attachments": [],
+        "links": [],
+        "embedUrls": [],
+        "commentCount": 37,
+        "commentPage": 1,
+        "commentPageCount": 1,
+        "extras": {
+            "writerId": "{{mb_id_04}}"
+        },
+        "poll": {
+            "question": "컴퓨터 청소 방법에 대하여 블로워식 과 흡입식 ?",
+            "totalVotes": 161,
+            "options": [
+                {
+                    "label": "블로워식",
+                    "votes": 101
+                },
+                {
+                    "label": "흡입식",
+                    "votes": 35
+                },
+                {
+                    "label": "기타",
+                    "votes": 25
+                }
+            ]
+        },
+        "specs": [],
+        "infoRows": [],
+        "secretCommentCount": 0,
+        "comments": [
+            {
+                "writer": "{{writer_06}}",
+                "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_06}}.jpg",
+                "postedAt": {
+                    "dateTime": "2026-09-28T17:19",
+                    "precision": "MINUTE"
+                },
+                "content": "먼지만 간단하게 털어내고 있습니다! 청소기가 없어서 불던 빨아들이던 할 수가 없어서...ㅎㅎ",
+                "recommendCount": 0,
+                "secret": false
+            },
+            {
+                "writer": "{{writer_07}}",
+                "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_07}}.jpg",
+                "postedAt": {
+                    "dateTime": "2026-09-28T17:46",
+                    "precision": "MINUTE"
+                },
+                "content": "송풍기로 밀어버리는게 속 편하죠",
+                "recommendCount": 0,
+                "secret": false
+            },
+            {
+                "writer": "{{writer_08}}",
+                "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_08}}.jpg",
+                "postedAt": {
+                    "dateTime": "2026-09-28T17:58",
+                    "precision": "MINUTE"
+                },
+                "content": "흡입식이 최고 붓으로 살살 하면서",
+                "recommendCount": 0,
+                "secret": false
+            },
+            {
+                "writer": "{{writer_09}}",
+                "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+                "postedAt": {
+                    "dateTime": "2026-09-28T18:18",
+                    "precision": "MINUTE"
+                },
+                "content": "에어건으로 싹",
+                "recommendCount": 0,
+                "secret": false
+            },
+            {
+                "writer": "{{writer_10}}",
+                "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_10}}.jpg",
+                "postedAt": {
+                    "dateTime": "2026-09-28T18:23",
+                    "precision": "MINUTE"
+                },
+                "content": "에어건으로 강하게....",
+                "recommendCount": 0,
+                "secret": false
+            },
+            {
+                "writer": "{{writer_11}}",
+                "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+                "postedAt": {
+                    "dateTime": "2026-09-28T18:35",
+                    "precision": "MINUTE"
+                },
+                "content": "흡입식을 좀 더 선호합니다.",
+                "recommendCount": 0,
+                "secret": false
+            },
+            {
+                "writer": "{{writer_12}}",
+                "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_13}}.jpg",
+                "postedAt": {
+                    "dateTime": "2026-09-28T18:52",
+                    "precision": "MINUTE"
+                },
+                "content": "부드러운 붓으로 가끔 털어내는 정도지만 할때는 블로워 방식을 선호합니다",
+                "recommendCount": 0,
+                "secret": false
+            },
+            {
+                "writer": "{{writer_05}}",
+                "profileImageUrl": "https://photo.coolenjoy.co.kr/image/member_noimage.gif",
+                "postedAt": {
+                    "dateTime": "2026-09-28T19:00",
+                    "precision": "MINUTE"
+                },
+                "content": "송풍기로 불고 팬은 물티슈로 청소하네요.",
+                "recommendCount": 0,
+                "secret": false
+            }
+        ]
+    }
+}

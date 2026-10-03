@@ -12,7 +12,8 @@
                 "precision": "MINUTE"
             },
             "content": "비밀글입니다.",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": true
         }
     ]
 }

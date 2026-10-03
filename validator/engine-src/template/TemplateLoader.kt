@@ -17,9 +17,13 @@ object TemplateLoader {
     private const val MAX_SELECTOR_LENGTH = 300
     private const val MAX_LIST_ENTRIES = 16
     private const val MAX_TEXT_LENGTH = 200
+    private val POLL_CALL = Regex("""[A-Za-z0-9_.]{1,64}""")
 
     /** `comment`/`article` 섹션을 가진 템플릿이 요구하는 최소 엔진 버전. */
     const val MIN_ENGINE_FOR_ARTICLE = 2
+
+    /** `comment.secret`, `article.poll`, `article.specs`, `article.content.pre.rows`를 쓰는 템플릿이 요구하는 최소 엔진 버전. */
+    const val MIN_ENGINE_FOR_PARSER_EXTRAS = 3
 
     private val json = Json {
         ignoreUnknownKeys = false
@@ -91,6 +95,12 @@ object TemplateLoader {
                 "'comment'/'article' sections require minEngineVersion >= $MIN_ENGINE_FOR_ARTICLE (engine version 1 rejects unknown top-level keys)",
             )
         }
+        if (usesParserExtras(t) && t.minEngineVersion < MIN_ENGINE_FOR_PARSER_EXTRAS) {
+            fail(
+                "minEngineVersion",
+                "'comment.secret'/'article.poll'/'article.specs'/'article.content.pre.rows' require minEngineVersion >= $MIN_ENGINE_FOR_PARSER_EXTRAS (older engines reject unknown keys)",
+            )
+        }
         t.comment?.let { validateComment("comment", it) }
         t.article?.let {
             if (t.comment == null) fail("article", "requires a 'comment' section (article comments are parsed with it)")
@@ -98,11 +108,15 @@ object TemplateLoader {
         }
     }
 
+    private fun usesParserExtras(t: SiteTemplate): Boolean =
+        t.comment?.secret?.isNotEmpty() == true || t.article?.let { it.poll != null || it.specs != null || it.content.pre?.rows != null } == true
+
     private fun validateComment(path: String, c: CommentTemplate) {
         validateSelector("$path.row", c.row)
         validateSelector("$path.contentSelect", c.contentSelect)
         validateField("$path.content", c.content, VType.STRING, 0)
         validateFieldMap("$path.fields", c.fields, COMMENT_FIELD_TYPES)
+        validateSelectors("$path.secret", c.secret)
     }
 
     private fun validateArticle(path: String, a: ArticleTemplate) {
@@ -128,7 +142,30 @@ object TemplateLoader {
             p.current?.let { validateField("$path.commentPaging.current", it, VType.INT, 0) }
             p.pages?.let { validateList("$path.commentPaging.pages", it, VType.INT) }
         }
+        a.poll?.let { validatePoll("$path.poll", it) }
+        a.specs?.let { validateLabeledRows("$path.specs", it) }
         validateErrors("$path.errors", a.errors)
+    }
+
+    private fun validatePoll(path: String, p: PollSpec) {
+        validateSelector("$path.select", p.select)
+        if (!POLL_CALL.matches(p.call)) fail("$path.call", "must match [A-Za-z0-9_.]{1,64} but was '${p.call}'")
+        for ((key, pattern) in listOf("labelPattern" to p.labelPattern, "questionPattern" to p.questionPattern, "totalPattern" to p.totalPattern)) {
+            val regex = compileRegex(pattern, "$path.$key")
+            if (regex.toPattern().matcher("").groupCount() < 1) fail("$path.$key", "must have a capture group")
+        }
+    }
+
+    private fun validateLabeledRows(path: String, spec: LabeledRowsSpec) {
+        if (spec.sources.isEmpty()) fail("$path.sources", "must have at least one source")
+        if (spec.sources.size > MAX_LIST_ENTRIES) fail("$path.sources", "more than $MAX_LIST_ENTRIES sources")
+        spec.sources.forEachIndexed { i, src ->
+            validateSelector("$path.sources[$i].selectAll", src.selectAll)
+            validateField("$path.sources[$i].label", src.label, VType.STRING, 0)
+            validateField("$path.sources[$i].value", src.value, VType.STRING, 0)
+        }
+        if (spec.excludeLabels.size > MAX_LIST_ENTRIES) fail("$path.excludeLabels", "more than $MAX_LIST_ENTRIES labels")
+        spec.excludeLabels.forEachIndexed { i, l -> validateText("$path.excludeLabels[$i]", l, allowEmpty = false) }
     }
 
     private fun validateFieldMap(path: String, fields: Map<String, FieldSpec>, types: Map<String, VType>) {
@@ -146,6 +183,7 @@ object TemplateLoader {
             validateSelector("$path.pre.select", p.select)
             validateSelectors("$path.pre.remove", p.remove)
             p.cutFrom?.let { validateSelector("$path.pre.cutFrom", it) }
+            p.rows?.let { validateLabeledRows("$path.pre.rows", it) }
         }
     }
 

@@ -12,7 +12,8 @@
                 "precision": "MINUTE"
             },
             "content": "라이프 모션 위크 정보 감사합니다.",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": false
         },
         {
             "writer": "{{writer_06}}",
@@ -22,7 +23,8 @@
                 "precision": "MINUTE"
             },
             "content": "특가 정보 감사합니다",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": false
         },
         {
             "writer": "{{writer_07}}",
@@ -32,7 +34,8 @@
                 "precision": "MINUTE"
             },
             "content": "핏쳐 모션위크 네이버 특가 정보 고마워요",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": false
         },
         {
             "writer": "{{writer_08}}",
@@ -42,7 +45,8 @@
                 "precision": "MINUTE"
             },
             "content": "할인율 좋군요",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": false
         },
         {
             "writer": "{{writer_09}}",
@@ -52,7 +56,8 @@
                 "precision": "MINUTE"
             },
             "content": "특가 소식 감사합니다",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": false
         },
         {
             "writer": "{{writer_10}}",
@@ -62,7 +67,8 @@
                 "precision": "MINUTE"
             },
             "content": "모션데스크 특가 정보 고맙습니다",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": false
         },
         {
             "writer": "{{writer_11}}",
@@ -72,7 +78,8 @@
                 "precision": "MINUTE"
             },
             "content": "핏쳐 모션데스크, 사이드테이블 할인정보 감사합니다",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": false
         },
         {
             "writer": "{{writer_12}}",
@@ -82,7 +89,8 @@
                 "precision": "MINUTE"
             },
             "content": "구매 정보 감사합니다",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": false
         },
         {
             "writer": "{{writer_13}}",
@@ -92,7 +100,8 @@
                 "precision": "MINUTE"
             },
             "content": "LIFE MOTION WEEK 특가 정보 감사합니다.",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": false
         },
         {
             "writer": "{{writer_14}}",
@@ -102,7 +111,8 @@
                 "precision": "MINUTE"
             },
             "content": "할인율 나쁘지 않네요",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": false
         },
         {
             "writer": "{{writer_15}}",
@@ -112,7 +122,8 @@
                 "precision": "MINUTE"
             },
             "content": "할인 가격이 나쁘지 않네요.",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": false
         }
     ]
 }

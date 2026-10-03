@@ -32,6 +32,10 @@
         "extras": {
             "writerId": "{{mb_id_04}}"
         },
+        "poll": null,
+        "specs": [],
+        "infoRows": [],
+        "secretCommentCount": 0,
         "comments": [
             {
                 "writer": "{{writer_05}}",
@@ -41,7 +45,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "영드군요",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             }
         ]
     }

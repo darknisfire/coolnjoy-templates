@@ -20,6 +20,11 @@
 | mart2_login_required.html | https://coolenjoy.net/bbs/mart2/1276355 (비로그인) | 200 | 본문 3KB 오류 페이지: `alert("글을 읽을 권한이 없습니다.\n\n회원이시라면 로그인 후 이용해 보십시오.")` + `login.php?wr_id=..&url=..` JS 이동, `#validation_check`. 원문 그대로(가공 없음) |
 | not_found.html | https://coolenjoy.net/bbs/38/1 | 200 | 본문 3KB 오류 페이지: `alert("글이 존재하지 않습니다.\n\n글이 삭제되었거나 이동된 경우입니다.")`. 원문 그대로 |
 | comment_view_daybook_p1.html | https://coolenjoy.net/nariya/bbs/comment_view.php?bo_table=daybook&wr_id=6734441&cob=old&page=1 | 200 | 댓글 페이지 조각(`ArticleRepository.comments`). 한 페이지 50개 중 앞 3개만 남김. `section#bo_vc`와 페이지 링크 포함 |
+| point_event.html | https://coolenjoy.net/bbs/point/3127120 | 200 | POINT(신청형 이벤트). 본문 앞 정보 표(divTable: 물품/포인트/중복참여/선정방식/진행일정/배송비/발송일 + 신청기록 링크)와 유의사항 li. 댓글 46개 중 앞 10개만 남김(헤더 댓글 수 46 유지) |
+| special_29.html | https://coolenjoy.net/bbs/29/332130 | 200 | 특가존(신청형 특가). point와 같은 정보 표인데 `포인트` 행 대신 `가격`/`진행수량` 행. 댓글 26 |
+| votes_poll.html | https://coolenjoy.net/bbs/votes/2347283 | 200 | 설문조사(마감됨). 투표 결과가 Google Charts 스크립트(`arrayToDataTable`, 총투표수)로만 내려옴. **이 픽스처만 해당 `<script>` 1개를 남겼다**(jsapi 로더 제외). 댓글 37개 중 앞 8개만 남김 |
+| review_comment_page2.html | https://coolenjoy.net/bbs/review/1421700 | 200 | 공식 리뷰. 댓글 64개/2페이지, 사이트가 마지막(2번째) 페이지 14개를 기본으로 보여줌 |
+| system_table.html | https://coolenjoy.net/bbs/system/1288076 | 200 | 시스템 감상. 본문 뒤 `div.bo_system` 안에 CPU/VGA 등 스펙 표(`td.bo_system_td`/`td2`). 파서가 `Article.specs`로 분해함(T13) |
 
 ## 로그인 상태 픽스처 가공(mart2_login.html)
 
@@ -40,3 +45,9 @@
 - 닉네임은 회원 링크·`title="닉 자기소개"`·같은 파일 안의 같은 문자열을 치환한다. 사이트명·브랜드로도 쓰이는 `쿨엔조이`, `darkFlash`는 다른 파일에서 수집된 경우 치환하지 않는다(`--keep`).
 - 공식 계정 ID `coolenjoy`는 사이트·게시판 경로와 구분되지 않아 그대로 두었다. 로그인 계정 표시 `TESTUSER`는 픽스처 가공 때 이미 치환된 값이라 유지한다.
 - 재현(원본을 `<orig>`에 두고 실행. 세 디렉터리를 서로 `--also`로 지정): `node core/tools/anonymize-fixtures.mjs --also <orig>/2026-10/list --also <orig>/2026-10/article <orig>/2023-05/list <out>/2023-05/list`. 검사는 `--check`를 같은 인자 앞에 붙이고 개수만 본다.
+
+## 2026-10-03 추가 수집(상세 유형 실측)
+
+- 인벤토리에서 상세 유형이 "추정"이던 게시판 29곳을 비로그인 GET으로 확인했다(익명게시판 50은 목록 접근 불가로 제외). UA `CoolnJoy-Android/2.0.0 (+dev)`, 요청 간 1.3초 이상, 총 60회(게시판 목록 27, 상세 31(투표 글 추가 2건 포함, 1건은 비밀글 302), `new.php` 2). 원본 응답은 저장소에 두지 않는다.
+- 가공은 위와 같다(`article#bo_v`만 남기고 script/noscript/`span.sv`/`aside#bo_vc_w` 제거). 예외: `votes_poll.html`은 결과 데이터가 든 `<script>` 1개를 남겼고, point_event/votes_poll은 댓글을 앞쪽만 남겼다(`article#c_*` 삭제).
+- 익명화: 위 "익명화" 절 명령과 같고 `--also`로 기존 list/article/2023-05 list를 함께 지정해 새 파일만 출력에서 가져왔다. `--check` 결과는 잔존 ID 0, 닉네임 0. 이 도구는 말줄임(`…`)된 `title` 닉네임의 원문 전체(본문 속 `@닉네임 답글`)를 찾지 못해 system_table.html의 해당 1건은 수동으로 `{{writer_09}}`로 치환했다.

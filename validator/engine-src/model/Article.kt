@@ -25,6 +25,10 @@ data class ArticleLink(
  * @property commentPage 이 페이지의 댓글 페이지(1부터)
  * @property commentPageCount 댓글 전체 페이지 수
  * @property extras writerId(mb_id) 등
+ * @property poll 설문(투표) 결과. 상세 페이지의 Google Charts 스크립트 데이터에서 값만 읽는다(스크립트는 실행하지 않음). 없거나 형식이 다르면 null
+ * @property specs 시스템 사양 표(`div.bo_system`)의 라벨/값. 없으면 빈 목록
+ * @property infoRows 본문 앞 정보 표(신청형 이벤트 divTable, 회원장터 거래 정보, 자료실 요약)의 라벨/값. 회원장터의 판매자 이름·연락처·IP 행은
+ *   결과와 [preContentHtml] 모두에서 제외한다(앱에 표시·저장하지 않음). 없으면 빈 목록
  */
 data class Article(
     val boardId: String,
@@ -48,4 +52,18 @@ data class Article(
     val commentPage: Int = 1,
     val commentPageCount: Int = 1,
     val extras: Map<String, String> = emptyMap(),
-)
+    val poll: Poll? = null,
+    val specs: List<LabeledValue> = emptyList(),
+    val infoRows: List<LabeledValue> = emptyList(),
+) {
+    /** 이 페이지에 실린 댓글 중 비밀 댓글 수. 게시글 전체 수는 `ArticleRepository.commentStats`. */
+    val secretCommentCount: Int get() = comments.count { it.secret }
+}
+
+/** 라벨/값 한 줄(정보 표, 사양 표). 둘 다 공백 정리된 텍스트이며 비어 있지 않다. */
+data class LabeledValue(val label: String, val value: String)
+
+/** 설문 결과. [totalVotes]는 사이트가 표시한 총투표수, 없으면 항목 득표 합. */
+data class Poll(val question: String?, val options: List<PollOption>, val totalVotes: Int)
+
+data class PollOption(val label: String, val votes: Int)

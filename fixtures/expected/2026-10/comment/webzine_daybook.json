@@ -12,7 +12,8 @@
                 "precision": "MINUTE"
             },
             "content": "비밀글입니다.",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": true
         },
         {
             "writer": "{{writer_11}}",
@@ -22,7 +23,8 @@
                 "precision": "MINUTE"
             },
             "content": "비밀글입니다.",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": true
         },
         {
             "writer": "{{writer_12}}",
@@ -32,7 +34,8 @@
                 "precision": "MINUTE"
             },
             "content": "비밀글입니다.",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": true
         }
     ]
 }

@@ -1,6 +1,6 @@
 {
-  "templateVersion": 2,
-  "minEngineVersion": 2,
+  "templateVersion": 3,
+  "minEngineVersion": 3,
   "site": {
     "baseUrl": "https://coolenjoy.net"
   },
@@ -1936,7 +1936,11 @@
           }
         ]
       }
-    }
+    },
+    "secret": [
+      "div.cmt_contents .na-secret",
+      "input[id^=secret_comment_][value=secret]"
+    ]
   },
   "article": {
     "root": "article#bo_v",
@@ -2136,7 +2140,78 @@
         "remove": [
           "#bo_v_img"
         ],
-        "cutFrom": "div.view-content"
+        "cutFrom": "div.view-content",
+        "rows": {
+          "sources": [
+            {
+              "selectAll": "div.divTableRow",
+              "label": {
+                "select": "div.divTableCell",
+                "op": [
+                  {
+                    "text": {}
+                  },
+                  {
+                    "regexReplace": {
+                      "pattern": "[\\s\\u00A0]*[:：][\\s\\u00A0]*$",
+                      "replacement": ""
+                    }
+                  }
+                ]
+              },
+              "value": {
+                "select": "div.divTableCell2",
+                "op": [
+                  {
+                    "text": {}
+                  },
+                  {
+                    "regexReplace": {
+                      "pattern": "^[\\s\\u00A0]*[:：][\\s\\u00A0]*",
+                      "replacement": ""
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "selectAll": "tr:not(:has(table))",
+              "label": {
+                "select": "td:nth-child(1)",
+                "op": [
+                  {
+                    "text": {}
+                  },
+                  {
+                    "regexReplace": {
+                      "pattern": "[\\s\\u00A0]*[:：][\\s\\u00A0]*$",
+                      "replacement": ""
+                    }
+                  }
+                ]
+              },
+              "value": {
+                "select": "td:nth-child(2)",
+                "op": [
+                  {
+                    "text": {}
+                  },
+                  {
+                    "regexReplace": {
+                      "pattern": "^[\\s\\u00A0]*[:：][\\s\\u00A0]*",
+                      "replacement": ""
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "excludeLabels": [
+            "이름",
+            "연락처",
+            "IP"
+          ]
+        }
       }
     },
     "attachments": {
@@ -2259,6 +2334,48 @@
         ]
       },
       "distinct": true
+    },
+    "specs": {
+      "sources": [
+        {
+          "selectAll": "div.bo_system table tr",
+          "label": {
+            "select": "td.bo_system_td",
+            "op": [
+              {
+                "text": {}
+              },
+              {
+                "regexReplace": {
+                  "pattern": "[\\s\\u00A0]*[:：][\\s\\u00A0]*$",
+                  "replacement": ""
+                }
+              }
+            ]
+          },
+          "value": {
+            "select": "td.bo_system_td2",
+            "op": [
+              {
+                "text": {}
+              },
+              {
+                "regexReplace": {
+                  "pattern": "^[\\s\\u00A0]*[:：][\\s\\u00A0]*",
+                  "replacement": ""
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "poll": {
+      "select": "script",
+      "call": "arrayToDataTable",
+      "labelPattern": "^(.*?)\\s*:\\s*\\(\\s*\\d+\\s*\\)\\s*표\\s*$",
+      "questionPattern": "title\\s*:\\s*['\"]([^'\"]*?)\\s*(?:총투표수\\s*:\\s*\\[\\s*[\\d,]+\\s*\\])?\\s*['\"]",
+      "totalPattern": "총투표수\\s*:\\s*\\[\\s*([\\d,]+)\\s*\\]"
     },
     "commentsEmpty": "#bo_vc_empty",
     "commentPaging": {

@@ -4,6 +4,7 @@ import bateaux.spt.coolnjoy.core.model.Article
 import bateaux.spt.coolnjoy.core.model.ArticleLink
 import bateaux.spt.coolnjoy.core.model.ArticleResult
 import bateaux.spt.coolnjoy.core.model.CommentItem
+import bateaux.spt.coolnjoy.core.model.LabeledValue
 import bateaux.spt.coolnjoy.core.model.PostedAt
 import bateaux.spt.coolnjoy.core.parse.DateNormalizer
 import bateaux.spt.coolnjoy.core.template.TemplateEngine
@@ -28,7 +29,7 @@ class ArticleValidationTest {
     private val zone = ZoneId.of("Asia/Seoul")
     private val json = Json { prettyPrint = true }
 
-    private enum class Kind { SUCCESS, LOGIN_REQUIRED, NOT_FOUND, UNRECOGNIZED }
+    private enum class Kind { SUCCESS, LOGIN_REQUIRED, NOT_FOUND, UNRECOGNIZED, SECRET_POST }
 
     /** 파일명 규칙으로 기대 종류를 정한다: `*_login_required` / `not_found*` / `comment_view*`(조각이라 상세가 아님). */
     private fun expectedKind(name: String): Kind = when {
@@ -42,6 +43,7 @@ class ArticleValidationTest {
         is ArticleResult.Success -> Kind.SUCCESS
         is ArticleResult.LoginRequired -> Kind.LOGIN_REQUIRED
         is ArticleResult.NotFound -> Kind.NOT_FOUND
+        is ArticleResult.SecretPost -> Kind.SECRET_POST
         is ArticleResult.AccessDenied -> error("AccessDenied is not expected in fixtures")
         is ArticleResult.Unrecognized -> Kind.UNRECOGNIZED
     }
@@ -126,7 +128,7 @@ class ArticleValidationTest {
                 if (a.commentCount > 0 && a.comments.isEmpty()) problems += "$label: commentCount=${a.commentCount} but no comments parsed"
             }
         }
-        for (k in Kind.entries) assertTrue(k in kinds, "no fixture produced $k: $kinds")
+        for (k in Kind.entries - Kind.SECRET_POST) assertTrue(k in kinds, "no fixture produced $k: $kinds")
         assertEquals(emptyList(), problems, problems.joinToString("\n"))
     }
 
@@ -146,6 +148,37 @@ class ArticleValidationTest {
         }
         assertTrue(nonEmpty >= 8, "expected most sources to contain comments but only $nonEmpty did")
         assertEquals(emptyList(), problems, problems.joinToString("\n"))
+    }
+
+    private fun parseArticle(dir: String, name: String): Article {
+        val src = articleSources().single { it.dir == dir && it.name == name }
+        val r = engine(src.dir).articleParser().parse(read(src.file), src.pageUrl)
+        return (r as ArticleResult.Success).article
+    }
+
+    @Test
+    fun v3ExtrasFromNewFixtures() {
+        val poll = checkNotNull(parseArticle("2026-10", "votes_poll").poll) { "poll missing" }
+        assertEquals(3, poll.options.size)
+        assertEquals(161, poll.totalVotes)
+        assertEquals(listOf(101, 35, 25), poll.options.map { it.votes })
+
+        assertEquals(10, parseArticle("2026-10", "system_table").specs.size)
+        assertEquals(7, parseArticle("2026-10", "point_event").infoRows.size)
+        assertEquals(7, parseArticle("2026-10", "special_29").infoRows.size)
+
+        val web = parseArticle("2026-10", "webzine_daybook")
+        assertEquals(3, web.secretCommentCount)
+        assertEquals(1, parseArticle("2026-10", "mart2_login").secretCommentCount)
+
+        val mart = parseArticle("2026-10", "mart2_login")
+        assertTrue(mart.infoRows.isNotEmpty(), "mart infoRows empty")
+        val banned = Regex("판매자|이름|연락처|휴대폰|IP")
+        assertTrue(mart.infoRows.none { banned.containsMatchIn(it.label) }, "seller row leaked: ${mart.infoRows}")
+
+        val page2 = parseArticle("2026-10", "review_comment_page2")
+        assertEquals(2, page2.commentPage)
+        assertEquals(2, page2.commentPageCount)
     }
 
     @Test
@@ -209,6 +242,7 @@ class ArticleValidationTest {
         "postedAt" to postedJson(c.postedAt),
         "content" to JsonPrimitive(c.content),
         "recommendCount" to num(c.recommendCount),
+        "secret" to JsonPrimitive(c.secret),
     )
 
     private fun articleBody(a: Article) = obj(
@@ -232,8 +266,14 @@ class ArticleValidationTest {
         "commentPage" to JsonPrimitive(a.commentPage),
         "commentPageCount" to JsonPrimitive(a.commentPageCount),
         "extras" to JsonObject(a.extras.toSortedMap().mapValues { JsonPrimitive(it.value) }),
+        "poll" to (a.poll?.let { p -> obj("question" to str(p.question), "totalVotes" to JsonPrimitive(p.totalVotes), "options" to JsonArray(p.options.map { obj("label" to JsonPrimitive(it.label), "votes" to JsonPrimitive(it.votes)) })) } ?: JsonNull),
+        "specs" to JsonArray(a.specs.map(::labeledJson)),
+        "infoRows" to JsonArray(a.infoRows.map(::labeledJson)),
+        "secretCommentCount" to JsonPrimitive(a.secretCommentCount),
         "comments" to JsonArray(a.comments.map(::commentJson)),
     )
+
+    private fun labeledJson(l: LabeledValue) = obj("label" to JsonPrimitive(l.label), "value" to JsonPrimitive(l.value))
 
     private fun articleJson(s: Src, r: ArticleResult): JsonObject {
         val head = listOf(
@@ -247,6 +287,7 @@ class ArticleValidationTest {
             is ArticleResult.LoginRequired -> listOf("message" to str(r.message))
             is ArticleResult.NotFound -> listOf("message" to str(r.message))
             is ArticleResult.AccessDenied -> listOf("message" to str(r.message))
+            is ArticleResult.SecretPost -> listOf("passwordUrl" to str(r.passwordUrl))
             is ArticleResult.Unrecognized -> listOf("reason" to str(r.reason))
         }
         return JsonObject(linkedMapOf(*(head + tail).toTypedArray()))

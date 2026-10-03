@@ -12,7 +12,8 @@
                 "precision": "MINUTE"
             },
             "content": "한글날의 의미도 되새기면서 재미있게 참여할 수 있는 뜻깊은 이벤트네요.",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": false
         },
         {
             "writer": "{{writer_06}}",
@@ -22,7 +23,8 @@
                 "precision": "MINUTE"
             },
             "content": "한글날 기념 우리말 대잔치 이벤트 정보 감사합니다.",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": false
         },
         {
             "writer": "{{writer_07}}",
@@ -32,7 +34,8 @@
                 "precision": "MINUTE"
             },
             "content": "이벤트 좋네요",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": false
         },
         {
             "writer": "{{writer_08}}",
@@ -42,7 +45,8 @@
                 "precision": "MINUTE"
             },
             "content": "이벤트 정보 감사합니다",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": false
         },
         {
             "writer": "{{writer_09}}",
@@ -52,7 +56,8 @@
                 "precision": "MINUTE"
             },
             "content": "오 참여해야겠네요",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": false
         },
         {
             "writer": "{{writer_10}}",
@@ -62,7 +67,8 @@
                 "precision": "MINUTE"
             },
             "content": "신기한 이벤트네요",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": false
         },
         {
             "writer": "{{writer_11}}",
@@ -72,7 +78,8 @@
                 "precision": "MINUTE"
             },
             "content": "의미 있는 이벤트라 인기 좋겟네요.",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": false
         }
     ]
 }

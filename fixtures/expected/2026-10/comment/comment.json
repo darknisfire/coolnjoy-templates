@@ -12,7 +12,8 @@
                 "precision": "MINUTE"
             },
             "content": "오 한번써보고싶네요",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": false
         },
         {
             "writer": "{{writer_03}}",
@@ -22,7 +23,8 @@
                 "precision": "MINUTE"
             },
             "content": "이질감이 없네요",
-            "recommendCount": 0
+            "recommendCount": 0,
+            "secret": false
         }
     ]
 }

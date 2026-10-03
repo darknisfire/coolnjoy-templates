@@ -1,0 +1,96 @@
+{
+    "fixture": "2026-10/article/votes_poll.html",
+    "pageUrl": "https://coolenjoy.net/bbs/votes/2347283",
+    "itemCount": 8,
+    "warnings": [],
+    "items": [
+        {
+            "writer": "{{writer_06}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_06}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-28T17:19",
+                "precision": "MINUTE"
+            },
+            "content": "먼지만 간단하게 털어내고 있습니다! 청소기가 없어서 불던 빨아들이던 할 수가 없어서...ㅎㅎ",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_07}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_07}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-28T17:46",
+                "precision": "MINUTE"
+            },
+            "content": "송풍기로 밀어버리는게 속 편하죠",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_08}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_08}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-28T17:58",
+                "precision": "MINUTE"
+            },
+            "content": "흡입식이 최고 붓으로 살살 하면서",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_09}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-28T18:18",
+                "precision": "MINUTE"
+            },
+            "content": "에어건으로 싹",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_10}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_10}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-28T18:23",
+                "precision": "MINUTE"
+            },
+            "content": "에어건으로 강하게....",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_11}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/SWFUpload/resizedemo/saved/cfc17ceed3bc75c358c93018fb0a9f631.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-28T18:35",
+                "precision": "MINUTE"
+            },
+            "content": "흡입식을 좀 더 선호합니다.",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_12}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_13}}.jpg",
+            "postedAt": {
+                "dateTime": "2026-09-28T18:52",
+                "precision": "MINUTE"
+            },
+            "content": "부드러운 붓으로 가끔 털어내는 정도지만 할때는 블로워 방식을 선호합니다",
+            "recommendCount": 0,
+            "secret": false
+        },
+        {
+            "writer": "{{writer_05}}",
+            "profileImageUrl": "https://photo.coolenjoy.co.kr/image/member_noimage.gif",
+            "postedAt": {
+                "dateTime": "2026-09-28T19:00",
+                "precision": "MINUTE"
+            },
+            "content": "송풍기로 불고 팬은 물티슈로 청소하네요.",
+            "recommendCount": 0,
+            "secret": false
+        }
+    ]
+}

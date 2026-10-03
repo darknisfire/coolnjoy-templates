@@ -38,6 +38,10 @@
         "extras": {
             "writerId": "{{mb_id_04}}"
         },
+        "poll": null,
+        "specs": [],
+        "infoRows": [],
+        "secretCommentCount": 0,
         "comments": [
             {
                 "writer": "{{writer_05}}",
@@ -47,7 +51,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "LS57CG950 가격대가 있지만 스펙 좋네요. 한가위 빅세일 정보 감사합니다.",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_06}}",
@@ -57,7 +62,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "LS57CG950 가격대가 나가지만 갖고 싶은 55인치 게이밍 모니터군요 빅세일 정보 고맙습니다",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_07}}",
@@ -67,7 +73,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "삼성 모니터 지마켓 한가위 빅세일 정보 고마워요",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_08}}",
@@ -77,7 +84,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "이벤트 좋네요",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_09}}",
@@ -87,7 +95,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "삼성 모니터 할인 정보 감사합니다.",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_10}}",
@@ -97,7 +106,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "삼성 모니터 스페셜 특가 정보 감사합니다.",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_11}}",
@@ -107,7 +117,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "삼성 모니터 한가위 빅세일 정보 감사합니다.",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_12}}",
@@ -117,7 +128,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "57인치 써보고 싶네요",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_13}}",
@@ -127,7 +139,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "모니터 할인정보 감사합니다",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_14}}",
@@ -137,7 +150,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "빅세일 정보 감사합니다.",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_15}}",
@@ -147,7 +161,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "할인 정보 감사해요",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_16}}",
@@ -157,7 +172,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "모니터 특가 정보감사합니다.",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_17}}",
@@ -167,7 +183,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "할인 환영합니다",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_18}}",
@@ -177,7 +194,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "빅세일 정보 잘 봤습니다.",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_19}}",
@@ -187,7 +205,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "빅세일 정보 고맙습니다",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_20}}",
@@ -197,7 +216,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "한가위 빅세일 카드 할인 괜찮군요.",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_21}}",
@@ -207,7 +227,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "특가 정보 감사합니다",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_22}}",
@@ -217,7 +238,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "한가위 모니터 할인 정보 감사해요.",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_23}}",
@@ -227,7 +249,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "모니터 특가 정보 잘 봤습니다",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_24}}",
@@ -237,7 +260,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "모니터 할인 정보 감사합니다",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_25}}",
@@ -247,7 +271,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "모니터 할인 정보 고맙습니다.",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_26}}",
@@ -257,7 +282,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "9월 22일까지면 추석 전에 바꾸기 딱이겠습니다",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_27}}",
@@ -267,7 +293,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "추석 할인 괜찬은",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_28}}",
@@ -277,7 +304,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "정보 감사합니다!",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_29}}",
@@ -287,7 +315,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "할인 정보 감사합니다!",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             },
             {
                 "writer": "{{writer_30}}",
@@ -297,7 +326,8 @@
                     "precision": "MINUTE"
                 },
                 "content": "모니터 특가 감사합니다 !!",
-                "recommendCount": 0
+                "recommendCount": 0,
+                "secret": false
             }
         ]
     }

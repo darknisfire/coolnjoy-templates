@@ -5,12 +5,16 @@ import bateaux.spt.coolnjoy.core.model.Article
 import bateaux.spt.coolnjoy.core.model.ArticleLink
 import bateaux.spt.coolnjoy.core.model.ArticleResult
 import bateaux.spt.coolnjoy.core.model.CommentItem
+import bateaux.spt.coolnjoy.core.model.LabeledValue
 import bateaux.spt.coolnjoy.core.model.PostedAt
 import bateaux.spt.coolnjoy.core.parse.ArticleParser
 import bateaux.spt.coolnjoy.core.parse.CommentParser
 import bateaux.spt.coolnjoy.core.parse.ContentSanitizer
 import bateaux.spt.coolnjoy.core.parse.ParseResult
+import bateaux.spt.coolnjoy.core.parse.PollExtractor
+import bateaux.spt.coolnjoy.core.parse.PollParams
 import bateaux.spt.coolnjoy.core.parse.SanitizedContent
+import bateaux.spt.coolnjoy.core.parse.hasVisibleContent
 import bateaux.spt.coolnjoy.core.parse.parseRowsIn
 import bateaux.spt.coolnjoy.core.site.ArticleRef
 import bateaux.spt.coolnjoy.core.site.ArticleUrls
@@ -37,6 +41,7 @@ internal class TemplateCommentParser(
                 postedAt = ev.eval(row, spec, "postedAt") as PostedAt?,
                 content = ev.eval(contents, spec.content) as String? ?: "",
                 recommendCount = ev.eval(row, spec, "recommendCount") as Int?,
+                secret = spec.secret.any { row.selectFirst(it) != null },
             )
         }
 }
@@ -114,7 +119,9 @@ internal class TemplateArticleParser(
                 SanitizedContent("", emptyList())
             }
         }
-        val pre = content.pre?.takeIf { mainEl != null }?.let { p -> preContent(root, p, pageUrl) }
+        var infoRows: List<LabeledValue> = emptyList()
+        val pre = content.pre?.takeIf { mainEl != null }?.let { p -> preContent(root, p, pageUrl) { infoRows = it } }
+        if (pre == null) infoRows = emptyList()
 
         val embeds = spec.embedUrls?.let { ev.evalList(root, it) }?.filterIsInstance<String>().orEmpty()
 
@@ -122,6 +129,9 @@ internal class TemplateArticleParser(
         warnings += parsedComments.warnings.filterNot { w ->
             w.contains("no rows matched") && spec.commentsEmpty != null && root.selectFirst(spec.commentsEmpty) != null
         }
+
+        val poll = spec.poll?.let { PollExtractor.extract(doc, PollParams(it.select, it.call, it.labelPattern, it.questionPattern, it.totalPattern)) }
+        poll?.warning?.let { warnings += it }
 
         val (page, pageCount) = commentPaging(root)
         val article = Article(
@@ -146,6 +156,9 @@ internal class TemplateArticleParser(
             commentPage = page,
             commentPageCount = pageCount,
             extras = extras,
+            poll = poll?.poll,
+            specs = spec.specs?.let { ev.evalLabeledRows(root, it, removeExcluded = false) }.orEmpty(),
+            infoRows = infoRows,
         )
         return ArticleResult.Success(article, warnings)
     }
@@ -156,17 +169,16 @@ internal class TemplateArticleParser(
         if (remove.isEmpty()) ContentSanitizer.sanitize(source, pageUrl)
         else ContentSanitizer.sanitize(source, pageUrl) { body -> remove.forEach { body.select(it).remove() } }
 
-    private fun preContent(root: Element, p: PreContentSpec, pageUrl: String): SanitizedContent? {
+    private fun preContent(root: Element, p: PreContentSpec, pageUrl: String, onRows: (List<LabeledValue>) -> Unit): SanitizedContent? {
         val container = root.selectFirst(p.select) ?: return null
         val sanitized = ContentSanitizer.sanitize(container, pageUrl) { body ->
             p.remove.forEach { body.select(it).remove() }
             val cut = p.cutFrom?.let { body.selectFirst(it) }
             cut?.nextElementSiblings()?.remove()
             cut?.remove()
+            p.rows?.let { onRows(ev.evalLabeledRows(body, it, removeExcluded = true)) }
         }
-        return sanitized.takeIf {
-            it.html.isNotBlank() && (Jsoup.parseBodyFragment(it.html).text().isNotBlank() || it.images.isNotEmpty())
-        }
+        return sanitized.takeIf { it.hasVisibleContent() }
     }
 
     private fun commentPaging(root: Element): Pair<Int, Int> {
@@ -206,4 +218,24 @@ internal fun Evaluator.evalLinks(ctx: Element, spec: LinkListSpec): List<Article
         out += ArticleLink(eval(el, spec.name) as String? ?: "", url)
     }
     return out.distinctBy { it.url }
+}
+
+/**
+ * [LabeledRowsSpec]: 소스 순서대로 행마다 label(null이면 건너뜀) → 제외 라벨(일치하면 [removeExcluded]일 때 행을 DOM에서 지우고 건너뜀) →
+ * value(null이면 건너뜀)를 평가한다.
+ */
+internal fun Evaluator.evalLabeledRows(ctx: Element, spec: LabeledRowsSpec, removeExcluded: Boolean): List<LabeledValue> {
+    val out = ArrayList<LabeledValue>()
+    for (source in spec.sources) {
+        for (row in ctx.select(source.selectAll)) {
+            val label = eval(row, source.label) as String? ?: continue
+            if (label in spec.excludeLabels) {
+                if (removeExcluded) row.remove()
+                continue
+            }
+            val value = eval(row, source.value) as String? ?: continue
+            out += LabeledValue(label, value)
+        }
+    }
+    return out
 }

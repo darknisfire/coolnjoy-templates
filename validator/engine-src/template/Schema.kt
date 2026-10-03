@@ -93,6 +93,7 @@ val LIST_FIELD_KEYS: Set<String> get() = LIST_FIELD_TYPES.keys
  * @property contentSelect 행 안의 본문 요소. 없으면 그 행은 건너뛴다(필수 필드 누락)
  * @property content [contentSelect] 요소를 컨텍스트로 평가하는 본문 규칙(STRING). null/빈 값이면 빈 문자열 — 본문이 빈 댓글도 유지한다
  * @property fields 키는 [COMMENT_FIELD_TYPES]. 행이 컨텍스트
+ * @property secret 비밀 댓글 판정 셀렉터들(행 안에서 select, 엔진 버전 3). 하나라도 일치하면 `CommentItem.secret`. 없으면 항상 false
  */
 @Serializable
 data class CommentTemplate(
@@ -100,6 +101,7 @@ data class CommentTemplate(
     val contentSelect: String,
     val content: FieldSpec,
     val fields: Map<String, FieldSpec> = emptyMap(),
+    val secret: List<String> = emptyList(),
 )
 
 /** `comment.fields`에 쓸 수 있는 키와 값 타입. */
@@ -140,6 +142,8 @@ internal val ARTICLE_FIELD_TYPES: Map<String, VType> = mapOf(
  * @property embedUrls 제거된 iframe 등의 원래 src 목록(선택)
  * @property commentsEmpty 이 셀렉터가 root 안에 있으면 "댓글 행 없음" warning을 내지 않는다(선택)
  * @property commentPaging 댓글 페이지 정보(선택). 없으면 1/1
+ * @property poll 설문 결과 추출 규칙(선택, 엔진 버전 3). [PollSpec] 참고. 문서 전체가 대상
+ * @property specs 시스템 사양 표 규칙(선택, 엔진 버전 3). root가 컨텍스트
  * @property errors root가 없을 때의 응답 분류
  */
 @Serializable
@@ -157,6 +161,8 @@ data class ArticleTemplate(
     val embedUrls: ListSpec? = null,
     val commentsEmpty: String? = null,
     val commentPaging: PagingSpec? = null,
+    val poll: PollSpec? = null,
+    val specs: LabeledRowsSpec? = null,
     val errors: ErrorRules,
 )
 
@@ -188,13 +194,17 @@ data class SanitizeSource(
 
 /**
  * 본문 앞 영역. main이 있을 때만 평가한다. [select] 요소의 복사본에서 [remove]를 지우고, [cutFrom] 요소(첫 일치)와
- * 그 뒤 형제 요소를 지운 뒤 정화한다. 결과가 텍스트도 이미지도 없으면 null.
+ * 그 뒤 형제 요소를 지운 뒤 정화한다. 결과가 텍스트도 이미지도 없으면(BOM U+FEFF·ZWSP만 남은 경우 포함) null.
+ *
+ * @property rows 라벨/값 분해(선택, 엔진 버전 3). 지우기·자르기를 마친 복사본에서 평가하며 `excludeLabels` 행은 HTML에서도 지운다.
+ *   결과는 `Article.infoRows`이고 pre가 null이면 빈 목록
  */
 @Serializable
 data class PreContentSpec(
     val select: String,
     val remove: List<String> = emptyList(),
     val cutFrom: String? = null,
+    val rows: LabeledRowsSpec? = null,
 )
 
 /**
@@ -274,4 +284,43 @@ data class ErrorCondition(
     val redirectContains: String? = null,
     /** true면 alert 문구가 있다. */
     val hasAlert: Boolean? = null,
+)
+
+// ---- 엔진 버전 3: 라벨/값 표, 설문 데이터 추출 -------------------------------------------------------
+
+/**
+ * 라벨/값 표 분해 규칙(`Article.specs`, `Article.infoRows`). [sources]를 순서대로 평가한다.
+ * 행([LabeledRowSource.selectAll])마다 label 필드(null이면 그 행 건너뜀) → [excludeLabels]와 정확히 일치하면 제외
+ * (`pre.rows`에서는 그 행을 HTML에서도 지움) → value 필드(null이면 건너뜀) 순이다.
+ */
+@Serializable
+data class LabeledRowsSpec(
+    val sources: List<LabeledRowSource>,
+    val excludeLabels: List<String> = emptyList(),
+)
+
+/** 행 요소마다 [label]/[value](STRING, 행이 컨텍스트)를 평가한다. */
+@Serializable
+data class LabeledRowSource(
+    val selectAll: String,
+    val label: FieldSpec,
+    val value: FieldSpec,
+)
+
+/**
+ * 설문 결과 **데이터 추출 전용** 규칙. 스크립트를 실행하지 않고, [select]로 고른 `<script>` 중 [call]을 포함하는 첫 것의 텍스트에서
+ * `call([[...],[...]])` 배열 리터럴(문자열/숫자/불리언/null만)을 작은 파서로 읽는다. 첫 셀이 문자열, 둘째 셀이 숫자인 행이 항목이다.
+ *
+ * @property call 데이터 표를 만드는 호출 이름(`arrayToDataTable`)
+ * @property labelPattern 항목 셀에서 라벨을 꺼내는 정규식(그룹 1, 불일치하면 셀 전체)
+ * @property questionPattern 스크립트 텍스트에서 질문을 꺼내는 정규식(그룹 1)
+ * @property totalPattern 스크립트 텍스트에서 총투표수를 꺼내는 정규식(그룹 1, 없으면 항목 득표 합)
+ */
+@Serializable
+data class PollSpec(
+    val select: String = "script",
+    val call: String,
+    val labelPattern: String,
+    val questionPattern: String,
+    val totalPattern: String,
 )
