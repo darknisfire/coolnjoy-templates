@@ -64,7 +64,9 @@
                 },
                 "content": "먼지만 간단하게 털어내고 있습니다! 청소기가 없어서 불던 빨아들이던 할 수가 없어서...ㅎㅎ",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 2347293,
+                "images": []
             },
             {
                 "writer": "{{writer_07}}",
@@ -75,7 +77,9 @@
                 },
                 "content": "송풍기로 밀어버리는게 속 편하죠",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 2347296,
+                "images": []
             },
             {
                 "writer": "{{writer_08}}",
@@ -86,7 +90,9 @@
                 },
                 "content": "흡입식이 최고 붓으로 살살 하면서",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 2347298,
+                "images": []
             },
             {
                 "writer": "{{writer_09}}",
@@ -97,7 +103,9 @@
                 },
                 "content": "에어건으로 싹",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 2347301,
+                "images": []
             },
             {
                 "writer": "{{writer_10}}",
@@ -108,7 +116,9 @@
                 },
                 "content": "에어건으로 강하게....",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 2347303,
+                "images": []
             },
             {
                 "writer": "{{writer_11}}",
@@ -119,7 +129,9 @@
                 },
                 "content": "흡입식을 좀 더 선호합니다.",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 2347305,
+                "images": []
             },
             {
                 "writer": "{{writer_12}}",
@@ -130,7 +142,9 @@
                 },
                 "content": "부드러운 붓으로 가끔 털어내는 정도지만 할때는 블로워 방식을 선호합니다",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 2347308,
+                "images": []
             },
             {
                 "writer": "{{writer_05}}",
@@ -141,7 +155,9 @@
                 },
                 "content": "송풍기로 불고 팬은 물티슈로 청소하네요.",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 2347310,
+                "images": []
             }
         ]
     }

@@ -22,6 +22,8 @@
 | comment_view_daybook_p1.html | https://coolenjoy.net/nariya/bbs/comment_view.php?bo_table=daybook&wr_id=6734441&cob=old&page=1 | 200 | 댓글 페이지 조각(`ArticleRepository.comments`). 한 페이지 50개 중 앞 3개만 남김. `section#bo_vc`와 페이지 링크 포함 |
 | point_event.html | https://coolenjoy.net/bbs/point/3127120 | 200 | POINT(신청형 이벤트). 본문 앞 정보 표(divTable: 물품/포인트/중복참여/선정방식/진행일정/배송비/발송일 + 신청기록 링크)와 유의사항 li. 댓글 46개 중 앞 10개만 남김(헤더 댓글 수 46 유지) |
 | special_29.html | https://coolenjoy.net/bbs/29/332130 | 200 | 특가존(신청형 특가). point와 같은 정보 표인데 `포인트` 행 대신 `가격`/`진행수량` 행. 댓글 26 |
+| daybook_image_comments.html | https://coolenjoy.net/bbs/daybook/6734855 | 200 | 2026-10-03 22:0x KST 수집(T18fix). 이벤트(daybook) 인증샷 댓글: 이미지만 있는 댓글(`div.cmt_contents > img.img-fluid`), 이미지+텍스트, 비밀 댓글(`na-secret`+`secret_comment_N`) 3종만 남김(댓글 136개 중). 본문 텍스트가 없어 `contents.text()`가 비는 원인 실측 |
+| point_notice.html | https://coolenjoy.net/bbs/point/3127121 | 200 | 2026-10-03 22:0x KST 수집(T18fix). POINT 게시판 공지 글("COOLENJOY POINT RUSH"): `divTable` 정보 표가 없고 본문(`div.view-content`) 안에 큰 `<table>` 하나. 신청 정보 카드(infoRows) 없음이 정상. 댓글 앞 3개만 남김 |
 | votes_poll.html | https://coolenjoy.net/bbs/votes/2347283 | 200 | 설문조사(마감됨). 투표 결과가 Google Charts 스크립트(`arrayToDataTable`, 총투표수)로만 내려옴. **이 픽스처만 해당 `<script>` 1개를 남겼다**(jsapi 로더 제외). 댓글 37개 중 앞 8개만 남김 |
 | review_comment_page2.html | https://coolenjoy.net/bbs/review/1421700 | 200 | 공식 리뷰. 댓글 64개/2페이지, 사이트가 마지막(2번째) 페이지 14개를 기본으로 보여줌 |
 | system_table.html | https://coolenjoy.net/bbs/system/1288076 | 200 | 시스템 감상. 본문 뒤 `div.bo_system` 안에 CPU/VGA 등 스펙 표(`td.bo_system_td`/`td2`). 현재 파서는 이 표를 가져오지 않음 |

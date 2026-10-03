@@ -13,7 +13,9 @@
             },
             "content": "오 한번써보고싶네요",
             "recommendCount": 0,
-            "secret": false
+            "secret": false,
+            "id": 7067658,
+            "images": []
         },
         {
             "writer": "{{writer_03}}",
@@ -24,7 +26,9 @@
             },
             "content": "이질감이 없네요",
             "recommendCount": 0,
-            "secret": false
+            "secret": false,
+            "id": 7067712,
+            "images": []
         }
     ]
 }

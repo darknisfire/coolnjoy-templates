@@ -1,6 +1,6 @@
 {
-  "templateVersion": 4,
-  "minEngineVersion": 4,
+  "templateVersion": 5,
+  "minEngineVersion": 5,
   "site": {
     "baseUrl": "https://coolenjoy.net"
   },
@@ -1940,7 +1940,18 @@
     "secret": [
       "div.cmt_contents .na-secret",
       "input[id^=secret_comment_][value=secret]"
-    ]
+    ],
+    "images": {
+      "selectAll": "img[src]",
+      "item": {
+        "op": [
+          {
+            "absUrl": "src"
+          }
+        ]
+      },
+      "distinct": true
+    }
   },
   "article": {
     "root": "article#bo_v",

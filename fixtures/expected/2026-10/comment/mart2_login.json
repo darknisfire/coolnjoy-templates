@@ -13,7 +13,9 @@
             },
             "content": "비밀글입니다.",
             "recommendCount": 0,
-            "secret": true
+            "secret": true,
+            "id": 1282867,
+            "images": []
         }
     ]
 }

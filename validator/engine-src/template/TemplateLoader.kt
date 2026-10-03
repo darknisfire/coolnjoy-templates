@@ -28,6 +28,9 @@ object TemplateLoader {
     /** `search` 섹션을 쓰는 템플릿이 요구하는 최소 엔진 버전(엔진 3은 알 수 없는 최상위 키를 거부한다). */
     const val MIN_ENGINE_FOR_SEARCH = 4
 
+    /** `comment.images`를 쓰는 템플릿이 요구하는 최소 엔진 버전(엔진 4는 알 수 없는 키를 거부한다). */
+    const val MIN_ENGINE_FOR_COMMENT_IMAGES = 5
+
     private val json = Json {
         ignoreUnknownKeys = false
         isLenient = false
@@ -107,6 +110,9 @@ object TemplateLoader {
         if (t.search != null && t.minEngineVersion < MIN_ENGINE_FOR_SEARCH) {
             fail("minEngineVersion", "'search' section requires minEngineVersion >= $MIN_ENGINE_FOR_SEARCH (older engines reject unknown top-level keys)")
         }
+        if (t.comment?.images != null && t.minEngineVersion < MIN_ENGINE_FOR_COMMENT_IMAGES) {
+            fail("minEngineVersion", "'comment.images' requires minEngineVersion >= $MIN_ENGINE_FOR_COMMENT_IMAGES (older engines reject unknown keys)")
+        }
         t.comment?.let { validateComment("comment", it) }
         t.article?.let {
             if (t.comment == null) fail("article", "requires a 'comment' section (article comments are parsed with it)")
@@ -145,6 +151,7 @@ object TemplateLoader {
         validateField("$path.content", c.content, VType.STRING, 0)
         validateFieldMap("$path.fields", c.fields, COMMENT_FIELD_TYPES)
         validateSelectors("$path.secret", c.secret)
+        c.images?.let { validateList("$path.images", it, VType.STRING) }
     }
 
     private fun validateArticle(path: String, a: ArticleTemplate) {

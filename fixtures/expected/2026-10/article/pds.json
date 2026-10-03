@@ -59,7 +59,9 @@
                 },
                 "content": "인텔 드라이버 고마워요",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 203490,
+                "images": []
             },
             {
                 "writer": "{{writer_06}}",
@@ -70,7 +72,9 @@
                 },
                 "content": "드라이버 정보 감사합니다",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 203497,
+                "images": []
             },
             {
                 "writer": "{{writer_07}}",
@@ -81,7 +85,9 @@
                 },
                 "content": "자료 감사합니다",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 203498,
+                "images": []
             },
             {
                 "writer": "{{writer_08}}",
@@ -92,7 +98,9 @@
                 },
                 "content": "인텔이 드라이버 잘만드는데.. 오류도없고",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 203499,
+                "images": []
             },
             {
                 "writer": "{{writer_09}}",
@@ -103,7 +111,9 @@
                 },
                 "content": "자료 감사합니다",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 203504,
+                "images": []
             },
             {
                 "writer": "{{writer_10}}",
@@ -114,7 +124,9 @@
                 },
                 "content": "자료 감사합니다",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 203507,
+                "images": []
             },
             {
                 "writer": "{{writer_11}}",
@@ -125,7 +137,9 @@
                 },
                 "content": "자료 감사합니다",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 203533,
+                "images": []
             },
             {
                 "writer": "{{writer_12}}",
@@ -136,7 +150,9 @@
                 },
                 "content": "자료 감사합니다",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 203537,
+                "images": []
             }
         ]
     }

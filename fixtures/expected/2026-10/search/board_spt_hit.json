@@ -1,0 +1,11 @@
+{
+    "fixture": "2026-10/search/board_spt_hit.html",
+    "pageUrl": "https://coolenjoy.net/bbs/search.php?sfl=wr_subject%7C%7Cwr_content&sop=and&stx=x",
+    "summary": {
+        "total": 1,
+        "boardCount": null,
+        "pageCount": null,
+        "hasNext": true,
+        "empty": false
+    }
+}

@@ -13,7 +13,9 @@
             },
             "content": "ddr3까진 가지고 있는데 2는 오랜만에 보는군요",
             "recommendCount": 0,
-            "secret": false
+            "secret": false,
+            "id": 19026,
+            "images": []
         },
         {
             "writer": "{{writer_03}}",
@@ -24,7 +26,9 @@
             },
             "content": "2007년쯤 DDR2-667 구매했던 기억이 나네요. 그 시절엔 시금치 메모리는 무조건 삼성만 찾았던...",
             "recommendCount": 0,
-            "secret": false
+            "secret": false,
+            "id": 19027,
+            "images": []
         },
         {
             "writer": "{{writer_06}}",
@@ -35,7 +39,9 @@
             },
             "content": "ㅎㅎ 옆사진에 pc2100u 있습니다 ddr1 입죠 2는 아직 명함내밀긴 좀 이르긴 하죠 ㅎㅎㅎㅎㅎㅎ 자그마치 메이드인 이태리~",
             "recommendCount": 0,
-            "secret": false
+            "secret": false,
+            "id": 19028,
+            "images": []
         },
         {
             "writer": "{{writer_08}}",
@@ -46,7 +52,9 @@
             },
             "content": "하닉이 ddr2 때 품질도 ddr5만큼 좋았는데 주변 여건 때문에 패권 못 잡았죠.",
             "recommendCount": 0,
-            "secret": false
+            "secret": false,
+            "id": 19030,
+            "images": []
         },
         {
             "writer": "{{writer_09}}",
@@ -57,7 +65,9 @@
             },
             "content": "DDR2 램 저도 가지고 있는",
             "recommendCount": 0,
-            "secret": false
+            "secret": false,
+            "id": 19031,
+            "images": []
         },
         {
             "writer": "{{writer_10}}",
@@ -68,7 +78,9 @@
             },
             "content": "와우!",
             "recommendCount": 0,
-            "secret": false
+            "secret": false,
+            "id": 19050,
+            "images": []
         }
     ]
 }

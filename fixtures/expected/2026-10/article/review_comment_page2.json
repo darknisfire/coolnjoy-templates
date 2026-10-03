@@ -47,7 +47,9 @@
                 },
                 "content": "t1이 브랜드 파워가 있나보네요 3호점까지 생길걸 보면..",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 1421909,
+                "images": []
             },
             {
                 "writer": "{{writer_07}}",
@@ -58,7 +60,9 @@
                 },
                 "content": "집근처에 젠지 피시방이 있는데 t1도 가보고싶네요",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 1421915,
+                "images": []
             },
             {
                 "writer": "{{writer_08}}",
@@ -69,7 +73,9 @@
                 },
                 "content": "오우 한번 가보고싶네요 BASE CAMP 엄청고급스럽네",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 1421917,
+                "images": []
             },
             {
                 "writer": "{{writer_09}}",
@@ -80,7 +86,9 @@
                 },
                 "content": "T1팬으로 꼭~가봐야겠네요.",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 1421921,
+                "images": []
             },
             {
                 "writer": "{{writer_10}}",
@@ -91,7 +99,9 @@
                 },
                 "content": "다양한 브랜드의 키보드와 마우스 등 제품 구경도 할 수 있고 T1의 굿즈도 판매하며 먹거리까지 완벽하게 준비된 공간이라 너무 좋아보이네요",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 1421922,
+                "images": []
             },
             {
                 "writer": "{{writer_11}}",
@@ -102,7 +112,9 @@
                 },
                 "content": "볼거리 다양한 행사장 방문기 잘 봤습니다 (´▽`ʃ♡ƪ)",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 1421927,
+                "images": []
             },
             {
                 "writer": "{{writer_12}}",
@@ -113,7 +125,9 @@
                 },
                 "content": "와 3호점까지 오픈 했군요 딱 T1인걸 알 수 있게 잘 꾸며져있네요",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 1421928,
+                "images": []
             },
             {
                 "writer": "{{writer_13}}",
@@ -124,7 +138,9 @@
                 },
                 "content": "3호점까지 늘어난걸 보면, T1의 인기가 확실히 상당하긴 하네요. 팬분들은 좋아하겠어요.",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 1421929,
+                "images": []
             },
             {
                 "writer": "{{writer_14}}",
@@ -135,7 +151,9 @@
                 },
                 "content": "저기에 저런규모라니 대단하네유~ 볼거리도 있고 먹거리도 있고 놀거리도 있고 매력적인 공간이네유~",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 1421932,
+                "images": []
             },
             {
                 "writer": "{{writer_15}}",
@@ -146,7 +164,9 @@
                 },
                 "content": "스테이지 구성이 다양해 T1 팬이 아니라도 가서 즐길 거리들이 많아 보입니다",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 1421934,
+                "images": []
             },
             {
                 "writer": "{{writer_16}}",
@@ -157,7 +177,9 @@
                 },
                 "content": "지방 소도시 PC방 같은데랑은 정말 차원이 다르네요. 다양한 게이밍 기어를 직접 살펴보고 체험할 수 있는것도 정말 좋아보입니다ㅠ",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 1421936,
+                "images": []
             },
             {
                 "writer": "{{writer_17}}",
@@ -168,7 +190,9 @@
                 },
                 "content": "200석 규모의 게이밍 공간에 굿즈 스토어와 전시, 다이닝 공간까지 갖춰 T1 팬이라면 한 번쯤 방문해보고 싶은 복합 문화 공간이군요",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 1421941,
+                "images": []
             },
             {
                 "writer": "{{writer_18}}",
@@ -179,7 +203,9 @@
                 },
                 "content": "T1의 브랜드 감성과 최신 게이밍 환경을 한곳에서 경험할 수 있는 공간이라니 흥미롭네요.",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 1421942,
+                "images": []
             },
             {
                 "writer": "{{writer_19}}",
@@ -190,7 +216,9 @@
                 },
                 "content": "T1 팬들이 아주 좋아할 구성으로 잘 되있네요",
                 "recommendCount": 0,
-                "secret": false
+                "secret": false,
+                "id": 1421947,
+                "images": []
             }
         ]
     }

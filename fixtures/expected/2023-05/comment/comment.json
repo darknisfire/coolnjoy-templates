@@ -13,7 +13,9 @@
             },
             "content": "애플은 꾸준히 성장하고 잘 나가네요 ^^",
             "recommendCount": 0,
-            "secret": false
+            "secret": false,
+            "id": 4321134,
+            "images": []
         }
     ]
 }

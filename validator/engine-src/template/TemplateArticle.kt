@@ -14,6 +14,7 @@ import bateaux.spt.coolnjoy.core.parse.ParseResult
 import bateaux.spt.coolnjoy.core.parse.PollExtractor
 import bateaux.spt.coolnjoy.core.parse.PollParams
 import bateaux.spt.coolnjoy.core.parse.SanitizedContent
+import bateaux.spt.coolnjoy.core.parse.commentIdOf
 import bateaux.spt.coolnjoy.core.parse.hasVisibleContent
 import bateaux.spt.coolnjoy.core.parse.parseRowsIn
 import bateaux.spt.coolnjoy.core.site.ArticleRef
@@ -42,6 +43,8 @@ internal class TemplateCommentParser(
                 content = ev.eval(contents, spec.content) as String? ?: "",
                 recommendCount = ev.eval(row, spec, "recommendCount") as Int?,
                 secret = spec.secret.any { row.selectFirst(it) != null },
+                id = commentIdOf(row),
+                images = spec.images?.let { ev.evalList(contents, it) }?.filterIsInstance<String>().orEmpty(),
             )
         }
 }

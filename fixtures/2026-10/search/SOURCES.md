@@ -11,6 +11,8 @@
 | board_jirum.html | 게시판 내 검색 결과 | https://coolenjoy.net/bbs/board.php?bo_table=jirum&sfl=wr_subject%7C%7Cwr_content&stx=%EB%AA%A8%EB%8B%88%ED%84%B0 | 18:42 | 200 | `div#bo_list_total` + `section#bo_list` + `ul.pagination` | JIRUM 목록 레이아웃 그대로(15행). "전체 6,025". 2페이지 이상 |
 | all_empty.html | 전체 검색 결과 없음 | https://coolenjoy.net/bbs/search.php?sfl=wr_subject%7C%7Cwr_content&sop=and&stx=zzqqxxnoresult91 | 18:42 | 200 | 안내 `div.f-de`(`검색된 자료가 하나도 없습니다.`) | 결과 없음에는 `#sch_res_ov`, `#sch_res_list`, 페이지 막대가 없다 |
 | board_empty.html | 게시판 내 검색 결과 없음 | https://coolenjoy.net/bbs/board.php?bo_table=jirum&sfl=wr_subject&stx=zzqqxxnoresult91 | 18:42 | 200 | `div#bo_list_total` + `section#bo_list` | "전체 0 / 1 페이지", 목록 안에 `게시물이 없습니다.` |
+| board_spt_empty.html | 게시판 내 검색, 첫 구간 결과 없음 + Next | https://coolenjoy.net/bbs/board.php?bo_table=28&sfl=wr_subject&stx=xfx%20480&sop=and | 2026-10-03 22:0x (T18fix) | 200 | `div#bo_list_total` + `section#bo_list` + `ul.pagination` | 그래픽카드(28). "전체 0 / 1 페이지"에 `게시물이 없습니다.`인데 페이지 막대에 `<li class="page-item fa-beat-fade"><a href="/bbs/28?sfl=..&stx=xfx+480&sop=and&spt=-496901&page=1">Next</a></li>`만 있다 |
+| board_spt_hit.html | 게시판 내 검색, 두 번째 구간(spt=-496901) 결과 1건 | https://coolenjoy.net/bbs/board.php?bo_table=28&sfl=wr_subject&stx=xfx%20480&sop=and&spt=-496901&page=1 | 2026-10-03 22:0x (T18fix) | 200 | 위와 같음 | "전체 1". 페이지 막대에 `Prev`(spt=-546901)와 `Next`(spt=-446901) 링크. 행의 글 링크에도 `spt=-496901`이 붙어 있다 |
 
 ## 마크업 요약 (2026-10-03 실측)
 
@@ -33,6 +35,12 @@
 - 목록 레이아웃은 검색이 아닌 목록과 같다(`section#bo_list`, `a.na-subject` 등). 총 건수는 `#bo_list_total`의 `전체 <b>6,025</b> / N 페이지`(N은 현재 페이지 번호이지 전체 페이지 수가 아니다). 제목 검색과 제목+내용 검색의 건수가 다르다(3,436 vs 6,025).
 - 결과 없음: `전체 <b>0</b> / 1 페이지`, 본문 `게시물이 없습니다.`(목록 행 없음).
 - 같은 검색어의 전체 검색 `onetable=jirum` 건수(371)와 게시판 내 검색 건수(6,025)가 다르다. 원인은 확인하지 못했다. 앱은 두 값을 섞어 쓰지 않는다.
+
+### 검색 구간(`spt`) — 2026-10-03 22:0x 실측(T18fix, 게시판 28 제목 검색 "xfx 480")
+
+- 그누보드는 게시판 검색을 글번호 구간 단위로 훑는다. 한 응답은 한 구간만 검색하고, 결과가 없으면 `전체 0` 목록과 함께 페이지 막대 맨 끝에 `Next` 링크(`...&spt=N&page=1`)만 준다. `spt`는 음수이고 Next마다 50000씩 커졌다(-496901 → -446901). 구간 안 페이지 이동은 `page=N` 링크.
+- 첫 구간(spt 없음)은 0건, `spt=-496901` 구간에서 1건. 이 응답에는 `Prev`(이전 구간, spt=-546901)와 `Next`(spt=-446901)가 같이 있다. 결과가 있는 구간에도 Next가 붙는다(`board_jirum.html`의 `spt=-67410`도 같은 형태).
+- 앱 동작: `SearchRepository.searchSegments`가 0건이면 Next의 `spt`로 최대 3번 더 요청, 이후에도 없으면 `SearchPage.nextSpt`를 남긴다. 마지막 구간에서 Next가 없어지는 응답은 실측하지 못했다(요청 수 제한).
 
 ## 실측 요청 (11회, 모두 HTTP 200)
 

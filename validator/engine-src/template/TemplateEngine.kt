@@ -68,8 +68,9 @@ class TemplateEngine(
          * 1: 목록 레이아웃. 2: `comment`/`article` 섹션과 연산 `labelSplit`/`pageUrl`/`requireMatch`.
          * 3: `comment.secret`, `article.poll`(스크립트 데이터 추출 전용), `article.specs`, `article.content.pre.rows`(라벨/값 표).
          * 4: `search` 섹션(전체 검색 결과 행·요약. 새 연산 없음).
+         * 5: `comment.images`(댓글 본문 이미지 목록).
          */
-        const val ENGINE_VERSION = 4
+        const val ENGINE_VERSION = 5
     }
 }
 

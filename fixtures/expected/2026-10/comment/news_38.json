@@ -13,7 +13,9 @@
             },
             "content": "한글날의 의미도 되새기면서 재미있게 참여할 수 있는 뜻깊은 이벤트네요.",
             "recommendCount": 0,
-            "secret": false
+            "secret": false,
+            "id": 7067464,
+            "images": []
         },
         {
             "writer": "{{writer_06}}",
@@ -24,7 +26,9 @@
             },
             "content": "한글날 기념 우리말 대잔치 이벤트 정보 감사합니다.",
             "recommendCount": 0,
-            "secret": false
+            "secret": false,
+            "id": 7067523,
+            "images": []
         },
         {
             "writer": "{{writer_07}}",
@@ -35,7 +39,9 @@
             },
             "content": "이벤트 좋네요",
             "recommendCount": 0,
-            "secret": false
+            "secret": false,
+            "id": 7067534,
+            "images": []
         },
         {
             "writer": "{{writer_08}}",
@@ -46,7 +52,9 @@
             },
             "content": "이벤트 정보 감사합니다",
             "recommendCount": 0,
-            "secret": false
+            "secret": false,
+            "id": 7067571,
+            "images": []
         },
         {
             "writer": "{{writer_09}}",
@@ -57,7 +65,9 @@
             },
             "content": "오 참여해야겠네요",
             "recommendCount": 0,
-            "secret": false
+            "secret": false,
+            "id": 7067673,
+            "images": []
         },
         {
             "writer": "{{writer_10}}",
@@ -68,7 +78,9 @@
             },
             "content": "신기한 이벤트네요",
             "recommendCount": 0,
-            "secret": false
+            "secret": false,
+            "id": 7067683,
+            "images": []
         },
         {
             "writer": "{{writer_11}}",
@@ -79,7 +91,9 @@
             },
             "content": "의미 있는 이벤트라 인기 좋겟네요.",
             "recommendCount": 0,
-            "secret": false
+            "secret": false,
+            "id": 7067700,
+            "images": []
         }
     ]
 }

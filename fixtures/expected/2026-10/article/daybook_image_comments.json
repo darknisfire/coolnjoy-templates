@@ -1,0 +1,85 @@
+{
+    "fixture": "2026-10/article/daybook_image_comments.html",
+    "pageUrl": "https://coolenjoy.net/bbs/daybook/6734855",
+    "clock": "2026-10-03T05:00:00Z",
+    "kind": "SUCCESS",
+    "warnings": [],
+    "article": {
+        "boardId": "daybook",
+        "wrId": 6734855,
+        "url": "https://coolenjoy.net/bbs/daybook/6734855",
+        "title": "필립스 27B2N3500G 찜하기 이벤트",
+        "category": "마감",
+        "writer": "{{writer_01}}",
+        "writerProfileImageUrl": "https://photo.coolenjoy.co.kr/image/bbs_m/icon/{{mb_id_01}}.jpg",
+        "postedAt": {
+            "dateTime": "2026-09-16T13:02:13",
+            "precision": "MINUTE"
+        },
+        "viewCount": 757,
+        "recommendCount": null,
+        "preContentHtml": null,
+        "contentHtml": "<p><span>&nbsp; &nbsp;&nbsp;&nbsp;<a href=\"https://search.shopping.naver.com/catalog/61447876617\" rel=\"nofollow noopener\"><img alt=\"3710f105bdca5b8d3acca0ac9e462eef6ef6f857.jpg\" src=\"https://photo.coolenjoy.co.kr/data/editor/2609/0c925f80937bc792bdbe97d0d10cf8ea0f81630a.jpg\" title=\"\"></a> &nbsp;</span></p>\n<p><span>&nbsp;&nbsp;</span></p>\n<table cellpadding=\"10\">\n <tbody>\n  <tr>\n   <td><span>이벤트 경품</span><span><span><br><strong>모바일 문화상품권 5천 원 - (5명)</strong><br></span><span><br>\n       이벤트 기간 : 09월 16일 ~ 09월 22일<br>\n       당첨자 발표 : 09월 28일 이후<br>\n       경품 발송 : 09월 29일 이후<br></span> <br></span><span><br></span><span><strong><span>* 이벤트 참여 방법</span></strong></span><span><br>\n      1. PC 및 모바일 환경에서 네이버 검색창에 '필립스 27B2N3500G' 검색 후 상품 카탈로그 접속</span><br><span>2. 찜하기 아이콘 클릭하여 완료</span><br><span>3. 찜하기 상태를 확인할 수 있도록 캡처하여 댓글로 응모 (1회 인증, 비밀 댓글x)<br></span><br><span><br></span><span><strong><span>* 이벤트 유의사항</span></strong></span><span><br>\n      - 경품의 판매가 가능하도록 규정이 변경되었습니다. 자세한 내용은 &gt;<a href=\"https://coolenjoy.net/bbs/TOWTOW/14\" rel=\"nofollow noopener\">링크</a>&lt;를 참고해주세요<br>\n      - 회전 정보에 기입된 주소, 연락처로 발송되며, 미기재 시 선정 취소됩니다.<br>\n      - 본 이벤트 주관 스폰서는 <span>알파스캔 / 1544-7734&nbsp;</span>이며, 모든 문의는 스폰서에 해주시기 바랍니다.</span></td>\n  </tr>\n </tbody>\n</table>\n<p><span>&nbsp;&nbsp;</span></p>\n<p><span><span>&nbsp;&nbsp;</span></span></p>\n<p><span><span>&nbsp;&nbsp;</span></span></p>\n<p><span><span>&nbsp;&nbsp;</span></span></p>\n<p><span>&nbsp;&nbsp;</span></p>\n<hr>\n<p><span><strong>당첨자 발표 - </strong></span><span><a href=\"https://t.ly/T8xS9\" rel=\"nofollow noopener\"><strong>링크(회원번호)</strong></a></span></p>\n<p><span>*조기발표</span></p>\n<p><span>&nbsp;&nbsp;</span></p>\n<p><span>로엔</span></p>\n<p><span>달빛メ</span></p>\n<p><span>DoooooD</span></p>\n<p><span>♡꼬꼬♡</span></p>\n<p><span>모킹버드</span></p>",
+        "images": [
+            "https://photo.coolenjoy.co.kr/data/editor/2609/0c925f80937bc792bdbe97d0d10cf8ea0f81630a.jpg"
+        ],
+        "attachments": [],
+        "links": [],
+        "embedUrls": [],
+        "commentCount": 136,
+        "commentPage": 3,
+        "commentPageCount": 3,
+        "extras": {
+            "writerId": "{{mb_id_01}}"
+        },
+        "poll": null,
+        "specs": [],
+        "infoRows": [],
+        "secretCommentCount": 1,
+        "comments": [
+            {
+                "writer": "{{writer_02}}",
+                "profileImageUrl": "https://coolenjoy.net/bbs/daybook/{{profile_img_01}}",
+                "postedAt": {
+                    "dateTime": "2026-09-18T05:27",
+                    "precision": "MINUTE"
+                },
+                "content": "",
+                "recommendCount": 0,
+                "secret": false,
+                "id": 6735219,
+                "images": [
+                    "https://photo.coolenjoy.co.kr/data/editor/2609/cmt_1026153556_Qij3SJx0_01d2c51c08ac92830db1c14a7d947cead49c4be8.png"
+                ]
+            },
+            {
+                "writer": "{{writer_03}}",
+                "profileImageUrl": "https://coolenjoy.net/bbs/daybook/{{profile_img_02}}",
+                "postedAt": {
+                    "dateTime": "2026-09-18T11:49",
+                    "precision": "MINUTE"
+                },
+                "content": "비밀글입니다.",
+                "recommendCount": 0,
+                "secret": true,
+                "id": 6735226,
+                "images": []
+            },
+            {
+                "writer": "{{writer_04}}",
+                "profileImageUrl": "https://coolenjoy.net/bbs/daybook/{{profile_img_03}}",
+                "postedAt": {
+                    "dateTime": "2026-09-18T20:11",
+                    "precision": "MINUTE"
+                },
+                "content": "참여완료",
+                "recommendCount": 0,
+                "secret": false,
+                "id": 6735239,
+                "images": [
+                    "https://photo.coolenjoy.co.kr/data/editor/2609/cmt_3547054383_sGVdFzMY_3a1ac08c62cbafe7cd2c4070a5da14f9ccf35614.jpg"
+                ]
+            }
+        ]
+    }
+}

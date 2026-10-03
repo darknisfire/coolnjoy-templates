@@ -144,10 +144,19 @@ class ArticleValidationTest {
             // 댓글이 없는 페이지(오류 페이지, 댓글 0개 글)는 "no rows matched" 경고만 허용한다.
             val unexpected = r.warnings.filterNot { r.items.isEmpty() && it.contains("no rows matched") }
             if (unexpected.isNotEmpty()) problems += "${s.dir}/${s.name}: warnings $unexpected"
-            r.items.forEachIndexed { i, c -> if (c.content.isBlank()) problems += "${s.dir}/${s.name}: comment $i blank" }
+            r.items.forEachIndexed { i, c -> if (c.content.isBlank() && c.images.isEmpty()) problems += "${s.dir}/${s.name}: comment $i blank" }
         }
         assertTrue(nonEmpty >= 8, "expected most sources to contain comments but only $nonEmpty did")
         assertEquals(emptyList(), problems, problems.joinToString("\n"))
+    }
+
+    @Test
+    fun v5CommentImages() {
+        val s = commentSources().single { it.dir == "2026-10" && it.name == "daybook_image_comments" }
+        val items = engine(s.dir).commentParser().parse(read(s.file), s.pageUrl).items
+        assertTrue(items.any { it.images.isNotEmpty() }, "no comment images parsed")
+        assertTrue(items.flatMap { it.images }.all { it.startsWith("https://") }, "comment image url must be absolute")
+        assertTrue(items.all { it.id != null }, "comment id missing")
     }
 
     private fun parseArticle(dir: String, name: String): Article {
@@ -243,6 +252,8 @@ class ArticleValidationTest {
         "content" to JsonPrimitive(c.content),
         "recommendCount" to num(c.recommendCount),
         "secret" to JsonPrimitive(c.secret),
+        "id" to num(c.id),
+        "images" to strings(c.images),
     )
 
     private fun articleBody(a: Article) = obj(

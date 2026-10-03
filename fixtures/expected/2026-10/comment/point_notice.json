@@ -1,0 +1,47 @@
+{
+    "fixture": "2026-10/article/point_notice.html",
+    "pageUrl": "https://coolenjoy.net/bbs/point/3127121",
+    "itemCount": 3,
+    "warnings": [],
+    "items": [
+        {
+            "writer": "{{writer_02}}",
+            "profileImageUrl": "https://coolenjoy.net/bbs/point/{{profile_img_01}}",
+            "postedAt": {
+                "dateTime": "2026-09-23T11:14",
+                "precision": "MINUTE"
+            },
+            "content": "!!굿굿굿",
+            "recommendCount": 0,
+            "secret": false,
+            "id": 3127123,
+            "images": []
+        },
+        {
+            "writer": "{{writer_03}}",
+            "profileImageUrl": "https://coolenjoy.net/bbs/point/{{profile_img_02}}",
+            "postedAt": {
+                "dateTime": "2026-09-23T16:33",
+                "precision": "MINUTE"
+            },
+            "content": "이게 포인트를 주는 이벤트는 아닌거죠?",
+            "recommendCount": 0,
+            "secret": false,
+            "id": 3127163,
+            "images": []
+        },
+        {
+            "writer": "{{writer_04}}",
+            "profileImageUrl": "https://coolenjoy.net/bbs/point/{{profile_img_03}}",
+            "postedAt": {
+                "dateTime": "2026-09-30T03:05",
+                "precision": "MINUTE"
+            },
+            "content": "굳",
+            "recommendCount": 0,
+            "secret": false,
+            "id": 3129411,
+            "images": []
+        }
+    ]
+}

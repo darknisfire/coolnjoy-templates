@@ -96,6 +96,7 @@ val LIST_FIELD_KEYS: Set<String> get() = LIST_FIELD_TYPES.keys
  * @property content [contentSelect] 요소를 컨텍스트로 평가하는 본문 규칙(STRING). null/빈 값이면 빈 문자열 — 본문이 빈 댓글도 유지한다
  * @property fields 키는 [COMMENT_FIELD_TYPES]. 행이 컨텍스트
  * @property secret 비밀 댓글 판정 셀렉터들(행 안에서 select, 엔진 버전 3). 하나라도 일치하면 `CommentItem.secret`. 없으면 항상 false
+ * @property images 본문 이미지 목록(선택, 엔진 버전 5). [contentSelect] 요소가 컨텍스트. 없으면 빈 목록
  */
 @Serializable
 data class CommentTemplate(
@@ -104,6 +105,7 @@ data class CommentTemplate(
     val content: FieldSpec,
     val fields: Map<String, FieldSpec> = emptyMap(),
     val secret: List<String> = emptyList(),
+    val images: ListSpec? = null,
 )
 
 /** `comment.fields`에 쓸 수 있는 키와 값 타입. */

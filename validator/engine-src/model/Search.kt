@@ -20,15 +20,20 @@ sealed interface SearchScope {
 /**
  * 검색 요청. 사이트 검색 폼과 같은 제약을 둔다: 검색어는 앞뒤 공백을 뺀 뒤 2자 이상이고 공백은 최대 1개
  * (사이트 JS `fsearch_submit`이 거부하는 값을 서버에 보내지 않기 위함). 검색 방법(`sop`)은 항상 `and`.
+ *
+ * @property spt 게시판 내 검색의 검색 구간(그누보드 `spt`, 글번호 기준 시작점이며 음수일 수 있음). 사이트는 한 구간만 훑고
+ *   결과가 없으면 "Next" 링크의 `spt`로 다음 구간을 요청하게 한다. null이면 첫 구간. 응답의 다음 값은 `SearchPage.nextSpt`.
  */
 data class SearchQuery(
     val keyword: String,
     val field: SearchField = SearchField.TITLE_CONTENT,
     val scope: SearchScope = SearchScope.All,
     val page: Int = 1,
+    val spt: Int? = null,
 ) {
     init {
         require(page >= 1) { "page must be >= 1: $page" }
+        require(spt == null || scope is SearchScope.Board) { "spt applies to in-board search only" }
         validationError(keyword)?.let { throw IllegalArgumentException(it) }
     }
 

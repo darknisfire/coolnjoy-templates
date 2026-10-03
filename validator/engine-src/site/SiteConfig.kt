@@ -13,11 +13,15 @@ data class SiteConfig(
     fun findBoard(id: String): Board? = boards.firstOrNull { it.id == id }
 
     /** 목록 URL. ALL(최신글, id [ALL_BOARD_ID])은 `/bbs/new.php`, 나머지는 `/bbs/{bo_table}`. page>1이면 `?page=N`. */
-    fun boardUrl(boardId: String, page: Int = 1): String {
+    fun boardUrl(boardId: String, page: Int = 1, category: String? = null): String {
         require(page >= 1) { "page must be >= 1: $page" }
         val root = baseUrl.trimEnd('/')
         val path = if (boardId == ALL_BOARD_ID) "/bbs/new.php" else "/bbs/$boardId"
-        return if (page > 1) "$root$path?page=$page" else "$root$path"
+        val params = buildList {
+            category?.takeIf { it.isNotBlank() }?.let { add("sca=" + URLEncoder.encode(it, "UTF-8").replace("+", "%20")) }
+            if (page > 1) add("page=$page")
+        }
+        return if (params.isEmpty()) "$root$path" else "$root$path?${params.joinToString("&")}"
     }
 
     /** 게시글 URL `/bbs/{bo_table}/{wr_id}`. [boardId]는 영문·숫자·밑줄이어야 한다. */
@@ -44,12 +48,13 @@ data class SiteConfig(
         val root = baseUrl.trimEnd('/')
         val sfl = query.field.sfl.replace("|", "%7C")
         val stx = URLEncoder.encode(query.normalizedKeyword, "UTF-8")
+        val spt = query.spt?.let { "&spt=$it" }.orEmpty()
         val page = if (query.page > 1) "&page=${query.page}" else ""
         return when (val scope = query.scope) {
             is SearchScope.Board -> {
                 requireBoardId(scope.id)
                 require(scope.id != ALL_BOARD_ID) { "최신글($ALL_BOARD_ID)은 게시판 내 검색 대상이 아니다. 전체 검색을 사용" }
-                "$root/bbs/board.php?bo_table=${scope.id}&sfl=$sfl&stx=$stx&sop=and$page"
+                "$root/bbs/board.php?bo_table=${scope.id}&sfl=$sfl&stx=$stx&sop=and$spt$page"
             }
             SearchScope.All -> "$root/bbs/search.php?sfl=$sfl&sop=and&stx=$stx$page"
         }

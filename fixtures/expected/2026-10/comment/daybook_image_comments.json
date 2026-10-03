@@ -1,0 +1,51 @@
+{
+    "fixture": "2026-10/article/daybook_image_comments.html",
+    "pageUrl": "https://coolenjoy.net/bbs/daybook/6734855",
+    "itemCount": 3,
+    "warnings": [],
+    "items": [
+        {
+            "writer": "{{writer_02}}",
+            "profileImageUrl": "https://coolenjoy.net/bbs/daybook/{{profile_img_01}}",
+            "postedAt": {
+                "dateTime": "2026-09-18T05:27",
+                "precision": "MINUTE"
+            },
+            "content": "",
+            "recommendCount": 0,
+            "secret": false,
+            "id": 6735219,
+            "images": [
+                "https://photo.coolenjoy.co.kr/data/editor/2609/cmt_1026153556_Qij3SJx0_01d2c51c08ac92830db1c14a7d947cead49c4be8.png"
+            ]
+        },
+        {
+            "writer": "{{writer_03}}",
+            "profileImageUrl": "https://coolenjoy.net/bbs/daybook/{{profile_img_02}}",
+            "postedAt": {
+                "dateTime": "2026-09-18T11:49",
+                "precision": "MINUTE"
+            },
+            "content": "비밀글입니다.",
+            "recommendCount": 0,
+            "secret": true,
+            "id": 6735226,
+            "images": []
+        },
+        {
+            "writer": "{{writer_04}}",
+            "profileImageUrl": "https://coolenjoy.net/bbs/daybook/{{profile_img_03}}",
+            "postedAt": {
+                "dateTime": "2026-09-18T20:11",
+                "precision": "MINUTE"
+            },
+            "content": "참여완료",
+            "recommendCount": 0,
+            "secret": false,
+            "id": 6735239,
+            "images": [
+                "https://photo.coolenjoy.co.kr/data/editor/2609/cmt_3547054383_sGVdFzMY_3a1ac08c62cbafe7cd2c4070a5da14f9ccf35614.jpg"
+            ]
+        }
+    ]
+}
