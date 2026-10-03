@@ -1,0 +1,310 @@
+{
+    "fixture": "2026-10/list/all.html",
+    "layout": "ALL",
+    "pageUrl": "https://coolenjoy.net/bbs/new.php",
+    "clock": "2026-10-03T04:10:00Z",
+    "itemCount": 15,
+    "warnings": [],
+    "items": [
+        {
+            "board": "회원장터",
+            "category": "판매",
+            "subCategory": null,
+            "title": "[미개봉] 4TB, 10TB HDD 판매합니다",
+            "url": "https://coolenjoy.net/bbs/new.php?bo_table=mart2&wr_id=1284733&page=1&mb_id=&meun=",
+            "writer": "{{writer_02}}",
+            "commentCount": 0,
+            "viewCount": null,
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T13:06",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "boTable": "mart2",
+                "wrId": "1284733"
+            }
+        },
+        {
+            "board": "회원장터",
+            "category": "판매",
+            "subCategory": null,
+            "title": "신제품 LCD 3열 CPU 수랭 쿨러 SUDOKOO PROTEUS360",
+            "url": "https://coolenjoy.net/bbs/new.php?bo_table=mart2&wr_id=1284409&page=1&mb_id=&meun=",
+            "writer": "{{writer_03}}",
+            "commentCount": 0,
+            "viewCount": null,
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T12:54",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "boTable": "mart2",
+                "wrId": "1284409"
+            }
+        },
+        {
+            "board": "회원장터",
+            "category": "판매",
+            "subCategory": null,
+            "title": "신제품 큐닉스 CORE MG32B 280 게이밍 모니터 32인치 280Hz주사율",
+            "url": "https://coolenjoy.net/bbs/new.php?bo_table=mart2&wr_id=1284683&page=1&mb_id=&meun=",
+            "writer": "{{writer_03}}",
+            "commentCount": 0,
+            "viewCount": null,
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T12:54",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "boTable": "mart2",
+                "wrId": "1284683"
+            }
+        },
+        {
+            "board": "회원장터",
+            "category": "판매",
+            "subCategory": null,
+            "title": "지스킬 DDR4 실버로얄 3600 CL14(8G*2) 판매합니다.",
+            "url": "https://coolenjoy.net/bbs/new.php?bo_table=mart2&wr_id=1284739&page=1&mb_id=&meun=",
+            "writer": "{{writer_04}}",
+            "commentCount": 0,
+            "viewCount": null,
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T12:48",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "boTable": "mart2",
+                "wrId": "1284739"
+            }
+        },
+        {
+            "board": "회원장터",
+            "category": "판매",
+            "subCategory": null,
+            "title": "Phanteks Glacier C350A 워터블럭",
+            "url": "https://coolenjoy.net/bbs/new.php?bo_table=mart2&wr_id=1284305&page=1&mb_id=&meun=",
+            "writer": "{{writer_05}}",
+            "commentCount": 0,
+            "viewCount": null,
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T12:25",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "boTable": "mart2",
+                "wrId": "1284305"
+            }
+        },
+        {
+            "board": "회원장터",
+            "category": "판매",
+            "subCategory": null,
+            "title": "CORSAIR OBSIDIAN 1000D",
+            "url": "https://coolenjoy.net/bbs/new.php?bo_table=mart2&wr_id=1284306&page=1&mb_id=&meun=",
+            "writer": "{{writer_05}}",
+            "commentCount": 0,
+            "viewCount": null,
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T12:25",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "boTable": "mart2",
+                "wrId": "1284306"
+            }
+        },
+        {
+            "board": "회원장터",
+            "category": "판매",
+            "subCategory": null,
+            "title": "Yeston RX 9070 XT Sakura",
+            "url": "https://coolenjoy.net/bbs/new.php?bo_table=mart2&wr_id=1284487&page=1&mb_id=&meun=",
+            "writer": "{{writer_07}}",
+            "commentCount": 0,
+            "viewCount": null,
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T11:48",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "boTable": "mart2",
+                "wrId": "1284487"
+            }
+        },
+        {
+            "board": "지름/알뜰정보",
+            "category": "모바일",
+            "subCategory": null,
+            "title": "휴대폰성지 / 수도권방문 / 성지의기준 휴대폰성지 순진",
+            "url": "https://coolenjoy.net/bbs/new.php?bo_table=jirum&wr_id=3562819&page=1&mb_id=&meun=",
+            "writer": "{{writer_08}}",
+            "commentCount": 3,
+            "viewCount": null,
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T11:13",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "boTable": "jirum",
+                "wrId": "3562819"
+            }
+        },
+        {
+            "board": "지름/알뜰정보",
+            "category": "식품",
+            "subCategory": null,
+            "title": "락토바이오틱스 맥스 프로바이오틱스 생유산균 4개월분 (23,900원/무료)",
+            "url": "https://coolenjoy.net/bbs/new.php?bo_table=jirum&wr_id=3562818&page=1&mb_id=&meun=",
+            "writer": "{{writer_09}}",
+            "commentCount": 4,
+            "viewCount": null,
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T11:13",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "boTable": "jirum",
+                "wrId": "3562818"
+            }
+        },
+        {
+            "board": "소모임",
+            "category": "새소식",
+            "subCategory": null,
+            "title": "SEARCH PARTY: WHERE'S PAWPAW? Official Trailer (20…",
+            "url": "https://coolenjoy.net/bbs/new.php?bo_table=group&wr_id=208382&page=1&mb_id=&meun=",
+            "writer": "{{writer_10}}",
+            "commentCount": 1,
+            "viewCount": null,
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T10:58",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "boTable": "group",
+                "wrId": "208382"
+            }
+        },
+        {
+            "board": "소모임",
+            "category": "새소식",
+            "subCategory": null,
+            "title": "시급 300엔의 사신 | 時給三〇〇円の死神 | 예고편",
+            "url": "https://coolenjoy.net/bbs/new.php?bo_table=group&wr_id=208381&page=1&mb_id=&meun=",
+            "writer": "{{writer_10}}",
+            "commentCount": 1,
+            "viewCount": null,
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T10:58",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "boTable": "group",
+                "wrId": "208381"
+            }
+        },
+        {
+            "board": "소모임",
+            "category": "새소식",
+            "subCategory": null,
+            "title": "SHE SAW US Official Trailer (2026)",
+            "url": "https://coolenjoy.net/bbs/new.php?bo_table=group&wr_id=208380&page=1&mb_id=&meun=",
+            "writer": "{{writer_10}}",
+            "commentCount": 1,
+            "viewCount": null,
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T10:53",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "boTable": "group",
+                "wrId": "208380"
+            }
+        },
+        {
+            "board": "소모임",
+            "category": "새소식",
+            "subCategory": null,
+            "title": "COME WITH ME Official Trailer (2026) Theo Rossi",
+            "url": "https://coolenjoy.net/bbs/new.php?bo_table=group&wr_id=208379&page=1&mb_id=&meun=",
+            "writer": "{{writer_10}}",
+            "commentCount": 1,
+            "viewCount": null,
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T10:53",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "boTable": "group",
+                "wrId": "208379"
+            }
+        },
+        {
+            "board": "소모임",
+            "category": "새소식",
+            "subCategory": null,
+            "title": "TIME Season 3 Official Trailer (2026) David Tennan…",
+            "url": "https://coolenjoy.net/bbs/new.php?bo_table=group&wr_id=208378&page=1&mb_id=&meun=",
+            "writer": "{{writer_10}}",
+            "commentCount": 1,
+            "viewCount": null,
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T10:52",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "boTable": "group",
+                "wrId": "208378"
+            }
+        },
+        {
+            "board": "회원장터",
+            "category": "판매",
+            "subCategory": null,
+            "title": "CORSAIR iCUE LINK LX140 RGB STARTER KIT (블랙, 2팩) 팝…",
+            "url": "https://coolenjoy.net/bbs/new.php?bo_table=mart2&wr_id=1283786&page=1&mb_id=&meun=",
+            "writer": "{{writer_11}}",
+            "commentCount": 0,
+            "viewCount": null,
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T10:23",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "boTable": "mart2",
+                "wrId": "1283786"
+            }
+        }
+    ]
+}

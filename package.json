@@ -1,0 +1,20 @@
+{
+	"name": "coolnjoy-templates",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"packageManager": "pnpm@12.8.1",
+	"engines": {
+		"node": ">=22"
+	},
+	"scripts": {
+		"build": "node scripts/build-dist.mjs",
+		"sign": "node scripts/sign.mjs",
+		"verify": "node scripts/verify-dist.mjs",
+		"test": "gradle -p validator test",
+		"deploy": "wrangler deploy"
+	},
+	"devDependencies": {
+		"wrangler": "4.129.1"
+	}
+}

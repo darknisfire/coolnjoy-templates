@@ -1,0 +1,282 @@
+{
+    "fixture": "2026-10/list/coolenjoy.html",
+    "layout": "COOLENJOY",
+    "pageUrl": "https://coolenjoy.net/bbs/coolenjoy",
+    "clock": "2026-10-03T04:10:00Z",
+    "itemCount": 16,
+    "warnings": [],
+    "items": [
+        {
+            "board": null,
+            "category": "공지",
+            "subCategory": null,
+            "title": "건의함 Q&A 주요 내용",
+            "url": "https://coolenjoy.net/bbs/coolenjoy/63928",
+            "writer": null,
+            "commentCount": 3,
+            "viewCount": "1926",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2023-07-24T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "신고",
+            "subCategory": null,
+            "title": "11:04 일에 접수한 내용입니다.",
+            "url": "https://coolenjoy.net/bbs/coolenjoy/68983",
+            "writer": null,
+            "commentCount": 0,
+            "viewCount": "0",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T11:04",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "버그",
+            "subCategory": null,
+            "title": "10.01 일에 접수한 내용입니다.",
+            "url": "https://coolenjoy.net/bbs/coolenjoy/68980",
+            "writer": null,
+            "commentCount": 1,
+            "viewCount": "4",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-01T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "의견",
+            "subCategory": null,
+            "title": "10.01 일에 접수한 내용입니다.",
+            "url": "https://coolenjoy.net/bbs/coolenjoy/68979",
+            "writer": null,
+            "commentCount": 1,
+            "viewCount": "5",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-01T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "의견",
+            "subCategory": null,
+            "title": "2026.09.28 일에 접수한 내용입니다.",
+            "url": "https://coolenjoy.net/bbs/coolenjoy/68977",
+            "writer": null,
+            "commentCount": 1,
+            "viewCount": "5",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-28T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "신고",
+            "subCategory": null,
+            "title": "2026.09.27 일에 접수한 내용입니다.",
+            "url": "https://coolenjoy.net/bbs/coolenjoy/68975",
+            "writer": null,
+            "commentCount": 1,
+            "viewCount": "4",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-27T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "신고",
+            "subCategory": null,
+            "title": "2026.09.24 일에 접수한 내용입니다.",
+            "url": "https://coolenjoy.net/bbs/coolenjoy/68972",
+            "writer": null,
+            "commentCount": 0,
+            "viewCount": "6",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-24T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "버그",
+            "subCategory": null,
+            "title": "2026.09.23 일에 접수한 내용입니다.",
+            "url": "https://coolenjoy.net/bbs/coolenjoy/68968",
+            "writer": null,
+            "commentCount": 5,
+            "viewCount": "12",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-23T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "버그",
+            "subCategory": null,
+            "title": "2026.09.22 일에 접수한 내용입니다.",
+            "url": "https://coolenjoy.net/bbs/coolenjoy/68966",
+            "writer": null,
+            "commentCount": 1,
+            "viewCount": "9",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-22T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "제안",
+            "subCategory": null,
+            "title": "2026.09.19 일에 접수한 내용입니다.",
+            "url": "https://coolenjoy.net/bbs/coolenjoy/68963",
+            "writer": null,
+            "commentCount": 1,
+            "viewCount": "7",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-19T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "버그",
+            "subCategory": null,
+            "title": "2026.09.19 일에 접수한 내용입니다.",
+            "url": "https://coolenjoy.net/bbs/coolenjoy/68960",
+            "writer": null,
+            "commentCount": 2,
+            "viewCount": "6",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-19T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "의견",
+            "subCategory": null,
+            "title": "2026.09.18 일에 접수한 내용입니다.",
+            "url": "https://coolenjoy.net/bbs/coolenjoy/68959",
+            "writer": null,
+            "commentCount": 1,
+            "viewCount": "4",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-18T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "신고",
+            "subCategory": null,
+            "title": "2026.09.15 일에 접수한 내용입니다.",
+            "url": "https://coolenjoy.net/bbs/coolenjoy/68957",
+            "writer": null,
+            "commentCount": 1,
+            "viewCount": "6",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-15T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "신고",
+            "subCategory": null,
+            "title": "2026.09.14 일에 접수한 내용입니다.",
+            "url": "https://coolenjoy.net/bbs/coolenjoy/68955",
+            "writer": null,
+            "commentCount": 1,
+            "viewCount": "2",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-14T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "의견",
+            "subCategory": null,
+            "title": "2026.09.10 일에 접수한 내용입니다.",
+            "url": "https://coolenjoy.net/bbs/coolenjoy/68952",
+            "writer": null,
+            "commentCount": 1,
+            "viewCount": "5",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-10T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "의견",
+            "subCategory": null,
+            "title": "2026.09.10 일에 접수한 내용입니다.",
+            "url": "https://coolenjoy.net/bbs/coolenjoy/68951",
+            "writer": null,
+            "commentCount": 1,
+            "viewCount": "12",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-10T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        }
+    ]
+}

@@ -1,0 +1,1871 @@
+{
+  "templateVersion": 1,
+  "minEngineVersion": 1,
+  "site": {
+    "baseUrl": "https://coolenjoy.net"
+  },
+  "boards": [
+    {
+      "id": "new",
+      "name": "최신글",
+      "layout": "ALL"
+    },
+    {
+      "id": "point",
+      "name": "포인트 이벤트",
+      "layout": "POINT"
+    },
+    {
+      "id": "daybook",
+      "name": "이벤트",
+      "layout": "WEBZINE"
+    },
+    {
+      "id": "29",
+      "name": "특가존",
+      "layout": "MARKET"
+    },
+    {
+      "id": "review",
+      "name": "공식 리뷰",
+      "layout": "WEBZINE",
+      "group": "정보 광장"
+    },
+    {
+      "id": "39",
+      "name": "벤치마크 / 기획",
+      "layout": "WEBZINE",
+      "group": "정보 광장"
+    },
+    {
+      "id": "copy_preview",
+      "name": "필테 / 사용기",
+      "layout": "WEBZINE",
+      "group": "정보 광장"
+    },
+    {
+      "id": "38",
+      "name": "뉴스 / 신제품",
+      "layout": "NEWS",
+      "group": "정보 광장"
+    },
+    {
+      "id": "37",
+      "name": "팁 강좌",
+      "layout": "LIST",
+      "group": "정보 광장"
+    },
+    {
+      "id": "46",
+      "name": "추억의 하드웨어",
+      "layout": "GALLERY",
+      "group": "정보 광장"
+    },
+    {
+      "id": "36",
+      "name": "DIY 갤러리",
+      "layout": "GALLERY",
+      "group": "정보 광장"
+    },
+    {
+      "id": "system",
+      "name": "시스템 감상",
+      "layout": "GALLERY",
+      "group": "정보 광장"
+    },
+    {
+      "id": "pds",
+      "name": "자료실",
+      "layout": "PDS",
+      "group": "정보 광장"
+    },
+    {
+      "id": "votes",
+      "name": "설문조사",
+      "layout": "VOTE",
+      "group": "정보 광장"
+    },
+    {
+      "id": "27",
+      "name": "CPU / MB / RAM",
+      "layout": "LIST",
+      "group": "하드웨어 포럼"
+    },
+    {
+      "id": "28",
+      "name": "그래픽카드",
+      "layout": "LIST",
+      "group": "하드웨어 포럼"
+    },
+    {
+      "id": "overclock",
+      "name": "오버클럭",
+      "layout": "LIST",
+      "group": "하드웨어 포럼"
+    },
+    {
+      "id": "31",
+      "name": "디스플레이",
+      "layout": "LIST",
+      "group": "하드웨어 포럼"
+    },
+    {
+      "id": "hdd",
+      "name": "SSD / HDD",
+      "layout": "LIST",
+      "group": "하드웨어 포럼"
+    },
+    {
+      "id": "case_tuning",
+      "name": "케이스 / 튜닝",
+      "layout": "LIST",
+      "group": "하드웨어 포럼"
+    },
+    {
+      "id": "cooling",
+      "name": "공랭 쿨러",
+      "layout": "LIST",
+      "group": "하드웨어 포럼"
+    },
+    {
+      "id": "water_cooling",
+      "name": "수랭 / 커스텀 쿨러",
+      "layout": "LIST",
+      "group": "하드웨어 포럼"
+    },
+    {
+      "id": "34",
+      "name": "키보드 / 마우스",
+      "layout": "LIST",
+      "group": "하드웨어 포럼"
+    },
+    {
+      "id": "35",
+      "name": "사운드 장치",
+      "layout": "LIST",
+      "group": "하드웨어 포럼"
+    },
+    {
+      "id": "40",
+      "name": "VR기기",
+      "layout": "LIST",
+      "group": "하드웨어 포럼"
+    },
+    {
+      "id": "tip",
+      "name": "파워서플라이",
+      "layout": "LIST",
+      "group": "하드웨어 포럼"
+    },
+    {
+      "id": "30",
+      "name": "조립 / 견적",
+      "layout": "LIST",
+      "group": "하드웨어 포럼"
+    },
+    {
+      "id": "45",
+      "name": "네트워크",
+      "layout": "LIST",
+      "group": "하드웨어 포럼"
+    },
+    {
+      "id": "diy",
+      "name": "노트북",
+      "layout": "LIST",
+      "group": "하드웨어 포럼"
+    },
+    {
+      "id": "42",
+      "name": "스마트폰 / 태블릿",
+      "layout": "LIST",
+      "group": "하드웨어 포럼"
+    },
+    {
+      "id": "25",
+      "name": "업계동향",
+      "layout": "LIST",
+      "group": "하드웨어 포럼"
+    },
+    {
+      "id": "32",
+      "name": "OS / 소프트웨어",
+      "layout": "LIST",
+      "group": "하드웨어 포럼"
+    },
+    {
+      "id": "qa",
+      "name": "기타 / 주변기기",
+      "layout": "LIST",
+      "group": "하드웨어 포럼"
+    },
+    {
+      "id": "freeboard2",
+      "name": "자유게시판",
+      "layout": "LIST",
+      "group": "커뮤니티"
+    },
+    {
+      "id": "group",
+      "name": "소모임",
+      "layout": "GROUP",
+      "group": "커뮤니티"
+    },
+    {
+      "id": "33",
+      "name": "게임게시판",
+      "layout": "GROUP",
+      "group": "커뮤니티"
+    },
+    {
+      "id": "50",
+      "name": "익명게시판(임시)",
+      "layout": "SECRET",
+      "group": "커뮤니티",
+      "requiresLogin": true
+    },
+    {
+      "id": "gallery",
+      "name": "자유갤러리",
+      "layout": "GALLERY",
+      "group": "커뮤니티"
+    },
+    {
+      "id": "jirum",
+      "name": "지름 / 알뜰정보",
+      "layout": "JIRUM",
+      "group": "커뮤니티"
+    },
+    {
+      "id": "jirum2",
+      "name": "ㄴ이벤트(부속게시판)",
+      "layout": "JIRUM",
+      "group": "커뮤니티"
+    },
+    {
+      "id": "mart2",
+      "name": "회원장터",
+      "layout": "MART",
+      "group": "커뮤니티"
+    },
+    {
+      "id": "give",
+      "name": "드립니다",
+      "layout": "GIVE",
+      "group": "커뮤니티"
+    },
+    {
+      "id": "coolenjoy",
+      "name": "건의함",
+      "layout": "COOLENJOY",
+      "group": "커뮤니티"
+    }
+  ],
+  "layouts": {
+    "ALL": {
+      "row": "div#new_list > ul > li",
+      "fields": {
+        "board": {
+          "select": "a",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "category": {
+          "select": "div.na-item > a",
+          "op": [
+            {
+              "text": {}
+            },
+            {
+              "regexGroup": {
+                "pattern": "^([^|]*)\\|",
+                "group": 1
+              }
+            }
+          ]
+        },
+        "title": {
+          "select": "div.na-item > a",
+          "op": [
+            {
+              "text": {}
+            },
+            {
+              "regexReplace": {
+                "pattern": "^[^|]*\\|",
+                "replacement": ""
+              }
+            }
+          ],
+          "required": true
+        },
+        "url": {
+          "select": "div.na-item > a",
+          "op": [
+            {
+              "absUrl": "href"
+            }
+          ],
+          "required": true
+        },
+        "writer": {
+          "select": "a.sv_member",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "commentCount": {
+          "select": "a.win_imgbox.me-a",
+          "op": [
+            {
+              "text": {}
+            },
+            {
+              "toInt": {}
+            }
+          ],
+          "fallback": [
+            {
+              "select": "span.count-plus",
+              "op": [
+                {
+                  "text": {}
+                },
+                {
+                  "regexGroup": {
+                    "pattern": "\\[\\s*([\\d,]+)\\s*]",
+                    "group": 1
+                  }
+                },
+                {
+                  "toInt": {}
+                }
+              ]
+            }
+          ]
+        },
+        "postedAt": {
+          "op": [
+            {
+              "afterIcon": "fa-clock-o"
+            },
+            {
+              "date": {}
+            }
+          ]
+        }
+      },
+      "extras": {
+        "boTable": {
+          "select": "div.na-item > a",
+          "op": [
+            {
+              "absUrl": "href"
+            },
+            {
+              "queryParam": "bo_table"
+            }
+          ]
+        },
+        "wrId": {
+          "select": "div.na-item > a",
+          "op": [
+            {
+              "absUrl": "href"
+            },
+            {
+              "queryParam": "wr_id"
+            }
+          ]
+        }
+      }
+    },
+    "POINT": {
+      "row": "div#bo_gallery > ul > li",
+      "fields": {
+        "category": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "subjectPart": "first"
+            }
+          ]
+        },
+        "subCategory": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "subjectPart": 1
+            }
+          ]
+        },
+        "title": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "subjectPart": "last"
+            }
+          ],
+          "required": true
+        },
+        "url": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "absUrl": "href"
+            }
+          ],
+          "required": true
+        },
+        "writer": {
+          "op": [
+            {
+              "const": "COOLENJOY"
+            }
+          ]
+        },
+        "commentCount": {
+          "select": "a.win_imgbox.me-a",
+          "op": [
+            {
+              "text": {}
+            },
+            {
+              "toInt": {}
+            }
+          ],
+          "fallback": [
+            {
+              "select": "span.count-plus",
+              "op": [
+                {
+                  "text": {}
+                },
+                {
+                  "regexGroup": {
+                    "pattern": "\\[\\s*([\\d,]+)\\s*]",
+                    "group": 1
+                  }
+                },
+                {
+                  "toInt": {}
+                }
+              ]
+            }
+          ]
+        },
+        "viewCount": {
+          "op": [
+            {
+              "withPrefix": "조회:"
+            }
+          ]
+        },
+        "recommendCount": {
+          "op": [
+            {
+              "afterIcon": "fa-thumbs-o-up"
+            },
+            {
+              "toInt": {}
+            }
+          ]
+        },
+        "postedAt": {
+          "op": [
+            {
+              "afterIcon": "fa-clock-o"
+            },
+            {
+              "date": {}
+            }
+          ]
+        },
+        "thumbnailUrl": {
+          "select": "div.img-item img, div.img-item2 img, div.img-item3 img",
+          "op": [
+            {
+              "absUrl": "src"
+            }
+          ]
+        }
+      },
+      "extras": {
+        "period": {
+          "op": [
+            {
+              "withPrefix": "일정:"
+            }
+          ]
+        },
+        "condition": {
+          "op": [
+            {
+              "withPrefix": "조건:"
+            }
+          ]
+        }
+      }
+    },
+    "WEBZINE": {
+      "row": "ul#bo_webzine > li",
+      "fields": {
+        "category": {
+          "select": "h5.card-title > a",
+          "op": [
+            {
+              "subjectPart": "first"
+            }
+          ]
+        },
+        "subCategory": {
+          "select": "h5.card-title > a",
+          "op": [
+            {
+              "subjectPart": 1
+            }
+          ]
+        },
+        "title": {
+          "select": "h5.card-title > a",
+          "op": [
+            {
+              "subjectPart": "last"
+            }
+          ],
+          "required": true
+        },
+        "url": {
+          "select": "h5.card-title > a",
+          "op": [
+            {
+              "absUrl": "href"
+            }
+          ],
+          "required": true
+        },
+        "writer": {
+          "select": "a.sv_member",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "commentCount": {
+          "select": "a.win_imgbox.me-a",
+          "op": [
+            {
+              "text": {}
+            },
+            {
+              "toInt": {}
+            }
+          ],
+          "fallback": [
+            {
+              "select": "span.count-plus",
+              "op": [
+                {
+                  "text": {}
+                },
+                {
+                  "regexGroup": {
+                    "pattern": "\\[\\s*([\\d,]+)\\s*]",
+                    "group": 1
+                  }
+                },
+                {
+                  "toInt": {}
+                }
+              ]
+            }
+          ]
+        },
+        "viewCount": {
+          "op": [
+            {
+              "afterIcon": "fa-eye"
+            }
+          ]
+        },
+        "recommendCount": {
+          "op": [
+            {
+              "afterIcon": "fa-thumbs-o-up"
+            },
+            {
+              "toInt": {}
+            }
+          ]
+        },
+        "postedAt": {
+          "op": [
+            {
+              "afterIcon": "fa-clock-o"
+            },
+            {
+              "date": {}
+            }
+          ]
+        },
+        "thumbnailUrl": {
+          "select": "div.img-item img, div.img-item2 img, div.img-item3 img",
+          "op": [
+            {
+              "absUrl": "src"
+            }
+          ]
+        }
+      },
+      "extras": {}
+    },
+    "MARKET": {
+      "row": "ul#bo_webzine > li",
+      "fields": {
+        "category": {
+          "select": "h5.card-title > a",
+          "op": [
+            {
+              "subjectPart": "first"
+            }
+          ]
+        },
+        "subCategory": {
+          "select": "h5.card-title > a",
+          "op": [
+            {
+              "subjectPart": 1
+            }
+          ]
+        },
+        "title": {
+          "select": "h5.card-title > a",
+          "op": [
+            {
+              "subjectPart": "last"
+            }
+          ],
+          "required": true
+        },
+        "url": {
+          "select": "h5.card-title > a",
+          "op": [
+            {
+              "absUrl": "href"
+            }
+          ],
+          "required": true
+        },
+        "writer": {
+          "select": "a.sv_member",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "commentCount": {
+          "select": "a.win_imgbox.me-a",
+          "op": [
+            {
+              "text": {}
+            },
+            {
+              "toInt": {}
+            }
+          ],
+          "fallback": [
+            {
+              "select": "span.count-plus",
+              "op": [
+                {
+                  "text": {}
+                },
+                {
+                  "regexGroup": {
+                    "pattern": "\\[\\s*([\\d,]+)\\s*]",
+                    "group": 1
+                  }
+                },
+                {
+                  "toInt": {}
+                }
+              ]
+            }
+          ]
+        },
+        "viewCount": {
+          "op": [
+            {
+              "afterIcon": "fa-eye"
+            }
+          ]
+        },
+        "recommendCount": {
+          "op": [
+            {
+              "afterIcon": "fa-thumbs-o-up"
+            },
+            {
+              "toInt": {}
+            }
+          ]
+        },
+        "postedAt": {
+          "op": [
+            {
+              "afterIcon": "fa-clock-o"
+            },
+            {
+              "date": {}
+            }
+          ]
+        },
+        "thumbnailUrl": {
+          "select": "div.img-item img, div.img-item2 img, div.img-item3 img",
+          "op": [
+            {
+              "absUrl": "src"
+            }
+          ]
+        }
+      },
+      "extras": {
+        "price": {
+          "select": "div.clearfix b > font",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "period": {
+          "select": "p.card-text > b",
+          "op": [
+            {
+              "text": {}
+            },
+            {
+              "removePrefix": "일정:"
+            }
+          ]
+        }
+      }
+    },
+    "GALLERY": {
+      "row": "div#bo_gallery > ul > li",
+      "fields": {
+        "category": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "subjectPart": "first"
+            }
+          ]
+        },
+        "subCategory": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "subjectPart": 1
+            }
+          ]
+        },
+        "title": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "subjectPart": "last"
+            }
+          ],
+          "required": true
+        },
+        "url": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "absUrl": "href"
+            }
+          ],
+          "required": true
+        },
+        "writer": {
+          "select": "a.sv_member",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "commentCount": {
+          "select": "a.win_imgbox.me-a",
+          "op": [
+            {
+              "text": {}
+            },
+            {
+              "toInt": {}
+            }
+          ],
+          "fallback": [
+            {
+              "select": "span.count-plus",
+              "op": [
+                {
+                  "text": {}
+                },
+                {
+                  "regexGroup": {
+                    "pattern": "\\[\\s*([\\d,]+)\\s*]",
+                    "group": 1
+                  }
+                },
+                {
+                  "toInt": {}
+                }
+              ]
+            }
+          ]
+        },
+        "viewCount": {
+          "op": [
+            {
+              "afterIcon": "fa-eye"
+            }
+          ]
+        },
+        "recommendCount": {
+          "op": [
+            {
+              "afterIcon": "fa-thumbs-o-up"
+            },
+            {
+              "toInt": {}
+            }
+          ]
+        },
+        "postedAt": {
+          "op": [
+            {
+              "afterIcon": "fa-clock-o"
+            },
+            {
+              "date": {}
+            }
+          ]
+        },
+        "thumbnailUrl": {
+          "select": "div.img-item img, div.img-item2 img, div.img-item3 img",
+          "op": [
+            {
+              "absUrl": "src"
+            }
+          ]
+        }
+      },
+      "extras": {}
+    },
+    "SECRET": {
+      "row": "section#bo_list > ul > li",
+      "fields": {
+        "title": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "subjectPart": "last"
+            }
+          ],
+          "required": true
+        },
+        "url": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "absUrl": "href"
+            }
+          ],
+          "required": true
+        },
+        "writer": {
+          "select": "a.sv_member",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "commentCount": {
+          "select": "a.win_imgbox.me-a",
+          "op": [
+            {
+              "text": {}
+            },
+            {
+              "toInt": {}
+            }
+          ],
+          "fallback": [
+            {
+              "select": "span.count-plus",
+              "op": [
+                {
+                  "text": {}
+                },
+                {
+                  "regexGroup": {
+                    "pattern": "\\[\\s*([\\d,]+)\\s*]",
+                    "group": 1
+                  }
+                },
+                {
+                  "toInt": {}
+                }
+              ]
+            }
+          ]
+        },
+        "viewCount": {
+          "op": [
+            {
+              "afterIcon": "fa-eye"
+            }
+          ]
+        },
+        "recommendCount": {
+          "op": [
+            {
+              "afterIcon": "fa-thumbs-o-up"
+            },
+            {
+              "toInt": {}
+            }
+          ]
+        },
+        "postedAt": {
+          "op": [
+            {
+              "afterIcon": "fa-clock-o"
+            },
+            {
+              "date": {}
+            }
+          ]
+        }
+      },
+      "extras": {}
+    },
+    "LIST": {
+      "row": "section#bo_list > ul > li",
+      "fields": {
+        "title": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "subjectPart": "last"
+            }
+          ],
+          "required": true
+        },
+        "url": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "absUrl": "href"
+            }
+          ],
+          "required": true
+        },
+        "category": {
+          "select": "#abcd",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "writer": {
+          "select": "a.sv_member",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "commentCount": {
+          "select": "a.win_imgbox.me-a",
+          "op": [
+            {
+              "text": {}
+            },
+            {
+              "toInt": {}
+            }
+          ],
+          "fallback": [
+            {
+              "select": "span.count-plus",
+              "op": [
+                {
+                  "text": {}
+                },
+                {
+                  "regexGroup": {
+                    "pattern": "\\[\\s*([\\d,]+)\\s*]",
+                    "group": 1
+                  }
+                },
+                {
+                  "toInt": {}
+                }
+              ]
+            }
+          ]
+        },
+        "viewCount": {
+          "op": [
+            {
+              "afterIcon": "fa-eye"
+            }
+          ]
+        },
+        "recommendCount": {
+          "op": [
+            {
+              "afterIcon": "fa-thumbs-o-up"
+            },
+            {
+              "toInt": {}
+            }
+          ]
+        },
+        "postedAt": {
+          "op": [
+            {
+              "afterIcon": "fa-clock-o"
+            },
+            {
+              "date": {}
+            }
+          ]
+        }
+      },
+      "extras": {}
+    },
+    "NEWS": {
+      "row": "section#bo_list > ul > li",
+      "fields": {
+        "title": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "subjectPart": "last"
+            }
+          ],
+          "required": true
+        },
+        "url": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "absUrl": "href"
+            }
+          ],
+          "required": true
+        },
+        "category": {
+          "select": "#abcd",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "writer": {
+          "select": "a.sv_member",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "commentCount": {
+          "select": "a.win_imgbox.me-a",
+          "op": [
+            {
+              "text": {}
+            },
+            {
+              "toInt": {}
+            }
+          ],
+          "fallback": [
+            {
+              "select": "span.count-plus",
+              "op": [
+                {
+                  "text": {}
+                },
+                {
+                  "regexGroup": {
+                    "pattern": "\\[\\s*([\\d,]+)\\s*]",
+                    "group": 1
+                  }
+                },
+                {
+                  "toInt": {}
+                }
+              ]
+            }
+          ]
+        },
+        "viewCount": {
+          "op": [
+            {
+              "afterIcon": "fa-eye"
+            }
+          ]
+        },
+        "recommendCount": {
+          "op": [
+            {
+              "afterIcon": "fa-thumbs-o-up"
+            },
+            {
+              "toInt": {}
+            }
+          ]
+        },
+        "postedAt": {
+          "op": [
+            {
+              "afterIcon": "fa-clock-o"
+            },
+            {
+              "date": {}
+            }
+          ]
+        }
+      },
+      "extras": {}
+    },
+    "PDS": {
+      "row": "section#bo_list > ul > li",
+      "fields": {
+        "title": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "subjectPart": "last"
+            }
+          ],
+          "required": true
+        },
+        "url": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "absUrl": "href"
+            }
+          ],
+          "required": true
+        },
+        "category": {
+          "select": "#abcd",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "subCategory": {
+          "select": "div.d-none",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "writer": {
+          "select": "a.sv_member",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "commentCount": {
+          "select": "a.win_imgbox.me-a",
+          "op": [
+            {
+              "text": {}
+            },
+            {
+              "toInt": {}
+            }
+          ],
+          "fallback": [
+            {
+              "select": "span.count-plus",
+              "op": [
+                {
+                  "text": {}
+                },
+                {
+                  "regexGroup": {
+                    "pattern": "\\[\\s*([\\d,]+)\\s*]",
+                    "group": 1
+                  }
+                },
+                {
+                  "toInt": {}
+                }
+              ]
+            }
+          ]
+        },
+        "viewCount": {
+          "op": [
+            {
+              "afterIcon": "fa-eye"
+            }
+          ]
+        },
+        "recommendCount": {
+          "op": [
+            {
+              "afterIcon": "fa-thumbs-o-up"
+            },
+            {
+              "toInt": {}
+            }
+          ]
+        },
+        "postedAt": {
+          "op": [
+            {
+              "afterIcon": "fa-clock-o"
+            },
+            {
+              "date": {}
+            }
+          ]
+        }
+      },
+      "extras": {}
+    },
+    "VOTE": {
+      "row": "section#bo_list > ul > li",
+      "fields": {
+        "title": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "subjectPart": "last"
+            }
+          ],
+          "required": true
+        },
+        "url": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "absUrl": "href"
+            }
+          ],
+          "required": true
+        },
+        "category": {
+          "select": "#abcd",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "writer": {
+          "select": "a.sv_member",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "commentCount": {
+          "select": "a.win_imgbox.me-a",
+          "op": [
+            {
+              "text": {}
+            },
+            {
+              "toInt": {}
+            }
+          ],
+          "fallback": [
+            {
+              "select": "span.count-plus",
+              "op": [
+                {
+                  "text": {}
+                },
+                {
+                  "regexGroup": {
+                    "pattern": "\\[\\s*([\\d,]+)\\s*]",
+                    "group": 1
+                  }
+                },
+                {
+                  "toInt": {}
+                }
+              ]
+            }
+          ]
+        },
+        "viewCount": {
+          "op": [
+            {
+              "afterIcon": "fa-eye"
+            }
+          ]
+        },
+        "recommendCount": {
+          "op": [
+            {
+              "afterIcon": "fa-thumbs-o-up"
+            },
+            {
+              "toInt": {}
+            }
+          ]
+        },
+        "postedAt": {
+          "op": [
+            {
+              "afterIcon": "fa-clock-o"
+            },
+            {
+              "date": {}
+            }
+          ]
+        }
+      },
+      "extras": {}
+    },
+    "GROUP": {
+      "row": "section#bo_list > ul > li",
+      "fields": {
+        "title": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "subjectPart": "last"
+            }
+          ],
+          "required": true
+        },
+        "url": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "absUrl": "href"
+            }
+          ],
+          "required": true
+        },
+        "category": {
+          "select": "div.d-none",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "subCategory": {
+          "select": "#abcd",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "writer": {
+          "select": "a.sv_member",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "commentCount": {
+          "select": "a.win_imgbox.me-a",
+          "op": [
+            {
+              "text": {}
+            },
+            {
+              "toInt": {}
+            }
+          ],
+          "fallback": [
+            {
+              "select": "span.count-plus",
+              "op": [
+                {
+                  "text": {}
+                },
+                {
+                  "regexGroup": {
+                    "pattern": "\\[\\s*([\\d,]+)\\s*]",
+                    "group": 1
+                  }
+                },
+                {
+                  "toInt": {}
+                }
+              ]
+            }
+          ]
+        },
+        "viewCount": {
+          "op": [
+            {
+              "afterIcon": "fa-eye"
+            }
+          ]
+        },
+        "recommendCount": {
+          "op": [
+            {
+              "afterIcon": "fa-thumbs-o-up"
+            },
+            {
+              "toInt": {}
+            }
+          ]
+        },
+        "postedAt": {
+          "op": [
+            {
+              "afterIcon": "fa-clock-o"
+            },
+            {
+              "date": {}
+            }
+          ]
+        }
+      },
+      "extras": {}
+    },
+    "JIRUM": {
+      "row": "section#bo_list > ul > li",
+      "fields": {
+        "title": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "subjectPart": "last"
+            }
+          ],
+          "required": true
+        },
+        "url": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "absUrl": "href"
+            }
+          ],
+          "required": true
+        },
+        "category": {
+          "select": "#abcd",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "writer": {
+          "select": "a.sv_member",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "commentCount": {
+          "select": "a.win_imgbox.me-a",
+          "op": [
+            {
+              "text": {}
+            },
+            {
+              "toInt": {}
+            }
+          ],
+          "fallback": [
+            {
+              "select": "span.count-plus",
+              "op": [
+                {
+                  "text": {}
+                },
+                {
+                  "regexGroup": {
+                    "pattern": "\\[\\s*([\\d,]+)\\s*]",
+                    "group": 1
+                  }
+                },
+                {
+                  "toInt": {}
+                }
+              ]
+            }
+          ]
+        },
+        "viewCount": {
+          "op": [
+            {
+              "afterIcon": "fa-eye"
+            }
+          ]
+        },
+        "recommendCount": {
+          "op": [
+            {
+              "afterIcon": "fa-thumbs-o-up"
+            },
+            {
+              "toInt": {}
+            }
+          ]
+        },
+        "postedAt": {
+          "op": [
+            {
+              "afterIcon": "fa-clock-o"
+            },
+            {
+              "date": {}
+            }
+          ]
+        }
+      },
+      "extras": {
+        "price": {
+          "select": "div.text-right",
+          "op": [
+            {
+              "textWithoutSrOnly": {}
+            }
+          ]
+        }
+      }
+    },
+    "MART": {
+      "row": "section#bo_list > ul > li",
+      "fields": {
+        "title": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "subjectPart": "last"
+            }
+          ],
+          "required": true
+        },
+        "url": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "absUrl": "href"
+            }
+          ],
+          "required": true
+        },
+        "category": {
+          "select": "#abcd",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "writer": {
+          "select": "a.sv_member",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "commentCount": {
+          "select": "a.win_imgbox.me-a",
+          "op": [
+            {
+              "text": {}
+            },
+            {
+              "toInt": {}
+            }
+          ],
+          "fallback": [
+            {
+              "select": "span.count-plus",
+              "op": [
+                {
+                  "text": {}
+                },
+                {
+                  "regexGroup": {
+                    "pattern": "\\[\\s*([\\d,]+)\\s*]",
+                    "group": 1
+                  }
+                },
+                {
+                  "toInt": {}
+                }
+              ]
+            }
+          ]
+        },
+        "viewCount": {
+          "op": [
+            {
+              "afterIcon": "fa-eye"
+            }
+          ]
+        },
+        "recommendCount": {
+          "op": [
+            {
+              "afterIcon": "fa-thumbs-o-up"
+            },
+            {
+              "toInt": {}
+            }
+          ]
+        },
+        "postedAt": {
+          "op": [
+            {
+              "afterIcon": "fa-clock-o"
+            },
+            {
+              "date": {}
+            }
+          ]
+        }
+      },
+      "extras": {
+        "price": {
+          "select": "div.text-right",
+          "op": [
+            {
+              "textWithoutSrOnly": {}
+            }
+          ]
+        }
+      }
+    },
+    "GIVE": {
+      "row": "section#bo_list > ul > li",
+      "fields": {
+        "title": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "subjectPart": "last"
+            }
+          ],
+          "required": true
+        },
+        "url": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "absUrl": "href"
+            }
+          ],
+          "required": true
+        },
+        "category": {
+          "select": "#abcd",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "writer": {
+          "select": "a.sv_member",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "commentCount": {
+          "select": "a.win_imgbox.me-a",
+          "op": [
+            {
+              "text": {}
+            },
+            {
+              "toInt": {}
+            }
+          ],
+          "fallback": [
+            {
+              "select": "span.count-plus",
+              "op": [
+                {
+                  "text": {}
+                },
+                {
+                  "regexGroup": {
+                    "pattern": "\\[\\s*([\\d,]+)\\s*]",
+                    "group": 1
+                  }
+                },
+                {
+                  "toInt": {}
+                }
+              ]
+            }
+          ]
+        },
+        "viewCount": {
+          "op": [
+            {
+              "afterIcon": "fa-eye"
+            }
+          ]
+        },
+        "recommendCount": {
+          "op": [
+            {
+              "afterIcon": "fa-thumbs-o-up"
+            },
+            {
+              "toInt": {}
+            }
+          ]
+        },
+        "postedAt": {
+          "op": [
+            {
+              "afterIcon": "fa-clock-o"
+            },
+            {
+              "date": {}
+            }
+          ]
+        }
+      },
+      "extras": {}
+    },
+    "COOLENJOY": {
+      "row": "section#bo_list > ul > li",
+      "fields": {
+        "title": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "subjectPart": "last"
+            }
+          ],
+          "required": true
+        },
+        "url": {
+          "select": "a.na-subject",
+          "op": [
+            {
+              "absUrl": "href"
+            }
+          ],
+          "required": true
+        },
+        "category": {
+          "select": "div.d-none",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "writer": {
+          "select": "a.sv_member",
+          "op": [
+            {
+              "text": {}
+            }
+          ]
+        },
+        "commentCount": {
+          "select": "a.win_imgbox.me-a",
+          "op": [
+            {
+              "text": {}
+            },
+            {
+              "toInt": {}
+            }
+          ],
+          "fallback": [
+            {
+              "select": "span.count-plus",
+              "op": [
+                {
+                  "text": {}
+                },
+                {
+                  "regexGroup": {
+                    "pattern": "\\[\\s*([\\d,]+)\\s*]",
+                    "group": 1
+                  }
+                },
+                {
+                  "toInt": {}
+                }
+              ]
+            }
+          ]
+        },
+        "viewCount": {
+          "op": [
+            {
+              "afterIcon": "fa-eye"
+            }
+          ]
+        },
+        "recommendCount": {
+          "op": [
+            {
+              "afterIcon": "fa-thumbs-o-up"
+            },
+            {
+              "toInt": {}
+            }
+          ]
+        },
+        "postedAt": {
+          "op": [
+            {
+              "afterIcon": "fa-clock-o"
+            },
+            {
+              "date": {}
+            }
+          ]
+        }
+      },
+      "extras": {}
+    }
+  }
+}

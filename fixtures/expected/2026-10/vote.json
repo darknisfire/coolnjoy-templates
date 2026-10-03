@@ -1,0 +1,265 @@
+{
+    "fixture": "2026-10/list/vote.html",
+    "layout": "VOTE",
+    "pageUrl": "https://coolenjoy.net/bbs/votes",
+    "clock": "2026-10-03T04:10:00Z",
+    "itemCount": 15,
+    "warnings": [],
+    "items": [
+        {
+            "board": null,
+            "category": "진행중",
+            "subCategory": null,
+            "title": "진짜 이거 하나면 모든 해킹 가능 !!!! 생명공학 팀…",
+            "url": "https://coolenjoy.net/bbs/votes/2347484",
+            "writer": "{{writer_02}}",
+            "commentCount": 0,
+            "viewCount": "1",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "마감됨",
+            "subCategory": null,
+            "title": "컴퓨터 청소 방법에 대하여 블로워식 과 흡입식 ?",
+            "url": "https://coolenjoy.net/bbs/votes/2347283",
+            "writer": "{{writer_03}}",
+            "commentCount": 37,
+            "viewCount": "694",
+            "recommendCount": 8,
+            "postedAt": {
+                "dateTime": "2026-09-26T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "마감됨",
+            "subCategory": null,
+            "title": "약속 장소에는 보통 몇 분 전에 도착하시나요?",
+            "url": "https://coolenjoy.net/bbs/votes/2346723",
+            "writer": "{{writer_04}}",
+            "commentCount": 35,
+            "viewCount": "912",
+            "recommendCount": 9,
+            "postedAt": {
+                "dateTime": "2026-07-16T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "마감됨",
+            "subCategory": null,
+            "title": "쉬는 날에는 외출과 집콕 중 어떤 것을 선호하시나요?",
+            "url": "https://coolenjoy.net/bbs/votes/2346717",
+            "writer": "{{writer_04}}",
+            "commentCount": 34,
+            "viewCount": "603",
+            "recommendCount": 6,
+            "postedAt": {
+                "dateTime": "2026-07-16T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "마감됨",
+            "subCategory": null,
+            "title": "나는 투자 or 금전 관리를 이렇게 한다!!",
+            "url": "https://coolenjoy.net/bbs/votes/2346139",
+            "writer": "{{writer_05}}",
+            "commentCount": 56,
+            "viewCount": "2091",
+            "recommendCount": 10,
+            "postedAt": {
+                "dateTime": "2026-02-24T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "마감됨",
+            "subCategory": null,
+            "title": "여러분은 게임 , 작업시 PC에서 풀로드시 어떻게 하시…",
+            "url": "https://coolenjoy.net/bbs/votes/2345753",
+            "writer": "{{writer_06}}",
+            "commentCount": 57,
+            "viewCount": "1568",
+            "recommendCount": 15,
+            "postedAt": {
+                "dateTime": "2026-01-24T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "마감됨",
+            "subCategory": null,
+            "title": "가장 좋아하는 짜장 라면은?",
+            "url": "https://coolenjoy.net/bbs/votes/2345049",
+            "writer": "{{writer_05}}",
+            "commentCount": 66,
+            "viewCount": "1733",
+            "recommendCount": 14,
+            "postedAt": {
+                "dateTime": "2026-01-07T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "마감됨",
+            "subCategory": null,
+            "title": "본체를 어디에 두고 사용하시나요?",
+            "url": "https://coolenjoy.net/bbs/votes/2344804",
+            "writer": "{{writer_06}}",
+            "commentCount": 73,
+            "viewCount": "1465",
+            "recommendCount": 15,
+            "postedAt": {
+                "dateTime": "2026-01-05T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "마감됨",
+            "subCategory": null,
+            "title": "선호하는 커피 브랜드는?",
+            "url": "https://coolenjoy.net/bbs/votes/2343963",
+            "writer": "{{writer_07}}",
+            "commentCount": 64,
+            "viewCount": "1365",
+            "recommendCount": 14,
+            "postedAt": {
+                "dateTime": "2025-12-26T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "마감됨",
+            "subCategory": null,
+            "title": "다가올 2026년 쿨엔조이 에 바라는점은?",
+            "url": "https://coolenjoy.net/bbs/votes/2343947",
+            "writer": "{{writer_07}}",
+            "commentCount": 54,
+            "viewCount": "1037",
+            "recommendCount": 14,
+            "postedAt": {
+                "dateTime": "2025-12-26T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "마감됨",
+            "subCategory": null,
+            "title": "선호 하시는 중고거래 어플은?",
+            "url": "https://coolenjoy.net/bbs/votes/2343221",
+            "writer": "{{writer_07}}",
+            "commentCount": 46,
+            "viewCount": "1250",
+            "recommendCount": 7,
+            "postedAt": {
+                "dateTime": "2025-12-11T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "마감됨",
+            "subCategory": null,
+            "title": "2026년 쿨엔조이 가족분들의 새해 소원은?",
+            "url": "https://coolenjoy.net/bbs/votes/2343213",
+            "writer": "{{writer_07}}",
+            "commentCount": 45,
+            "viewCount": "985",
+            "recommendCount": 10,
+            "postedAt": {
+                "dateTime": "2025-12-11T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "마감됨",
+            "subCategory": null,
+            "title": "국내 이커머스 개인정보 유출 사고 탈퇴했다 안했다",
+            "url": "https://coolenjoy.net/bbs/votes/2342523",
+            "writer": "{{writer_07}}",
+            "commentCount": 53,
+            "viewCount": "1234",
+            "recommendCount": 9,
+            "postedAt": {
+                "dateTime": "2025-11-30T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "마감됨",
+            "subCategory": null,
+            "title": "2025년 올 한해 이루고자 한 일들 이루셨나요?",
+            "url": "https://coolenjoy.net/bbs/votes/2341872",
+            "writer": "{{writer_05}}",
+            "commentCount": 48,
+            "viewCount": "976",
+            "recommendCount": 9,
+            "postedAt": {
+                "dateTime": "2025-11-27T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "마감됨",
+            "subCategory": null,
+            "title": "하루에 스팸 전화(문자) 몇 통 받으셨나요?",
+            "url": "https://coolenjoy.net/bbs/votes/2341848",
+            "writer": "{{writer_07}}",
+            "commentCount": 54,
+            "viewCount": "1010",
+            "recommendCount": 9,
+            "postedAt": {
+                "dateTime": "2025-11-27T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        }
+    ]
+}

@@ -1,0 +1,282 @@
+{
+    "fixture": "2026-10/list/news.html",
+    "layout": "NEWS",
+    "pageUrl": "https://coolenjoy.net/bbs/38",
+    "clock": "2026-10-03T04:10:00Z",
+    "itemCount": 16,
+    "warnings": [],
+    "items": [
+        {
+            "board": null,
+            "category": "공지",
+            "subCategory": null,
+            "title": "[필독] 뉴스/신제품 게시판 규정 안내 - 2025.07.14 업데이트",
+            "url": "https://coolenjoy.net/bbs/38/4985888",
+            "writer": "{{writer_01}}",
+            "commentCount": 52,
+            "viewCount": "32.4k",
+            "recommendCount": 17,
+            "postedAt": {
+                "dateTime": "2023-10-26T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "소프트웨어",
+            "subCategory": null,
+            "title": "Black Forest Labs 차세대 AI 이미지 생성 모델 FLUX 3 Image 출시…",
+            "url": "https://coolenjoy.net/bbs/38/7067622",
+            "writer": "{{writer_02}}",
+            "commentCount": 2,
+            "viewCount": "63",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-10-03T02:25",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "소프트웨어",
+            "subCategory": null,
+            "title": "ComfyUI사 Comfy Agent 발표, AI와 대화 워크플로우를 자동으로 생성, 수정…",
+            "url": "https://coolenjoy.net/bbs/38/7067621",
+            "writer": "{{writer_02}}",
+            "commentCount": 2,
+            "viewCount": "36",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-10-03T02:25",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "HW기타",
+            "subCategory": null,
+            "title": "Google 프로젝트 선캐처(Suncatcher) 발표, 구글의 야심작 머신러닝(데이터센터…",
+            "url": "https://coolenjoy.net/bbs/38/7067620",
+            "writer": "{{writer_02}}",
+            "commentCount": 1,
+            "viewCount": "50",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-03T02:10",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "HW기타",
+            "subCategory": null,
+            "title": "\"최대 4번 할인으로 더 강력하게!\" MSI, 11번가 월간 십일절 데스크탑 특가",
+            "url": "https://coolenjoy.net/bbs/38/7067487",
+            "writer": "{{writer_03}}",
+            "commentCount": 7,
+            "viewCount": "160",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "디스플레이",
+            "subCategory": null,
+            "title": "[11번가]😶‍🌫️시선집중💥LG 27인치 UHD 4K 고해상도 모니터 27U711B (10…",
+            "url": "https://coolenjoy.net/bbs/38/7067486",
+            "writer": "{{writer_04}}",
+            "commentCount": 5,
+            "viewCount": "66",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "업계동향",
+            "subCategory": null,
+            "title": "{{writer_05}}, HYTE 홀로라이브 사쿠라 미코 콜라보 제품 예약 판매 진행",
+            "url": "https://coolenjoy.net/bbs/38/7067485",
+            "writer": "{{writer_05}}",
+            "commentCount": 7,
+            "viewCount": "144",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "업계동향",
+            "subCategory": null,
+            "title": "Antec, 창립 40주년 기념 10월 공식 쇼핑몰 주말 특가 1차 진행",
+            "url": "https://coolenjoy.net/bbs/38/7067484",
+            "writer": "{{writer_06}}",
+            "commentCount": 7,
+            "viewCount": "145",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "케이스,튜닝",
+            "subCategory": null,
+            "title": "‘하이엔드 설계의 진화’ 마이크로닉스, 프리미엄 PC 케이스 ‘HAVN HS 360’ 출시",
+            "url": "https://coolenjoy.net/bbs/38/7067483",
+            "writer": "{{writer_07}}",
+            "commentCount": 7,
+            "viewCount": "154",
+            "recommendCount": 2,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "케이스,튜닝",
+            "subCategory": null,
+            "title": "마이크로닉스, 개천절 맞아 WIZMAX 릿지 PRO ‘3만원대’ 특가",
+            "url": "https://coolenjoy.net/bbs/38/7067479",
+            "writer": "{{writer_07}}",
+            "commentCount": 9,
+            "viewCount": "93",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "업계동향",
+            "subCategory": null,
+            "title": "다크플래쉬 ‘반값수다’, 10/7(수) 오후 5시! 놓치면 아쉬운 50% 할인",
+            "url": "https://coolenjoy.net/bbs/38/7067469",
+            "writer": "{{writer_08}}",
+            "commentCount": 6,
+            "viewCount": "80",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "키보드,마우스",
+            "subCategory": null,
+            "title": "펀키스, 39g 초경량 8K 게이밍 마우스 ATK A9 Mini Ultimate+ / F1…",
+            "url": "https://coolenjoy.net/bbs/38/7067466",
+            "writer": "{{writer_09}}",
+            "commentCount": 10,
+            "viewCount": "125",
+            "recommendCount": 2,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "파워",
+            "subCategory": null,
+            "title": "FSP, DAGGER PRO 850W 80PLUS GOLD ATX 3.1 (12V-2x6)…",
+            "url": "https://coolenjoy.net/bbs/38/7067465",
+            "writer": "{{writer_10}}",
+            "commentCount": 8,
+            "viewCount": "103",
+            "recommendCount": 2,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "업계동향",
+            "subCategory": null,
+            "title": "인사이 음식물처리기 쏜다! 탁탁몰, 한글날 기념 ‘우리말 대잔치’ 이벤트 진행",
+            "url": "https://coolenjoy.net/bbs/38/7067460",
+            "writer": "{{writer_11}}",
+            "commentCount": 7,
+            "viewCount": "66",
+            "recommendCount": 2,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "업계동향",
+            "subCategory": null,
+            "title": "[출시/특가/이벤트 총정리] 브라보텍 & 펀키스 10월 1주차 소식 안내",
+            "url": "https://coolenjoy.net/bbs/38/7067454",
+            "writer": "{{writer_12}}",
+            "commentCount": 7,
+            "viewCount": "59",
+            "recommendCount": 2,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "업계동향",
+            "subCategory": null,
+            "title": "초등학생 의자 추천｜아이 의자, 높이보다 ‘발이 편한지’부터 확인하세요, {{writer_13}} CC03…",
+            "url": "https://coolenjoy.net/bbs/38/7067453",
+            "writer": "{{writer_13}}",
+            "commentCount": 5,
+            "viewCount": "43",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        }
+    ]
+}

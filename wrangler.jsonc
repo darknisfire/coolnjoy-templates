@@ -1,0 +1,8 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "coolnjoy-templates",
+	"compatibility_date": "2026-06-01",
+	// Worker 코드 없이 정적 Assets만 배포한다. dist/ 는 scripts/build-dist.mjs 가 만든다.
+	"assets": { "directory": "./dist" },
+	"workers_dev": true
+}

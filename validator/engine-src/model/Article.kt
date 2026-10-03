@@ -1,0 +1,51 @@
+package bateaux.spt.coolnjoy.core.model
+
+/** 이름이 붙은 URL(첨부파일, 관련 링크). [url]은 절대 URL. */
+data class ArticleLink(
+    val name: String,
+    val url: String,
+)
+
+/**
+ * 게시글 상세. 실제 마크업(2026-10 BS4-Basic/Nariya)에서 얻을 수 있는 필드만 담는다.
+ *
+ * @property url 정식 URL(`/bbs/{bo_table}/{wr_id}`)
+ * @property category `h1#bo_v_title`의 `분류 | 제목`에서 분류. 없으면 null
+ * @property writerProfileImageUrl 작성자 카드의 프로필 이미지(절대 URL). 없으면 null
+ * @property viewCount 조회수(쉼표 제거). 이 게시판이 표시하지 않으면 null
+ * @property recommendCount 추천수. 추천 기능이 없는 게시판(예: 회원장터)은 null
+ * @property preContentHtml 본문 앞에 스킨이 끼워 넣는 영역(회원장터 거래 정보 표, 자료실 요약 표). 정화됨. 없으면 null
+ * @property contentHtml 본문(`div.view-content`) 정화된 HTML. script/style/iframe/이벤트 속성 제거, 상대 URL은 절대 URL
+ * @property images 본문 이미지(절대 URL). 원본으로 연결되는 `a.view_image`가 감싼 이미지는 원본 URL, 아니면 `src`
+ * @property attachments 첨부파일(그누보드 표준 `download.php` 링크). 이 사이트 자료실은 외부 iframe([embedUrls])을 쓴다
+ * @property links 게시글 관련 링크(그누보드 표준 `link.php`)
+ * @property embedUrls 제거된 iframe의 원래 `src`(유튜브, 자료실 다운로드 프레임 등)
+ * @property comments 이 페이지에 실린 댓글(사이트는 페이지당 50개). 대댓글 들여쓰기 표식은 마크업에 없어 평면 목록이다
+ * @property commentCount 전체 댓글 수
+ * @property commentPage 이 페이지의 댓글 페이지(1부터)
+ * @property commentPageCount 댓글 전체 페이지 수
+ * @property extras writerId(mb_id) 등
+ */
+data class Article(
+    val boardId: String,
+    val wrId: Long,
+    val url: String,
+    val title: String,
+    val category: String? = null,
+    val writer: String? = null,
+    val writerProfileImageUrl: String? = null,
+    val postedAt: PostedAt? = null,
+    val viewCount: Int? = null,
+    val recommendCount: Int? = null,
+    val preContentHtml: String? = null,
+    val contentHtml: String = "",
+    val images: List<String> = emptyList(),
+    val attachments: List<ArticleLink> = emptyList(),
+    val links: List<ArticleLink> = emptyList(),
+    val embedUrls: List<String> = emptyList(),
+    val comments: List<CommentItem> = emptyList(),
+    val commentCount: Int = 0,
+    val commentPage: Int = 1,
+    val commentPageCount: Int = 1,
+    val extras: Map<String, String> = emptyMap(),
+)

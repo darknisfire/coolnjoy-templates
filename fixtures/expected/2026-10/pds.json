@@ -1,0 +1,265 @@
+{
+    "fixture": "2026-10/list/pds.html",
+    "layout": "PDS",
+    "pageUrl": "https://coolenjoy.net/bbs/pds",
+    "clock": "2026-10-03T04:10:00Z",
+    "itemCount": 15,
+    "warnings": [],
+    "items": [
+        {
+            "board": null,
+            "category": "드라전용",
+            "subCategory": "사운드카드",
+            "title": "Realtek High Definition Audio …",
+            "url": "https://coolenjoy.net/bbs/pds/203599",
+            "writer": "{{writer_02}}",
+            "commentCount": 4,
+            "viewCount": "120",
+            "recommendCount": 2,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "유틸",
+            "subCategory": "시스템/최적화",
+            "title": "CCleaner v7.12.1526",
+            "url": "https://coolenjoy.net/bbs/pds/203598",
+            "writer": "{{writer_02}}",
+            "commentCount": 4,
+            "viewCount": "84",
+            "recommendCount": 3,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "드라전용",
+            "subCategory": "NVIDIA VGA",
+            "title": "Nvidia GeForce Game Ready 582.…",
+            "url": "https://coolenjoy.net/bbs/pds/203578",
+            "writer": "{{writer_02}}",
+            "commentCount": 10,
+            "viewCount": "661",
+            "recommendCount": 5,
+            "postedAt": {
+                "dateTime": "2026-10-01T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "드라전용",
+            "subCategory": "입력장치",
+            "title": "Logitech G HUB Software v2026.…",
+            "url": "https://coolenjoy.net/bbs/pds/203574",
+            "writer": "{{writer_02}}",
+            "commentCount": 5,
+            "viewCount": "128",
+            "recommendCount": 3,
+            "postedAt": {
+                "dateTime": "2026-10-01T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "드라전용",
+            "subCategory": "입력장치",
+            "title": "Logitech Logi Options+ v2.8.98…",
+            "url": "https://coolenjoy.net/bbs/pds/203567",
+            "writer": "{{writer_02}}",
+            "commentCount": 5,
+            "viewCount": "66",
+            "recommendCount": 2,
+            "postedAt": {
+                "dateTime": "2026-10-01T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "유틸",
+            "subCategory": "HW모니터링",
+            "title": "DEEPCOOL DIGITAL 디스플레이 통합 소프트웨…",
+            "url": "https://coolenjoy.net/bbs/pds/203556",
+            "writer": "{{writer_03}}",
+            "commentCount": 6,
+            "viewCount": "99",
+            "recommendCount": 2,
+            "postedAt": {
+                "dateTime": "2026-09-30T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "BIOS",
+            "subCategory": "메인보드",
+            "title": "ASUS ROG STRIX Z690-A GAMING W…",
+            "url": "https://coolenjoy.net/bbs/pds/203553",
+            "writer": "{{writer_03}}",
+            "commentCount": 6,
+            "viewCount": "72",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-09-30T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "드라전용",
+            "subCategory": "AMD",
+            "title": "AMD Software: Adrenalin Editio…",
+            "url": "https://coolenjoy.net/bbs/pds/203548",
+            "writer": "{{writer_04}}",
+            "commentCount": 9,
+            "viewCount": "524",
+            "recommendCount": 3,
+            "postedAt": {
+                "dateTime": "2026-09-30T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "드라전용",
+            "subCategory": "Intel내장 VGA",
+            "title": "Intel UHD & Arc Graphics Drive…",
+            "url": "https://coolenjoy.net/bbs/pds/203542",
+            "writer": "{{writer_02}}",
+            "commentCount": 6,
+            "viewCount": "100",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-09-29T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "드라전용",
+            "subCategory": "사운드카드",
+            "title": "Realtek High Definition Audio …",
+            "url": "https://coolenjoy.net/bbs/pds/203539",
+            "writer": "{{writer_02}}",
+            "commentCount": 6,
+            "viewCount": "146",
+            "recommendCount": 2,
+            "postedAt": {
+                "dateTime": "2026-09-29T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "드라전용",
+            "subCategory": "입력장치",
+            "title": "Logitech OnBoard Memory Manage…",
+            "url": "https://coolenjoy.net/bbs/pds/203515",
+            "writer": "{{writer_02}}",
+            "commentCount": 6,
+            "viewCount": "164",
+            "recommendCount": 2,
+            "postedAt": {
+                "dateTime": "2026-09-28T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "드라전용",
+            "subCategory": "사운드카드",
+            "title": "Realtek High Definition Audio …",
+            "url": "https://coolenjoy.net/bbs/pds/203514",
+            "writer": "{{writer_02}}",
+            "commentCount": 7,
+            "viewCount": "164",
+            "recommendCount": 3,
+            "postedAt": {
+                "dateTime": "2026-09-28T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "유틸",
+            "subCategory": "시스템/최적화",
+            "title": "Display Driver Uninstaller (DD…",
+            "url": "https://coolenjoy.net/bbs/pds/203508",
+            "writer": "{{writer_02}}",
+            "commentCount": 10,
+            "viewCount": "268",
+            "recommendCount": 6,
+            "postedAt": {
+                "dateTime": "2026-09-28T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "드라전용",
+            "subCategory": "Intel내장 VGA",
+            "title": "Intel 11-14th Gen Core Process…",
+            "url": "https://coolenjoy.net/bbs/pds/203489",
+            "writer": "{{writer_02}}",
+            "commentCount": 8,
+            "viewCount": "266",
+            "recommendCount": 3,
+            "postedAt": {
+                "dateTime": "2026-09-27T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "드라전용",
+            "subCategory": "Intel내장 VGA",
+            "title": "Intel UHD & Arc Graphics Drive…",
+            "url": "https://coolenjoy.net/bbs/pds/203451",
+            "writer": "{{writer_02}}",
+            "commentCount": 9,
+            "viewCount": "167",
+            "recommendCount": 2,
+            "postedAt": {
+                "dateTime": "2026-09-25T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        }
+    ]
+}

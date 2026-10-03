@@ -1,0 +1,314 @@
+{
+    "fixture": "2026-10/list/jirum.html",
+    "layout": "JIRUM",
+    "pageUrl": "https://coolenjoy.net/bbs/jirum",
+    "clock": "2026-10-03T04:10:00Z",
+    "itemCount": 16,
+    "warnings": [],
+    "items": [
+        {
+            "board": null,
+            "category": "이벤트",
+            "subCategory": null,
+            "title": "🌔한가위 빅세일🌔 삼성 오디세이부터 스마트모니터까지✨특가 총집합✨고민은 배송만 늦출뿐!",
+            "url": "https://coolenjoy.net/bbs/jirum/3553133",
+            "writer": "{{writer_02}}",
+            "commentCount": 26,
+            "viewCount": "40.3k",
+            "recommendCount": 2,
+            "postedAt": {
+                "dateTime": "2026-09-07T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "93,897원"
+            }
+        },
+        {
+            "board": null,
+            "category": "모바일",
+            "subCategory": null,
+            "title": "휴대폰성지 / 수도권방문 / 성지의기준 휴대폰성지 순진",
+            "url": "https://coolenjoy.net/bbs/jirum/3562819",
+            "writer": "{{writer_03}}",
+            "commentCount": 3,
+            "viewCount": "331",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-10-03T11:13",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "본문참고"
+            }
+        },
+        {
+            "board": null,
+            "category": "식품",
+            "subCategory": null,
+            "title": "락토바이오틱스 맥스 프로바이오틱스 생유산균 4개월분 (23,900원/무료)",
+            "url": "https://coolenjoy.net/bbs/jirum/3562818",
+            "writer": "{{writer_04}}",
+            "commentCount": 4,
+            "viewCount": "313",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-10-03T11:13",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "23,900원"
+            }
+        },
+        {
+            "board": null,
+            "category": "기타",
+            "subCategory": null,
+            "title": "[세모통] SK망 알뜰폰 100GB+5M 음성문자무제한 880원(4개월)",
+            "url": "https://coolenjoy.net/bbs/jirum/3562804",
+            "writer": "{{writer_04}}",
+            "commentCount": 5,
+            "viewCount": "652",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-10-03T09:57",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "23,000원"
+            }
+        },
+        {
+            "board": null,
+            "category": "PC관련",
+            "subCategory": null,
+            "title": "LG모니터 가을쇼핑 특가🍂 4세대 OLED 게이밍 27GX700A (72만), 300Hz…",
+            "url": "https://coolenjoy.net/bbs/jirum/3562587",
+            "writer": "{{writer_05}}",
+            "commentCount": 11,
+            "viewCount": "2711",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "729,000원"
+            }
+        },
+        {
+            "board": null,
+            "category": "PC관련",
+            "subCategory": null,
+            "title": "AULA 독거미 NOVA98 8K 기계식 키보드 블루투스 10000mAh 가스켓 LCD 멀…",
+            "url": "https://coolenjoy.net/bbs/jirum/3562586",
+            "writer": "{{writer_06}}",
+            "commentCount": 9,
+            "viewCount": "3018",
+            "recommendCount": 2,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "56,650원"
+            }
+        },
+        {
+            "board": null,
+            "category": "PC관련",
+            "subCategory": null,
+            "title": "[다얼유] 데스크테리어 최대 20% 할인 진행 안내 (10/3 ~ 10/11)",
+            "url": "https://coolenjoy.net/bbs/jirum/3562582",
+            "writer": "{{writer_07}}",
+            "commentCount": 9,
+            "viewCount": "2613",
+            "recommendCount": 2,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "79,200원"
+            }
+        },
+        {
+            "board": null,
+            "category": "PC관련",
+            "subCategory": null,
+            "title": "오늘 20시! 에이서 노트북 지마켓 인텔 라이브 특가",
+            "url": "https://coolenjoy.net/bbs/jirum/3562581",
+            "writer": "{{writer_08}}",
+            "commentCount": 11,
+            "viewCount": "2511",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "699,000원"
+            }
+        },
+        {
+            "board": null,
+            "category": "이벤트",
+            "subCategory": null,
+            "title": "🔥모니칸 어텀세일🔥삼성 오디세이 OLED G8 역대급 할인? 133만원대에 가능⭐",
+            "url": "https://coolenjoy.net/bbs/jirum/3562564",
+            "writer": "{{writer_02}}",
+            "commentCount": 8,
+            "viewCount": "2459",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "1,333,200원"
+            }
+        },
+        {
+            "board": null,
+            "category": "PC관련",
+            "subCategory": null,
+            "title": "(한성) KingBank KRXB DDR5-6000 UDIMM M CL30 32GB(16G…",
+            "url": "https://coolenjoy.net/bbs/jirum/3562526",
+            "writer": "{{writer_06}}",
+            "commentCount": 12,
+            "viewCount": "2750",
+            "recommendCount": 2,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "598,460원"
+            }
+        },
+        {
+            "board": null,
+            "category": "기타",
+            "subCategory": null,
+            "title": "트립스토어 해외여행 땡처리 특가 모음",
+            "url": "https://coolenjoy.net/bbs/jirum/3562509",
+            "writer": "{{writer_04}}",
+            "commentCount": 13,
+            "viewCount": "4526",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "본문참고"
+            }
+        },
+        {
+            "board": null,
+            "category": "PC관련",
+            "subCategory": null,
+            "title": "MSI MAG 321UPD700 E14 듀얼모드 게이밍 4K IPS 144",
+            "url": "https://coolenjoy.net/bbs/jirum/3562508",
+            "writer": "{{writer_06}}",
+            "commentCount": 11,
+            "viewCount": "2657",
+            "recommendCount": 2,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "360,600원"
+            }
+        },
+        {
+            "board": null,
+            "category": "PC관련",
+            "subCategory": null,
+            "title": "[네이버] 🎉개천절 기념 35% 할인🎉 마이크로닉스 WIZMAX 릿지 PRO (38,900…",
+            "url": "https://coolenjoy.net/bbs/jirum/3562507",
+            "writer": "{{writer_09}}",
+            "commentCount": 11,
+            "viewCount": "2560",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "38,900원"
+            }
+        },
+        {
+            "board": null,
+            "category": "PC관련",
+            "subCategory": null,
+            "title": "😶‍🌫️시선집중💥LG 27인치 UHD 4K 고해상도 모니터 27U711B 10월 3일(토)…",
+            "url": "https://coolenjoy.net/bbs/jirum/3562504",
+            "writer": "{{writer_05}}",
+            "commentCount": 12,
+            "viewCount": "2328",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "269,880원"
+            }
+        },
+        {
+            "board": null,
+            "category": "PC관련",
+            "subCategory": null,
+            "title": "TCOMAS 최상위권 성능 수랭 쿨러 2종 예판 399,000원 -> 299,000원",
+            "url": "https://coolenjoy.net/bbs/jirum/3562503",
+            "writer": "{{writer_10}}",
+            "commentCount": 13,
+            "viewCount": "2408",
+            "recommendCount": 2,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "29,900원"
+            }
+        },
+        {
+            "board": null,
+            "category": "기타",
+            "subCategory": null,
+            "title": "핏쳐 라이프 모션 WEEK! 인기제품 ~35% 특가중💥",
+            "url": "https://coolenjoy.net/bbs/jirum/3562487",
+            "writer": "{{writer_11}}",
+            "commentCount": 11,
+            "viewCount": "1710",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "92,070원"
+            }
+        }
+    ]
+}

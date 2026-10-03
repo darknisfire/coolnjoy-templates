@@ -1,0 +1,180 @@
+{
+    "fixture": "2026-10/list/webzine.html",
+    "layout": "WEBZINE",
+    "pageUrl": "https://coolenjoy.net/bbs/daybook",
+    "clock": "2026-10-03T04:10:00Z",
+    "itemCount": 10,
+    "warnings": [],
+    "items": [
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "필립스 27B2N3500G 찜하기 이벤트",
+            "url": "https://coolenjoy.net/bbs/daybook/6734855",
+            "writer": "{{writer_02}}",
+            "commentCount": 136,
+            "viewCount": "754",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-16T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/daybook/d6240cf39dbc7291d7a73e08d510d82c_HfJCUOar_849273edc0f223254a4e0fce6cf76b871f6cc213.jpg",
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "알파스캔 3226UCHW 찜하기 이벤트",
+            "url": "https://coolenjoy.net/bbs/daybook/6734854",
+            "writer": "{{writer_02}}",
+            "commentCount": 135,
+            "viewCount": "696",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-16T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/daybook/d6240cf39dbc7291d7a73e08d510d82c_uWiO0NCU_0b895b310abf6e568d257e584d574e034186bfb9.jpg",
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "마이크로닉스 AI AIRZEN 160 냉각 지원 만화 …",
+            "url": "https://coolenjoy.net/bbs/daybook/6734838",
+            "writer": "{{writer_04}}",
+            "commentCount": 88,
+            "viewCount": "534",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-16T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/daybook/d6240cf39dbc7291d7a73e08d510d82c_uwfAL4Bq_b3c0573e26ed6a3c0d8825c26953e4f0e038f1ce.jpg",
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "에디 REACTOR 500W 파워서플라이 필드테스터 모…",
+            "url": "https://coolenjoy.net/bbs/daybook/6734832",
+            "writer": "{{writer_04}}",
+            "commentCount": 17,
+            "viewCount": "270",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-16T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/daybook/d6240cf39dbc7291d7a73e08d510d82c_mnYsrStU_cb0db2254efaf0fb10b0f05147b8b27aebf88d4b.png",
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "나는 어떤 PC 유저일까? MY PC-BTI 테스트하고…",
+            "url": "https://coolenjoy.net/bbs/daybook/6734828",
+            "writer": "{{writer_05}}",
+            "commentCount": 120,
+            "viewCount": "666",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-16T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/daybook/d6240cf39dbc7291d7a73e08d510d82c_EYuj7wpg_4251ae0b2b67dac5dafba6335b2d76cc1ea87bcc.jpg",
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "체리 DW2300 무선 키보드마우스 SET 필드테스트 …",
+            "url": "https://coolenjoy.net/bbs/daybook/6734777",
+            "writer": "{{writer_05}}",
+            "commentCount": 19,
+            "viewCount": "294",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-15T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/daybook/d6240cf39dbc7291d7a73e08d510d82c_YJQ1Xlb9_7eaa02a2c759f3e45431a3546590d4c55c4d110d.jpg",
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "1stPlayer 와칠 WA7-K RGB 필드테스트 모…",
+            "url": "https://coolenjoy.net/bbs/daybook/6734670",
+            "writer": "{{writer_04}}",
+            "commentCount": 13,
+            "viewCount": "293",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-10T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/daybook/d6240cf39dbc7291d7a73e08d510d82c_zsTapCXF_57e38937feeb35331339f8a497df288cd462dcfa.png",
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "초대형 이동식 TV거치대 카멜 SMB100 출시 기념 …",
+            "url": "https://coolenjoy.net/bbs/daybook/6734441",
+            "writer": "{{writer_06}}",
+            "commentCount": 143,
+            "viewCount": "735",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-09T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/daybook/d6240cf39dbc7291d7a73e08d510d82c_vk2DjRHF_e907d675eb07a548d97f760bddcb01b8b09867b5.jpg",
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "LG 울트라기어 AI 게이밍모니터 25G590B 필드 …",
+            "url": "https://coolenjoy.net/bbs/daybook/6734423",
+            "writer": "{{writer_02}}",
+            "commentCount": 40,
+            "viewCount": "5919",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-09T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/daybook/d6240cf39dbc7291d7a73e08d510d82c_wcKlPpVi_1b5545b739e99ec528217539800b896c69cc8a91.jpg",
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "써멀테이크와 아스크텍이 함께하는 TH360 V3 ULT…",
+            "url": "https://coolenjoy.net/bbs/daybook/6734417",
+            "writer": "{{writer_07}}",
+            "commentCount": 135,
+            "viewCount": "679",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-09T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/daybook/d6240cf39dbc7291d7a73e08d510d82c_IYvh438Q_b7413ec1ccdf98013482c02ae2f4eac7f466030d.jpg",
+            "extras": {}
+        }
+    ]
+}

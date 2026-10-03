@@ -1,0 +1,504 @@
+{
+    "fixture": "2026-10/list/mart.html",
+    "layout": "MART",
+    "pageUrl": "https://coolenjoy.net/bbs/mart2",
+    "clock": "2026-10-03T04:10:00Z",
+    "itemCount": 26,
+    "warnings": [],
+    "items": [
+        {
+            "board": null,
+            "category": "공지",
+            "subCategory": null,
+            "title": "장터 게시판 공지사항 - 2025년 11월 18일 업데이트",
+            "url": "https://coolenjoy.net/bbs/mart2/1198833",
+            "writer": "{{writer_01}}",
+            "commentCount": 90,
+            "viewCount": "9478",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2023-08-01T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "본문참고"
+            }
+        },
+        {
+            "board": null,
+            "category": "판매",
+            "subCategory": null,
+            "title": "[미개봉] 4TB, 10TB HDD 판매합니다",
+            "url": "https://coolenjoy.net/bbs/mart2/1284733",
+            "writer": "{{writer_02}}",
+            "commentCount": 0,
+            "viewCount": "28",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T13:06",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "180,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "판매",
+            "subCategory": null,
+            "title": "신제품 LCD 3열 CPU 수랭 쿨러 SUDOKOO PROTEUS360",
+            "url": "https://coolenjoy.net/bbs/mart2/1284409",
+            "writer": "{{writer_03}}",
+            "commentCount": 0,
+            "viewCount": "363",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T12:54",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "250,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "판매",
+            "subCategory": null,
+            "title": "신제품 큐닉스 CORE MG32B 280 게이밍 모니터 32인치 280Hz주사율",
+            "url": "https://coolenjoy.net/bbs/mart2/1284683",
+            "writer": "{{writer_03}}",
+            "commentCount": 0,
+            "viewCount": "26",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T12:54",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "240,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "판매",
+            "subCategory": null,
+            "title": "지스킬 DDR4 실버로얄 3600 CL14(8G*2) 판매합니다.",
+            "url": "https://coolenjoy.net/bbs/mart2/1284739",
+            "writer": "{{writer_04}}",
+            "commentCount": 0,
+            "viewCount": "59",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T12:48",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "140,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "판매",
+            "subCategory": null,
+            "title": "Phanteks Glacier C350A 워터블럭",
+            "url": "https://coolenjoy.net/bbs/mart2/1284305",
+            "writer": "{{writer_05}}",
+            "commentCount": 0,
+            "viewCount": "189",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T12:25",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "45,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "판매",
+            "subCategory": null,
+            "title": "CORSAIR OBSIDIAN 1000D",
+            "url": "https://coolenjoy.net/bbs/mart2/1284306",
+            "writer": "{{writer_05}}",
+            "commentCount": 0,
+            "viewCount": "420",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T12:25",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "400,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "판매",
+            "subCategory": null,
+            "title": "Yeston RX 9070 XT Sakura",
+            "url": "https://coolenjoy.net/bbs/mart2/1284487",
+            "writer": "{{writer_06}}",
+            "commentCount": 0,
+            "viewCount": "416",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T11:48",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "1,050,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "판매",
+            "subCategory": null,
+            "title": "CORSAIR iCUE LINK LX140 RGB STARTER KIT (블랙, 2팩) 팝니다 마지…",
+            "url": "https://coolenjoy.net/bbs/mart2/1283786",
+            "writer": "{{writer_07}}",
+            "commentCount": 0,
+            "viewCount": "640",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T10:23",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "100,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "판매",
+            "subCategory": null,
+            "title": "아이패드미니 (A17 PRO) 128GB WIFI 스페이스그레이 판매",
+            "url": "https://coolenjoy.net/bbs/mart2/1284675",
+            "writer": "{{writer_08}}",
+            "commentCount": 0,
+            "viewCount": "75",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T10:19",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "600,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "구매",
+            "subCategory": null,
+            "title": "컬쳐랜드 문상 88% / 네이버페이 포인트 92% 구매합니다",
+            "url": "https://coolenjoy.net/bbs/mart2/1274953",
+            "writer": "{{writer_09}}",
+            "commentCount": 1,
+            "viewCount": "1140",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T10:14",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "1,000,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "판매",
+            "subCategory": null,
+            "title": "앱코 MP4000 (유선마이크)",
+            "url": "https://coolenjoy.net/bbs/mart2/1284753",
+            "writer": "{{writer_10}}",
+            "commentCount": 0,
+            "viewCount": "11",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T09:46",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "15,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "판매",
+            "subCategory": null,
+            "title": "Erying i9-13900hx H770 m-atx D5 판매합니다.",
+            "url": "https://coolenjoy.net/bbs/mart2/1284189",
+            "writer": "{{writer_11}}",
+            "commentCount": 2,
+            "viewCount": "732",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T09:44",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "415,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "판매",
+            "subCategory": null,
+            "title": "(부산) 미개봉 조텍 5080 amp",
+            "url": "https://coolenjoy.net/bbs/mart2/1284624",
+            "writer": "{{writer_12}}",
+            "commentCount": 0,
+            "viewCount": "109",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T09:31",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "2,180,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "판매",
+            "subCategory": null,
+            "title": "5080 9800X3D 완본체 팝니다.",
+            "url": "https://coolenjoy.net/bbs/mart2/1284665",
+            "writer": "{{writer_13}}",
+            "commentCount": 1,
+            "viewCount": "360",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T09:18",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "3,900,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "구매",
+            "subCategory": null,
+            "title": "스타워즈 갤럭틱 레이서 스팀 코드 삽니다.",
+            "url": "https://coolenjoy.net/bbs/mart2/1284752",
+            "writer": "{{writer_14}}",
+            "commentCount": 0,
+            "viewCount": "12",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T09:09",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "20,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "판매",
+            "subCategory": null,
+            "title": "밀리의 서재 27년 2월 28일까지 구독 같이 하실 분 모집합니다",
+            "url": "https://coolenjoy.net/bbs/mart2/1284663",
+            "writer": "{{writer_15}}",
+            "commentCount": 0,
+            "viewCount": "17",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T08:50",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "10,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "판매",
+            "subCategory": null,
+            "title": "로캣 콘퓨어 오울아이 게이밍 마우스, 쿠거 마우스 번지, ATK 99G Air 마우스 패드",
+            "url": "https://coolenjoy.net/bbs/mart2/1284662",
+            "writer": "{{writer_15}}",
+            "commentCount": 0,
+            "viewCount": "26",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T08:50",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "38,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "판매",
+            "subCategory": null,
+            "title": "(대구)라이젠 9600x or 인텔 250k 컴퓨터 본체 기타",
+            "url": "https://coolenjoy.net/bbs/mart2/1284540",
+            "writer": "{{writer_16}}",
+            "commentCount": 0,
+            "viewCount": "190",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T02:27",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "2,200,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "판매",
+            "subCategory": null,
+            "title": "레인보우 LED 플런저 키보드 BT1000 화이트 BIM1000 키보드",
+            "url": "https://coolenjoy.net/bbs/mart2/1276355",
+            "writer": "{{writer_17}}",
+            "commentCount": 1,
+            "viewCount": "1733",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-03T00:53",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "10,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "구매",
+            "subCategory": null,
+            "title": "컬쳐랜드 문화상품권 삽니다.",
+            "url": "https://coolenjoy.net/bbs/mart2/1283956",
+            "writer": "{{writer_18}}",
+            "commentCount": 0,
+            "viewCount": "141",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "90,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "판매",
+            "subCategory": null,
+            "title": "AMD 라이젠 9600 대원정품",
+            "url": "https://coolenjoy.net/bbs/mart2/1284751",
+            "writer": "{{writer_19}}",
+            "commentCount": 0,
+            "viewCount": "48",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "185,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "판매",
+            "subCategory": null,
+            "title": "2025 g16 제피러스 5070ti",
+            "url": "https://coolenjoy.net/bbs/mart2/1284688",
+            "writer": "{{writer_20}}",
+            "commentCount": 0,
+            "viewCount": "88",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "3,600,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "판매",
+            "subCategory": null,
+            "title": "본체 팝니다. 13700kf 5070ti",
+            "url": "https://coolenjoy.net/bbs/mart2/1284687",
+            "writer": "{{writer_20}}",
+            "commentCount": 0,
+            "viewCount": "84",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "2,800,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "판매",
+            "subCategory": null,
+            "title": "i7 13700kf 팝니다.",
+            "url": "https://coolenjoy.net/bbs/mart2/1284750",
+            "writer": "{{writer_21}}",
+            "commentCount": 0,
+            "viewCount": "38",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "300,000 원"
+            }
+        },
+        {
+            "board": null,
+            "category": "판매",
+            "subCategory": null,
+            "title": "5080 불칸 판매합니다",
+            "url": "https://coolenjoy.net/bbs/mart2/1284516",
+            "writer": "{{writer_22}}",
+            "commentCount": 0,
+            "viewCount": "384",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {
+                "price": "2,380,000 원"
+            }
+        }
+    ]
+}

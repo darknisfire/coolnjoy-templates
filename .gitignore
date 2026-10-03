@@ -1,0 +1,10 @@
+dist/
+node_modules/
+.wrangler/
+.dev.vars
+*.pem
+*.key
+.gradle/
+build/
+.kotlin/
+.idea/

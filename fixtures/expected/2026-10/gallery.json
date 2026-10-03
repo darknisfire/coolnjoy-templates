@@ -1,0 +1,180 @@
+{
+    "fixture": "2026-10/list/gallery.html",
+    "layout": "GALLERY",
+    "pageUrl": "https://coolenjoy.net/bbs/46",
+    "clock": "2026-10-03T04:10:00Z",
+    "itemCount": 10,
+    "warnings": [],
+    "items": [
+        {
+            "board": null,
+            "category": "기타",
+            "subCategory": null,
+            "title": "국내 최초의 WYSIWYG방식의 한글 워드프로세서 19…",
+            "url": "https://coolenjoy.net/bbs/46/19073",
+            "writer": "{{writer_02}}",
+            "commentCount": 6,
+            "viewCount": "82",
+            "recommendCount": 2,
+            "postedAt": {
+                "dateTime": "2026-09-28T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://photo.coolenjoy.co.kr/data/editor/2609/list_b43c64acebabdff923218bb7d9d3dd1ace4e9463.jpg",
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "노트북",
+            "subCategory": null,
+            "title": "2006년형 맥북프로 17인치",
+            "url": "https://coolenjoy.net/bbs/46/19066",
+            "writer": "{{writer_03}}",
+            "commentCount": 4,
+            "viewCount": "188",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-09-07T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://photo.coolenjoy.co.kr/data/editor/2609/list_991c03e80fd14ce15628753dd7a1d37d938a5fff.jpg",
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "그래픽카드",
+            "subCategory": null,
+            "title": "오래된 1990년대 후반 2000년대 중반 그래픽카드입…",
+            "url": "https://coolenjoy.net/bbs/46/19060",
+            "writer": "{{writer_04}}",
+            "commentCount": 5,
+            "viewCount": "217",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-08-31T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://photo.coolenjoy.co.kr/data/editor/2608/list_8dc31d782d8aa7976c5e07f4178b8acce33f8324.jpg",
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "CPU",
+            "subCategory": null,
+            "title": "오래된 CPU와 라이저카드",
+            "url": "https://coolenjoy.net/bbs/46/19051",
+            "writer": "{{writer_04}}",
+            "commentCount": 7,
+            "viewCount": "233",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-08-13T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://photo.coolenjoy.co.kr/data/editor/2608/list_1e7a432115f403981f81b352752c6fd2c416b43c.jpg",
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "CPU",
+            "subCategory": null,
+            "title": "ASUS P5A 슈퍼소켓 7 메인보드 BOX 일체",
+            "url": "https://coolenjoy.net/bbs/46/19043",
+            "writer": "{{writer_04}}",
+            "commentCount": 7,
+            "viewCount": "205",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-08-07T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://photo.coolenjoy.co.kr/data/editor/2608/list_ee97819175c7568c3045e9c993341e389be43886.jpg",
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "완본체",
+            "subCategory": null,
+            "title": "여러분 우리 영이좀 봐주세요",
+            "url": "https://coolenjoy.net/bbs/46/19037",
+            "writer": "{{writer_05}}",
+            "commentCount": 5,
+            "viewCount": "227",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-07-29T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://photo.coolenjoy.co.kr/data/editor/2607/list_9daf385551cd5af2493b1910457f391c2841aa6a.jpg",
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "노트북",
+            "subCategory": null,
+            "title": "LG XNOTE R570입니다",
+            "url": "https://coolenjoy.net/bbs/46/19033",
+            "writer": "{{writer_06}}",
+            "commentCount": 2,
+            "viewCount": "329",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-06-09T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://photo.coolenjoy.co.kr/data/editor/2606/list_1046140286757c8e3cc0164b074ff586e5058954.png",
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "메모리",
+            "subCategory": null,
+            "title": "이젠 여기 올라가도 되겠죠",
+            "url": "https://coolenjoy.net/bbs/46/19024",
+            "writer": "{{writer_07}}",
+            "commentCount": 6,
+            "viewCount": "351",
+            "recommendCount": 3,
+            "postedAt": {
+                "dateTime": "2026-05-31T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://photo.coolenjoy.co.kr/data/editor/2605/list_5bde4b04b9adf811407602932eb44d5d9d3b3515.jpg",
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "CPU",
+            "subCategory": null,
+            "title": "AMD 흠",
+            "url": "https://coolenjoy.net/bbs/46/19022",
+            "writer": "{{writer_08}}",
+            "commentCount": 0,
+            "viewCount": "195",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-05-30T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://photo.coolenjoy.co.kr/data/editor/2605/list_8cd1821e0a58804e9ce03fa1a104516cd7f7e38d.jpg",
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "그래픽카드",
+            "subCategory": null,
+            "title": "엔비디아 초창기 그래픽카드들(1995~2001)",
+            "url": "https://coolenjoy.net/bbs/46/19016",
+            "writer": "{{writer_09}}",
+            "commentCount": 8,
+            "viewCount": "396",
+            "recommendCount": 2,
+            "postedAt": {
+                "dateTime": "2026-05-26T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://photo.coolenjoy.co.kr/data/editor/2605/list_192cf5607d223301363202737c202abe2194bbd8.jpg",
+            "extras": {}
+        }
+    ]
+}

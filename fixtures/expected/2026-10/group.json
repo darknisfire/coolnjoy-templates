@@ -1,0 +1,435 @@
+{
+    "fixture": "2026-10/list/group.html",
+    "layout": "GROUP",
+    "pageUrl": "https://coolenjoy.net/bbs/group",
+    "clock": "2026-10-03T04:10:00Z",
+    "itemCount": 25,
+    "warnings": [],
+    "items": [
+        {
+            "board": null,
+            "category": "영화",
+            "subCategory": "새소식",
+            "title": "SEARCH PARTY: WHERE'S PAWPAW? …",
+            "url": "https://coolenjoy.net/bbs/group/208382",
+            "writer": "{{writer_02}}",
+            "commentCount": 1,
+            "viewCount": "4",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-03T10:58",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "영화",
+            "subCategory": "새소식",
+            "title": "시급 300엔의 사신 | 時給三〇〇円の死神 | 예고편",
+            "url": "https://coolenjoy.net/bbs/group/208381",
+            "writer": "{{writer_02}}",
+            "commentCount": 1,
+            "viewCount": "3",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-03T10:58",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "영화",
+            "subCategory": "새소식",
+            "title": "SHE SAW US Official Trailer (2…",
+            "url": "https://coolenjoy.net/bbs/group/208380",
+            "writer": "{{writer_02}}",
+            "commentCount": 1,
+            "viewCount": "4",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-03T10:53",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "영화",
+            "subCategory": "새소식",
+            "title": "COME WITH ME Official Trailer …",
+            "url": "https://coolenjoy.net/bbs/group/208379",
+            "writer": "{{writer_02}}",
+            "commentCount": 1,
+            "viewCount": "4",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-03T10:53",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "영화",
+            "subCategory": "새소식",
+            "title": "TIME Season 3 Official Trailer…",
+            "url": "https://coolenjoy.net/bbs/group/208378",
+            "writer": "{{writer_02}}",
+            "commentCount": 1,
+            "viewCount": "4",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-03T10:52",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "운동",
+            "subCategory": "잡담",
+            "title": "26년 10월 3일 운동일지",
+            "url": "https://coolenjoy.net/bbs/group/208377",
+            "writer": "{{writer_03}}",
+            "commentCount": 1,
+            "viewCount": "5",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-03T08:22",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "운동",
+            "subCategory": "잡담",
+            "title": "20km 달리기",
+            "url": "https://coolenjoy.net/bbs/group/208376",
+            "writer": "{{writer_04}}",
+            "commentCount": 1,
+            "viewCount": "4",
+            "recommendCount": 1,
+            "postedAt": {
+                "dateTime": "2026-10-03T07:53",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "영화",
+            "subCategory": "새소식",
+            "title": "FREE FALL Official Trailer (20…",
+            "url": "https://coolenjoy.net/bbs/group/208375",
+            "writer": "{{writer_02}}",
+            "commentCount": 1,
+            "viewCount": "5",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-03T01:58",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "영화",
+            "subCategory": "새소식",
+            "title": "DEAD HOWLING Official Trailer …",
+            "url": "https://coolenjoy.net/bbs/group/208374",
+            "writer": "{{writer_02}}",
+            "commentCount": 1,
+            "viewCount": "6",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-03T01:58",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "영화",
+            "subCategory": "새소식",
+            "title": "STICKY Official Trailer (2026)…",
+            "url": "https://coolenjoy.net/bbs/group/208373",
+            "writer": "{{writer_02}}",
+            "commentCount": 1,
+            "viewCount": "5",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-03T01:57",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "영화",
+            "subCategory": "새소식",
+            "title": "A SOCIAL CONTRACT Official Tra…",
+            "url": "https://coolenjoy.net/bbs/group/208372",
+            "writer": "{{writer_02}}",
+            "commentCount": 1,
+            "viewCount": "5",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-03T01:57",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "애니",
+            "subCategory": "새소식",
+            "title": "MESSI AND THE GIANTS Official …",
+            "url": "https://coolenjoy.net/bbs/group/208371",
+            "writer": "{{writer_02}}",
+            "commentCount": 1,
+            "viewCount": "4",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-03T01:57",
+                "precision": "MINUTE"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "영화",
+            "subCategory": "소개",
+            "title": "[비전퀘스트] 메인 예고편",
+            "url": "https://coolenjoy.net/bbs/group/208370",
+            "writer": "{{writer_05}}",
+            "commentCount": 1,
+            "viewCount": "6",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "영화",
+            "subCategory": "소개",
+            "title": "‘분노의 벡키’ 신작 티저 영상",
+            "url": "https://coolenjoy.net/bbs/group/208369",
+            "writer": "{{writer_05}}",
+            "commentCount": 1,
+            "viewCount": "9",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "영화",
+            "subCategory": "새소식",
+            "title": "DEXTER: RESURRECTION Season 2 …",
+            "url": "https://coolenjoy.net/bbs/group/208358",
+            "writer": "{{writer_02}}",
+            "commentCount": 2,
+            "viewCount": "8",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "영화",
+            "subCategory": "새소식",
+            "title": "EBENEZER Official Trailer 2 (2…",
+            "url": "https://coolenjoy.net/bbs/group/208357",
+            "writer": "{{writer_02}}",
+            "commentCount": 2,
+            "viewCount": "6",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "영화",
+            "subCategory": "새소식",
+            "title": "OPERATION KABUL Official Trail…",
+            "url": "https://coolenjoy.net/bbs/group/208356",
+            "writer": "{{writer_02}}",
+            "commentCount": 2,
+            "viewCount": "8",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "영화",
+            "subCategory": "새소식",
+            "title": "THE HOLIDAY HITMAN Official Tr…",
+            "url": "https://coolenjoy.net/bbs/group/208355",
+            "writer": "{{writer_02}}",
+            "commentCount": 2,
+            "viewCount": "7",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "영화",
+            "subCategory": "새소식",
+            "title": "WORM Official Trailer (2026)",
+            "url": "https://coolenjoy.net/bbs/group/208354",
+            "writer": "{{writer_02}}",
+            "commentCount": 2,
+            "viewCount": "7",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "운동",
+            "subCategory": "잡담",
+            "title": "20km 달리기",
+            "url": "https://coolenjoy.net/bbs/group/208256",
+            "writer": "{{writer_04}}",
+            "commentCount": 2,
+            "viewCount": "8",
+            "recommendCount": 2,
+            "postedAt": {
+                "dateTime": "2026-10-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "애니",
+            "subCategory": "새소식",
+            "title": "매일, 휴일 | ひらやすみ | 티저 영상",
+            "url": "https://coolenjoy.net/bbs/group/208179",
+            "writer": "{{writer_02}}",
+            "commentCount": 4,
+            "viewCount": "11",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-01T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "영화",
+            "subCategory": "새소식",
+            "title": "Collision Course | Official Tr…",
+            "url": "https://coolenjoy.net/bbs/group/208178",
+            "writer": "{{writer_02}}",
+            "commentCount": 4,
+            "viewCount": "11",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-01T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "영화",
+            "subCategory": "새소식",
+            "title": "최종면접 | Final Interview …",
+            "url": "https://coolenjoy.net/bbs/group/208177",
+            "writer": "{{writer_02}}",
+            "commentCount": 4,
+            "viewCount": "12",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-01T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "영화",
+            "subCategory": "새소식",
+            "title": "보통의 아이 | ふつうの子ども | 예고편",
+            "url": "https://coolenjoy.net/bbs/group/208176",
+            "writer": "{{writer_02}}",
+            "commentCount": 4,
+            "viewCount": "12",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-01T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        },
+        {
+            "board": null,
+            "category": "영화",
+            "subCategory": "새소식",
+            "title": "Abbott Elementary Season 6 Tra…",
+            "url": "https://coolenjoy.net/bbs/group/208175",
+            "writer": "{{writer_02}}",
+            "commentCount": 4,
+            "viewCount": "10",
+            "recommendCount": 0,
+            "postedAt": {
+                "dateTime": "2026-10-01T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": null,
+            "extras": {}
+        }
+    ]
+}

@@ -1,0 +1,510 @@
+{
+    "fixture": "2026-10/list/market.html",
+    "layout": "MARKET",
+    "pageUrl": "https://coolenjoy.net/bbs/29",
+    "clock": "2026-10-03T04:10:00Z",
+    "itemCount": 25,
+    "warnings": [],
+    "items": [
+        {
+            "board": null,
+            "category": "진행",
+            "subCategory": null,
+            "title": "ASRock 스틸레전드 SL-1200GW 80PLUS골…",
+            "url": "https://coolenjoy.net/bbs/29/332130",
+            "writer": null,
+            "commentCount": 25,
+            "viewCount": "134",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-10-01T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/d6240cf39dbc7291d7a73e08d510d82c_GxA1rowB_1bca39dd1053000501a37d93e1e90bf72f2c1042.jpg",
+            "extras": {
+                "period": "2026-10-01 00:00:00 ~ 2026-10-03 23:59:59",
+                "price": "134,500원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "ASRock 스틸레전드 SL-1200G 80PLUS골드…",
+            "url": "https://coolenjoy.net/bbs/29/332081",
+            "writer": null,
+            "commentCount": 45,
+            "viewCount": "500",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-28T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/d6240cf39dbc7291d7a73e08d510d82c_ACfdFDZu_afe3b990a09f08e1af86120886cc34dd2154622e.png",
+            "extras": {
+                "period": "2026-09-28 00:00:00 ~ 2026-09-30 23:59:59",
+                "price": "124,500원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "PCCOOLER CPS DT360 MAX ARGB DI…",
+            "url": "https://coolenjoy.net/bbs/29/332073",
+            "writer": null,
+            "commentCount": 4,
+            "viewCount": "419",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-23T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/d6240cf39dbc7291d7a73e08d510d82c_SbeRqi9U_4a9c787313c3051cba347b1f3d2c3da6e8e841f1.png",
+            "extras": {
+                "period": "2026-09-23 09:00:00 ~ 2026-09-29 23:59:59",
+                "price": "161,000원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "ASRock 스틸레전드 SL-1000GW 80PLUS골…",
+            "url": "https://coolenjoy.net/bbs/29/332041",
+            "writer": null,
+            "commentCount": 33,
+            "viewCount": "534",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-21T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/d6240cf39dbc7291d7a73e08d510d82c_lQFpvAzo_d7d2fea8007c7a1d7206304d5b001ccce7c66e02.png",
+            "extras": {
+                "period": "2026-09-21 00:00:00 ~ 2026-09-23 23:59:59",
+                "price": "114,000원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "ASRock 스틸레전드 SL-1000G 80PLUS골드…",
+            "url": "https://coolenjoy.net/bbs/29/332017",
+            "writer": null,
+            "commentCount": 22,
+            "viewCount": "572",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-09-16T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/d6240cf39dbc7291d7a73e08d510d82c_W1sMzp2T_b92ec67f7ff3f274d102c2e57a0d5eef9cfbff99.jpg",
+            "extras": {
+                "period": "2026-09-16 00:00:00 ~ 2026-09-18 23:59:59",
+                "price": "109,500원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "PCCOOLER CPS DV360 ARGB DISPLA…",
+            "url": "https://coolenjoy.net/bbs/29/332016",
+            "writer": null,
+            "commentCount": 0,
+            "viewCount": "548",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-08-28T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/d6240cf39dbc7291d7a73e08d510d82c_ncxkHsp1_f5fc2114de7e460b7a4fd7cd53299ddfb3893b87.png",
+            "extras": {
+                "period": "2026-08-28 09:12:02 ~ 2026-08-30 23:59:59",
+                "price": "279,000원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "마이크로닉스 WIZMAX 우드리안 PRIME 선착순 특…",
+            "url": "https://coolenjoy.net/bbs/29/332011",
+            "writer": null,
+            "commentCount": 0,
+            "viewCount": "1286",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-04-22T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/d6240cf39dbc7291d7a73e08d510d82c_8ncCjH1J_386dbb16ad8ced533cdcb365dd2f541ffcbde301.jpg",
+            "extras": {
+                "period": "2026-04-23 00:00:00 ~ 2026-04-26 23:59:59",
+                "price": "79,000원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "마이크로닉스 WIZMAX 우퍼 딥톤 (화이트) 선착순 …",
+            "url": "https://coolenjoy.net/bbs/29/332010",
+            "writer": null,
+            "commentCount": 0,
+            "viewCount": "460",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-04-22T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/d6240cf39dbc7291d7a73e08d510d82c_lLd5Zp04_e977e3ebc5bef082d59d606d80b3be4c7c8ce383.jpg",
+            "extras": {
+                "period": "2026-04-23 00:00:00 ~ 2026-04-26 23:59:59",
+                "price": "33,000원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "써멀테이크 Core P3 TG PRO 30% 할인 추첨…",
+            "url": "https://coolenjoy.net/bbs/29/332008",
+            "writer": null,
+            "commentCount": 0,
+            "viewCount": "1122",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-02-27T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/d6240cf39dbc7291d7a73e08d510d82c_gQuWYdE4_d046ee5769dc5bf7c9d867413db739b8a18e507c.jpg",
+            "extras": {
+                "period": "2026-02-27 10:00:00 ~ 2026-03-02 23:59:59",
+                "price": "142,800원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "AONE 시그니처 1300W 80PLUS골드 풀모듈러 …",
+            "url": "https://coolenjoy.net/bbs/29/332004",
+            "writer": null,
+            "commentCount": 3,
+            "viewCount": "767",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-02-12T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/d6240cf39dbc7291d7a73e08d510d82c_TgEJhplm_fdc6e9e17b7599aa59b185d9506e58b3f5040cf0.jpg",
+            "extras": {
+                "period": "2026-02-12 11:00:00 ~ 2026-02-18 23:59:59",
+                "price": "124,000원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "AONE 시그니처 1300W 80PLUS골드 풀모듈러 …",
+            "url": "https://coolenjoy.net/bbs/29/332003",
+            "writer": null,
+            "commentCount": 0,
+            "viewCount": "450",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-02-12T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/d6240cf39dbc7291d7a73e08d510d82c_7FeZgzCG_52b53b622fc40689ce57a0c2d03b19ae77d07cc7.jpg",
+            "extras": {
+                "period": "2026-02-12 11:00:00 ~ 2026-02-18 23:59:59",
+                "price": "119,000원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "PCCOOLER 디자인 끝판왕 싱글타워 특가!",
+            "url": "https://coolenjoy.net/bbs/29/331995",
+            "writer": null,
+            "commentCount": 5,
+            "viewCount": "917",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2026-01-06T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/d6240cf39dbc7291d7a73e08d510d82c_hM8CcdHB_c360c5b7525cbcfa4cbb668d781dbe7a688b982e.png",
+            "extras": {
+                "period": "2026-01-06 09:00:00 ~ 2026-01-12 23:59:59",
+                "price": "19,900원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "써멀테이크 View 390 Air 25% 할인 추첨 특…",
+            "url": "https://coolenjoy.net/bbs/29/331994",
+            "writer": null,
+            "commentCount": 0,
+            "viewCount": "1286",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2025-10-31T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/d6240cf39dbc7291d7a73e08d510d82c_j9eHlE1I_2ea2b2fefc6d6b07158cecc0f6a0ae9b8e4854e7.jpg",
+            "extras": {
+                "period": "2025-10-31 17:00:00 ~ 2025-11-02 23:59:59",
+                "price": "148,500원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "MAX3100 출시 기념 쿨엔조이 단독 특가 이벤트",
+            "url": "https://coolenjoy.net/bbs/29/331987",
+            "writer": null,
+            "commentCount": 2,
+            "viewCount": "1240",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2025-09-30T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/d6240cf39dbc7291d7a73e08d510d82c_GPfrwbpt_97592e51a4337e1e47ff663822823b6de820f4d0.png",
+            "extras": {
+                "period": "2025-10-01 00:00:00 ~ 2025-10-12 23:59:59",
+                "price": "108,900원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "MAX3000 출시 기념 쿨엔조이 단독 특가 이벤트",
+            "url": "https://coolenjoy.net/bbs/29/331986",
+            "writer": null,
+            "commentCount": 0,
+            "viewCount": "551",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2025-09-30T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/d6240cf39dbc7291d7a73e08d510d82c_VzaC1OLp_860526fcfdcd20fecaa260198e7648f766700013.png",
+            "extras": {
+                "period": "2025-10-01 00:00:00 ~ 2025-10-12 23:59:59",
+                "price": "79,900원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "발키리 VK-87 MIST 유무선 기계식 키보드 특가 …",
+            "url": "https://coolenjoy.net/bbs/29/331985",
+            "writer": null,
+            "commentCount": 0,
+            "viewCount": "1138",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2025-09-30T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/d6240cf39dbc7291d7a73e08d510d82c_uaUyBtFq_eaeb42c42a3daf1a16e0a430e39628dee8e04a3c.png",
+            "extras": {
+                "period": "2025-09-30 00:00:00 ~ 2025-10-12 23:59:59",
+                "price": "59,000원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "Segotep EX120 ARGB PWM FULL LC…",
+            "url": "https://coolenjoy.net/bbs/29/331982",
+            "writer": null,
+            "commentCount": 0,
+            "viewCount": "858",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2025-08-20T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/6dcb760469743a51ebbd50f7f4db4062_Ds2d9wvl_696383cfe5aebb5e517fd4b57cf3e31148038e1a.jpg",
+            "extras": {
+                "period": "2025-08-20 15:00:00 ~ 2025-08-26 23:59:59",
+                "price": "63,000원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "Segotep Nexus1 PRO KR 아트홀 출시 기…",
+            "url": "https://coolenjoy.net/bbs/29/331981",
+            "writer": null,
+            "commentCount": 0,
+            "viewCount": "1056",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2025-08-14T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/6dcb760469743a51ebbd50f7f4db4062_jSq1Bz8y_c7568fd19f3b2329724a15be65611a701991e3f7.jpg",
+            "extras": {
+                "period": "2025-08-14 15:30:00 ~ 2025-08-20 23:59:59",
+                "price": "57,500원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "마이크로닉스 WIZMAX Chill 세븐팬 선착순 특가",
+            "url": "https://coolenjoy.net/bbs/29/331978",
+            "writer": null,
+            "commentCount": 0,
+            "viewCount": "821",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2025-07-25T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/6dcb760469743a51ebbd50f7f4db4062_CQs9DPxh_262aeb03322b2312b86b2f2abc58aedf862eba46.png",
+            "extras": {
+                "period": "2025-07-25 11:00:00 ~ 2025-07-31 23:59:59",
+                "price": "43,500원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "Segotep BN750W KR 80PLUS BRONZ…",
+            "url": "https://coolenjoy.net/bbs/29/331976",
+            "writer": null,
+            "commentCount": 1,
+            "viewCount": "525",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2025-07-24T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/6dcb760469743a51ebbd50f7f4db4062_S2GnPQV0_60bb4c34b1da0922a51155a1d040a4cf7d2df7d9.jpg",
+            "extras": {
+                "period": "2025-07-24 09:00:00 ~ 2025-07-30 23:59:59",
+                "price": "52,000원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "마이크로닉스 COOLMAX FOCUS II 500W E…",
+            "url": "https://coolenjoy.net/bbs/29/331972",
+            "writer": null,
+            "commentCount": 1,
+            "viewCount": "448",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2025-07-03T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/6dcb760469743a51ebbd50f7f4db4062_uXRdrcob_9f48302ea1ed2a43f8f16a01029e689d45dab413.png",
+            "extras": {
+                "period": "2025-07-04 09:00:00 ~ 2025-07-07 23:59:59",
+                "price": "41,000원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "마이크로닉스 Classic II 풀체인지 600W 80…",
+            "url": "https://coolenjoy.net/bbs/29/331970",
+            "writer": null,
+            "commentCount": 0,
+            "viewCount": "349",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2025-07-02T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/6dcb760469743a51ebbd50f7f4db4062_UjV3JGyB_4033f4a89e416e785d4c14df6c5e2afd8c684a10.png",
+            "extras": {
+                "period": "2025-07-03 00:00:00 ~ 2025-07-06 23:59:59",
+                "price": "53,500원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "마이크로닉스 Classic II 풀체인지 700W 80…",
+            "url": "https://coolenjoy.net/bbs/29/331969",
+            "writer": null,
+            "commentCount": 0,
+            "viewCount": "321",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2025-07-01T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/6dcb760469743a51ebbd50f7f4db4062_0u5hBnxW_e1c020c9566a8a85485a44edaed31696667100a6.png",
+            "extras": {
+                "period": "2025-07-02 00:00:00 ~ 2025-07-05 23:59:59",
+                "price": "71,500원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "마이크로닉스 Classic II 750W 80PLUS골…",
+            "url": "https://coolenjoy.net/bbs/29/331968",
+            "writer": null,
+            "commentCount": 0,
+            "viewCount": "401",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2025-06-30T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/6dcb760469743a51ebbd50f7f4db4062_e8loD0PY_c1d27bde3a5d28ce42d08d6269bc3b08d0f71f50.png",
+            "extras": {
+                "period": "2025-07-01 00:00:00 ~ 2025-07-04 23:59:59",
+                "price": "119,000원"
+            }
+        },
+        {
+            "board": null,
+            "category": "마감",
+            "subCategory": null,
+            "title": "마이크로닉스 Classic II 풀체인지 550W 80…",
+            "url": "https://coolenjoy.net/bbs/29/331828",
+            "writer": null,
+            "commentCount": 130,
+            "viewCount": "997",
+            "recommendCount": null,
+            "postedAt": {
+                "dateTime": "2025-06-17T00:00",
+                "precision": "DAY"
+            },
+            "thumbnailUrl": "https://coolenjoy.net/data/file/29/6dcb760469743a51ebbd50f7f4db4062_ZYT8z2Ab_06d54752a8b2732ac01dcf3de8b57bd674319f41.png",
+            "extras": {
+                "period": "2025-06-17 00:00:00 ~ 2025-06-22 23:59:59",
+                "price": "0원"
+            }
+        }
+    ]
+}
