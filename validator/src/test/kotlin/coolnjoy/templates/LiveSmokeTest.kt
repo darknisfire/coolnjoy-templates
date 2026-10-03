@@ -16,7 +16,7 @@ import kotlin.test.assertTrue
 
 /**
  * 실사이트 smoke. 기본 `test`에서는 제외되고 `gradle -p validator liveTest`로만 실행된다.
- * 대표 게시판 4곳과 38 게시판 첫 글 1건을 GET(총 5회, 요청 간 1초 이상, 비로그인)해 현재 템플릿으로 파싱한다.
+ * 대표 게시판 4곳, 38 게시판 첫 글 1건, 전체 검색 1건을 GET(총 6회, 요청 간 1초 이상, 비로그인)해 현재 템플릿으로 파싱한다.
  */
 @Tag("live")
 class LiveSmokeTest {
@@ -67,5 +67,16 @@ class LiveSmokeTest {
         assertEquals(emptyList(), article.warnings, "article warnings")
         assertTrue(article.article.title.isNotBlank(), "article title")
         assertTrue(article.article.contentHtml.isNotBlank(), "article content")
+
+        // 전체 검색 1건(요약 total + 행).
+        Thread.sleep(1100)
+        val searchUrl = "$baseUrl/bbs/search.php?sfl=wr_subject%7C%7Cwr_content&sop=and&stx=%EB%AA%A8%EB%8B%88%ED%84%B0"
+        val html = get(searchUrl)
+        val search = engine.searchParser()
+        val hits = search.parse(html, searchUrl)
+        assertEquals(emptyList(), hits.warnings, "search warnings")
+        assertTrue(hits.items.isNotEmpty(), "search rows")
+        assertTrue(hits.items.all { it.url.startsWith("https://coolenjoy.net/bbs/") }, "search urls")
+        assertTrue((search.summary(html).total ?: 0) > 0, "search summary total")
     }
 }

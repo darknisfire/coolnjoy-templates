@@ -24,7 +24,7 @@
 | special_29.html | https://coolenjoy.net/bbs/29/332130 | 200 | 특가존(신청형 특가). point와 같은 정보 표인데 `포인트` 행 대신 `가격`/`진행수량` 행. 댓글 26 |
 | votes_poll.html | https://coolenjoy.net/bbs/votes/2347283 | 200 | 설문조사(마감됨). 투표 결과가 Google Charts 스크립트(`arrayToDataTable`, 총투표수)로만 내려옴. **이 픽스처만 해당 `<script>` 1개를 남겼다**(jsapi 로더 제외). 댓글 37개 중 앞 8개만 남김 |
 | review_comment_page2.html | https://coolenjoy.net/bbs/review/1421700 | 200 | 공식 리뷰. 댓글 64개/2페이지, 사이트가 마지막(2번째) 페이지 14개를 기본으로 보여줌 |
-| system_table.html | https://coolenjoy.net/bbs/system/1288076 | 200 | 시스템 감상. 본문 뒤 `div.bo_system` 안에 CPU/VGA 등 스펙 표(`td.bo_system_td`/`td2`). 파서가 `Article.specs`로 분해함(T13) |
+| system_table.html | https://coolenjoy.net/bbs/system/1288076 | 200 | 시스템 감상. 본문 뒤 `div.bo_system` 안에 CPU/VGA 등 스펙 표(`td.bo_system_td`/`td2`). 현재 파서는 이 표를 가져오지 않음 |
 
 ## 로그인 상태 픽스처 가공(mart2_login.html)
 

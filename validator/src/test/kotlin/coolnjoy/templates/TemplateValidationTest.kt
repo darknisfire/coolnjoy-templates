@@ -135,8 +135,8 @@ class TemplateValidationTest {
         }
         if (!update && Files.isDirectory(TestSupport.expectedRoot)) {
             Files.walk(TestSupport.expectedRoot).use { s ->
-                // expected/<dir>/article|comment/ 는 ArticleValidationTest 가 관리한다.
-                s.filter { it.toString().endsWith(".json") && it !in expectedFiles && it.parent.fileName.toString() !in setOf("article", "comment") }
+                // expected/<dir>/article|comment/ 는 ArticleValidationTest, search/ 는 SearchValidationTest 가 관리한다.
+                s.filter { it.toString().endsWith(".json") && it !in expectedFiles && it.parent.fileName.toString() !in setOf("article", "comment", "search") }
                     .forEach { problems += "orphan snapshot without fixture: ${TestSupport.expectedRoot.relativize(it)}" }
             }
         }

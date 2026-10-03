@@ -12,6 +12,7 @@ import kotlinx.serialization.Serializable
  * @property layouts 키는 [BoardLayout] 이름(COMMENT 제외)
  * @property comment 댓글 규칙(선택, 엔진 버전 2). 있으면 [TemplateEngine.commentParser] 사용 가능
  * @property article 게시글 상세 규칙(선택, 엔진 버전 2). 있으면 [comment]도 있어야 한다
+ * @property search 검색 결과 규칙(선택, 엔진 버전 4). 있으면 [TemplateEngine.searchParser] 사용 가능
  */
 @Serializable
 data class SiteTemplate(
@@ -22,6 +23,7 @@ data class SiteTemplate(
     val layouts: Map<String, LayoutTemplate>,
     val comment: CommentTemplate? = null,
     val article: ArticleTemplate? = null,
+    val search: SearchTemplate? = null,
 )
 
 @Serializable
@@ -324,3 +326,57 @@ data class PollSpec(
     val questionPattern: String,
     val totalPattern: String,
 )
+
+// ---- 엔진 버전 4: 검색 결과 ---------------------------------------------------------------------------
+
+/**
+ * 전체 검색 결과(`/bbs/search.php`) 규칙. 결과는 게시판별 묶음이며 문서 순서로 [groupHeader] → [row]… 가 이어진다.
+ * 게시판 내 검색은 일반 목록 레이아웃이라 `layouts`의 규칙을 그대로 쓰고, 이 섹션은 [summary]만 두 경우 모두에 쓴다.
+ *
+ * @property row 결과 행 셀렉터(문서 전체에서 select)
+ * @property groupHeader 게시판 묶음 머리글 셀렉터(선택). [row]와 한 번에 select해 문서 순서를 지킨다
+ * @property groupName 머리글 요소가 컨텍스트인 게시판 이름 규칙(STRING, 선택, [groupHeader] 필요). 없으면 boardName은 boardId
+ * @property fields 키는 [SEARCH_FIELD_TYPES]. `boardId`, `wrId`, `title`, `url`은 필수(행이 컨텍스트, 값이 없으면 그 행을 건너뜀)
+ * @property summary 결과 요약 규칙(선택)
+ */
+@Serializable
+data class SearchTemplate(
+    val row: String,
+    val groupHeader: String? = null,
+    val groupName: FieldSpec? = null,
+    val fields: Map<String, FieldSpec>,
+    val summary: SearchSummarySpec? = null,
+)
+
+/**
+ * 결과 요약 규칙. 컨텍스트는 문서 전체. 값이 null이면 그 항목은 비어 있다.
+ *
+ * @property total 전체 결과 수(INT). `fallback`으로 게시판 내 검색의 "전체 N"도 읽을 수 있다
+ * @property boardCount 결과가 있는 게시판 수(INT)
+ * @property pageCount 전체 페이지 수(INT)
+ * @property hasNext 이 셀렉터와 일치하는 요소가 있으면 다음 페이지 있음
+ * @property emptyTexts 문서 텍스트에 이 부분 문자열이 하나라도 있으면 결과 없음
+ */
+@Serializable
+data class SearchSummarySpec(
+    val total: FieldSpec? = null,
+    val boardCount: FieldSpec? = null,
+    val pageCount: FieldSpec? = null,
+    val hasNext: String? = null,
+    val emptyTexts: List<String> = emptyList(),
+)
+
+/** `search.fields`에 쓸 수 있는 키와 값 타입. `wrId`/`commentId`는 Int 범위를 넘을 수 있어 문자열로 받아 엔진이 Long으로 바꾼다. */
+internal val SEARCH_FIELD_TYPES: Map<String, VType> = mapOf(
+    "boardId" to VType.STRING,
+    "wrId" to VType.STRING,
+    "title" to VType.STRING,
+    "url" to VType.STRING,
+    "excerpt" to VType.STRING,
+    "writer" to VType.STRING,
+    "postedAt" to VType.DATE,
+    "commentCount" to VType.INT,
+    "commentId" to VType.STRING,
+)
+
+internal val SEARCH_REQUIRED_KEYS = listOf("boardId", "wrId", "title", "url")

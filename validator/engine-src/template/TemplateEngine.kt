@@ -8,6 +8,7 @@ import bateaux.spt.coolnjoy.core.parse.CommentParser
 import bateaux.spt.coolnjoy.core.parse.DateNormalizer
 import bateaux.spt.coolnjoy.core.parse.ListParser
 import bateaux.spt.coolnjoy.core.parse.ParseResult
+import bateaux.spt.coolnjoy.core.parse.SearchResultParser
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Element
 import org.jsoup.nodes.TextNode
@@ -31,6 +32,15 @@ class TemplateEngine(
 
     /** 템플릿이 게시글 상세 규칙(`article`, 댓글 규칙 포함)을 가졌는가. */
     fun supportsArticle(): Boolean = template.article != null
+
+    /** 템플릿이 검색 결과 규칙(`search`)을 가졌는가. */
+    fun supportsSearch(): Boolean = template.search != null
+
+    /** 검색 결과 파서(전체 검색 결과 행 + 요약). @throws TemplateException 템플릿에 `search` 섹션이 없을 때 */
+    fun searchParser(): SearchResultParser {
+        val spec = template.search ?: throw TemplateException("template has no 'search' section")
+        return TemplateSearchParser(spec, Evaluator(dates))
+    }
 
     /** @throws TemplateException 템플릿에 `comment` 섹션이 없을 때 */
     fun commentParser(): CommentParser {
@@ -57,8 +67,9 @@ class TemplateEngine(
          * 이 엔진이 해석할 수 있는 연산/스키마 버전. 템플릿의 `minEngineVersion`이 이보다 크면 거부한다.
          * 1: 목록 레이아웃. 2: `comment`/`article` 섹션과 연산 `labelSplit`/`pageUrl`/`requireMatch`.
          * 3: `comment.secret`, `article.poll`(스크립트 데이터 추출 전용), `article.specs`, `article.content.pre.rows`(라벨/값 표).
+         * 4: `search` 섹션(전체 검색 결과 행·요약. 새 연산 없음).
          */
-        const val ENGINE_VERSION = 3
+        const val ENGINE_VERSION = 4
     }
 }
 

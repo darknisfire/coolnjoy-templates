@@ -1,6 +1,6 @@
 {
-  "templateVersion": 3,
-  "minEngineVersion": 3,
+  "templateVersion": 4,
+  "minEngineVersion": 4,
   "site": {
     "baseUrl": "https://coolenjoy.net"
   },
@@ -2476,6 +2476,169 @@
         }
       ],
       "unrecognizedReason": "no article#bo_v and no known error page"
+    }
+  },
+  "search": {
+    "row": "section#sch_res_list li.list-group-item",
+    "groupHeader": "section#sch_res_list div.bg-light",
+    "groupName": {
+      "select": "strong",
+      "op": [
+        {
+          "text": {}
+        }
+      ]
+    },
+    "fields": {
+      "boardId": {
+        "select": "a.float-left",
+        "op": [
+          {
+            "absUrl": "href"
+          },
+          {
+            "regexGroup": {
+              "pattern": "^https?://[^/]+/bbs/([A-Za-z0-9_]+)/\\d+(?:[/?#]|$)",
+              "group": 1
+            }
+          }
+        ]
+      },
+      "wrId": {
+        "select": "a.float-left",
+        "op": [
+          {
+            "absUrl": "href"
+          },
+          {
+            "regexGroup": {
+              "pattern": "^https?://[^/]+/bbs/[A-Za-z0-9_]+/(\\d+)(?:[/?#]|$)",
+              "group": 1
+            }
+          }
+        ]
+      },
+      "title": {
+        "select": "a.float-left strong",
+        "op": [
+          {
+            "subjectPart": "last"
+          }
+        ]
+      },
+      "url": {
+        "select": "a.float-left",
+        "op": [
+          {
+            "absUrl": "href"
+          },
+          {
+            "regexGroup": {
+              "pattern": "^(https?://[^/]+/bbs/[A-Za-z0-9_]+/\\d+)(?:[/?#]|$)",
+              "group": 1
+            }
+          }
+        ]
+      },
+      "excerpt": {
+        "select": "div.f-de",
+        "op": [
+          {
+            "text": {}
+          }
+        ]
+      },
+      "writer": {
+        "select": "a.sv_member",
+        "op": [
+          {
+            "text": {}
+          }
+        ]
+      },
+      "postedAt": {
+        "op": [
+          {
+            "afterIcon": "fa-clock-o"
+          },
+          {
+            "date": {}
+          }
+        ]
+      },
+      "commentId": {
+        "select": "a.float-left",
+        "op": [
+          {
+            "absUrl": "href"
+          },
+          {
+            "regexGroup": {
+              "pattern": "#c_(\\d+)$",
+              "group": 1
+            }
+          }
+        ]
+      }
+    },
+    "summary": {
+      "total": {
+        "select": "#sch_res_ov b:nth-of-type(2)",
+        "op": [
+          {
+            "text": {}
+          },
+          {
+            "toInt": {}
+          }
+        ],
+        "fallback": [
+          {
+            "select": "#bo_list_total b",
+            "op": [
+              {
+                "text": {}
+              },
+              {
+                "toInt": {}
+              }
+            ]
+          }
+        ]
+      },
+      "boardCount": {
+        "select": "#sch_res_ov b:nth-of-type(1)",
+        "op": [
+          {
+            "text": {}
+          },
+          {
+            "toInt": {}
+          }
+        ]
+      },
+      "pageCount": {
+        "select": "#sch_res_ov",
+        "op": [
+          {
+            "text": {}
+          },
+          {
+            "regexGroup": {
+              "pattern": "검색 결과 : 게시판 [\\d,]+ / 게시물 [\\d,]+ / ([\\d,]+) 페이지",
+              "group": 1
+            }
+          },
+          {
+            "toInt": {}
+          }
+        ]
+      },
+      "hasNext": "ul.pagination li.page-item.active ~ li.page-item:not(.disabled) a[href]",
+      "emptyTexts": [
+        "검색된 자료가 하나도 없습니다",
+        "게시물이 없습니다"
+      ]
     }
   }
 }

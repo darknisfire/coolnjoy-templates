@@ -1,0 +1,16 @@
+{
+    "fixture": "2026-10/search/all_empty.html",
+    "pageUrl": "https://coolenjoy.net/bbs/search.php?sfl=wr_subject%7C%7Cwr_content&sop=and&stx=x",
+    "summary": {
+        "total": null,
+        "boardCount": null,
+        "pageCount": null,
+        "hasNext": false,
+        "empty": true
+    },
+    "itemCount": 0,
+    "warnings": [
+        "SEARCH: no rows matched 'section#sch_res_list li.list-group-item'"
+    ],
+    "items": []
+}

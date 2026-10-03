@@ -1,6 +1,9 @@
 package bateaux.spt.coolnjoy.core.site
 
 import bateaux.spt.coolnjoy.core.model.BoardLayout
+import bateaux.spt.coolnjoy.core.model.SearchQuery
+import bateaux.spt.coolnjoy.core.model.SearchScope
+import java.net.URLEncoder
 
 /** 사이트 주소와 게시판 목록. */
 data class SiteConfig(
@@ -30,6 +33,26 @@ data class SiteConfig(
         require(wrId >= 1) { "wrId must be >= 1: $wrId" }
         require(page >= 1) { "page must be >= 1: $page" }
         return "${baseUrl.trimEnd('/')}/nariya/bbs/comment_view.php?bo_table=$boardId&wr_id=$wrId&cob=old&page=$page"
+    }
+
+    /**
+     * 검색 URL(2026-10 실측). 게시판 내 검색은 `/bbs/board.php?bo_table={id}&sfl=..&stx=..&sop=and[&page=N]`(일반 목록 레이아웃),
+     * 전체 검색은 `/bbs/search.php?sfl=..&sop=and&stx=..[&page=N]`. 검색어는 UTF-8 퍼센트 인코딩, `sfl`의 `||`는 `%7C%7C`.
+     * @throws IllegalArgumentException 최신글([ALL_BOARD_ID])이나 잘못된 bo_table을 게시판 범위로 지정했을 때
+     */
+    fun searchUrl(query: SearchQuery): String {
+        val root = baseUrl.trimEnd('/')
+        val sfl = query.field.sfl.replace("|", "%7C")
+        val stx = URLEncoder.encode(query.normalizedKeyword, "UTF-8")
+        val page = if (query.page > 1) "&page=${query.page}" else ""
+        return when (val scope = query.scope) {
+            is SearchScope.Board -> {
+                requireBoardId(scope.id)
+                require(scope.id != ALL_BOARD_ID) { "최신글($ALL_BOARD_ID)은 게시판 내 검색 대상이 아니다. 전체 검색을 사용" }
+                "$root/bbs/board.php?bo_table=${scope.id}&sfl=$sfl&stx=$stx&sop=and$page"
+            }
+            SearchScope.All -> "$root/bbs/search.php?sfl=$sfl&sop=and&stx=$stx$page"
+        }
     }
 
     private fun requireBoardId(boardId: String) =

@@ -25,6 +25,9 @@ object TemplateLoader {
     /** `comment.secret`, `article.poll`, `article.specs`, `article.content.pre.rows`를 쓰는 템플릿이 요구하는 최소 엔진 버전. */
     const val MIN_ENGINE_FOR_PARSER_EXTRAS = 3
 
+    /** `search` 섹션을 쓰는 템플릿이 요구하는 최소 엔진 버전(엔진 3은 알 수 없는 최상위 키를 거부한다). */
+    const val MIN_ENGINE_FOR_SEARCH = 4
+
     private val json = Json {
         ignoreUnknownKeys = false
         isLenient = false
@@ -101,10 +104,35 @@ object TemplateLoader {
                 "'comment.secret'/'article.poll'/'article.specs'/'article.content.pre.rows' require minEngineVersion >= $MIN_ENGINE_FOR_PARSER_EXTRAS (older engines reject unknown keys)",
             )
         }
+        if (t.search != null && t.minEngineVersion < MIN_ENGINE_FOR_SEARCH) {
+            fail("minEngineVersion", "'search' section requires minEngineVersion >= $MIN_ENGINE_FOR_SEARCH (older engines reject unknown top-level keys)")
+        }
         t.comment?.let { validateComment("comment", it) }
         t.article?.let {
             if (t.comment == null) fail("article", "requires a 'comment' section (article comments are parsed with it)")
             validateArticle("article", it)
+        }
+        t.search?.let { validateSearch("search", it) }
+    }
+
+    private fun validateSearch(path: String, s: SearchTemplate) {
+        validateSelector("$path.row", s.row)
+        s.groupHeader?.let { validateSelector("$path.groupHeader", it) }
+        s.groupName?.let {
+            if (s.groupHeader == null) fail("$path.groupName", "requires groupHeader")
+            validateField("$path.groupName", it, VType.STRING, 0)
+        }
+        for (key in SEARCH_REQUIRED_KEYS) {
+            if (s.fields[key] == null) fail("$path.fields", "required field '$key' is missing")
+        }
+        validateFieldMap("$path.fields", s.fields, SEARCH_FIELD_TYPES)
+        s.summary?.let { sum ->
+            sum.total?.let { validateField("$path.summary.total", it, VType.INT, 0) }
+            sum.boardCount?.let { validateField("$path.summary.boardCount", it, VType.INT, 0) }
+            sum.pageCount?.let { validateField("$path.summary.pageCount", it, VType.INT, 0) }
+            sum.hasNext?.let { validateSelector("$path.summary.hasNext", it) }
+            if (sum.emptyTexts.size > MAX_LIST_ENTRIES) fail("$path.summary.emptyTexts", "more than $MAX_LIST_ENTRIES entries")
+            sum.emptyTexts.forEachIndexed { i, t -> validateText("$path.summary.emptyTexts[$i]", t, allowEmpty = false) }
         }
     }
 
